@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f3e9">
+  <title>Rosie’s Halloween • Read & Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="svg-library" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" id="brand"><span class="brand-mark">R</span><span>Rosie’s <strong>Halloween</strong></span></a>
+      <span class="mode-pill"><i></i> Read together</span>
+      <button class="wall-toggle quiet" id="wall-toggle">My Halloween Wall <span id="wall-count">0 / 3</span></button>
+    </header>
+    <main id="app"></main>
+    <footer class="site-footer">A little friend. A new adventure. <span>Local play · Parent-assisted</span></footer>
+  </div>
+  <dialog id="wall-dialog" aria-labelledby="wall-title">
+    <div class="dialog-heading"><div><p class="eyebrow">OUR LITTLE ADVENTURES</p><h2 id="wall-title">My Halloween Wall</h2></div><button id="close-wall" class="quiet">Close</button></div>
+    <div id="wall-items" class="wall-items"></div>
+    <p class="small-note">Stickers stay on this browser. We save no names, answers or recordings.</p>
+    <button id="clear-wall" class="quiet">Reset stickers</button>
+    <div id="reset-confirm" hidden><p>Start a fresh sticker wall?</p><button id="confirm-reset" class="secondary">Reset wall</button> <button id="cancel-reset" class="quiet">Keep stickers</button></div>
+  </dialog>
+  <script src="engine.js"></script>
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
