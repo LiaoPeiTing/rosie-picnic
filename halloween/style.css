@@ -578,3 +578,11 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes park-boat-bob{0%,100%{transform:translate(510px,288px) rotate(-2deg)}50%{transform:translate(510px,286px) rotate(2deg)}}
 @keyframes park-gold-twinkle{50%{filter:drop-shadow(0 0 3px #ffed8e);opacity:.65}}
 @media(prefers-reduced-motion:reduce){.park-lake-ship,.park-gold-glint{animation:none!important}}
+
+/* Storybook park: preserve the complete illustrated scene. */
+.play .world.park .world-decor{transform:none;background:#302441}
+.world.park .world-decor>svg{width:100%;height:100%}
+.world.park .world-decor:after,.world.park .corner-web,.world.park .spooky-decor,.world.park .screen-bat{display:none}
+.world.park .pirate-hiding-clue{left:18%;bottom:28%;width:10cqh;height:16cqh;clip-path:inset(0 0 56% 0)}
+.world.park .park-search-actors .rosie{left:1%;bottom:1%;height:38cqh;width:28cqh}
+.world.park:after,.world.park .halloween-bats{display:none}
