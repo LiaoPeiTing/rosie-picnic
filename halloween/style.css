@@ -608,3 +608,8 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .world.library:after{display:none}
 
 .world.library .carved-lantern{display:none}
+
+/* Library keeps the story characters brighter than the detailed scenery. */
+.world.library .library-illustration{filter:brightness(.62) saturate(.72)}
+.world.library .library-storybook-scene .library-display-icons{filter:brightness(.8) saturate(.85)}
+.play .world.library .rosie,.play .world.library .guest.princess{filter:brightness(1.09) saturate(1.12) drop-shadow(0 3px 6px #180d2b99) drop-shadow(0 0 5px #ffe7ee33)}
