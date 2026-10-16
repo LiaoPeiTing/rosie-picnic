@@ -586,3 +586,5 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .world.park .pirate-hiding-clue{left:18%;bottom:28%;width:10cqh;height:16cqh;clip-path:inset(0 0 56% 0)}
 .world.park .park-search-actors .rosie{left:1%;bottom:1%;height:38cqh;width:28cqh}
 .world.park:after,.world.park .halloween-bats{display:none}
+
+.world.park .park-illustration{display:block;width:100%;height:100%;object-fit:contain}.world.park .pirate-hiding-clue img{width:100%;height:100%;object-fit:contain}
