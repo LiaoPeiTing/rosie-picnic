@@ -599,3 +599,12 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .play .world.park .halloween-bats{display:block;opacity:1}
 .play:has(.world.park) .screen-bat,.world.park .screen-bat{display:block}
 @media(prefers-reduced-motion:reduce){.play:has(.world.park) .screen-bat,.world.park .screen-bat{display:none}}
+
+/* Illustrated Halloween library, separate from all interactive actors. */
+.play .world.library .world-decor{filter:none;transform:none;background:#2c1d37}
+.library-storybook-scene{position:absolute;inset:0}
+.library-illustration{display:block;width:100%;height:100%;object-fit:contain}
+.library-storybook-scene .library-display-icons{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.world.library:after{display:none}
+
+.world.library .carved-lantern{display:none}
