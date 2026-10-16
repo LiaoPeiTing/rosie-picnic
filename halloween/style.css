@@ -679,3 +679,4 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 #wall-dialog .wall-sticker{padding:20px}
 @media(max-width:700px){#wall-dialog .wall-items{grid-template-columns:1fr}#wall-dialog .wall-sticker .art{height:240px}.play .world .sticker-pocket{width:32cqh;height:29cqh;font-size:3cqh}}
 @media(prefers-reduced-motion:reduce){.sticker-preview.sticker-flying{animation:none;display:none}.sticker-pocket.pocket-receiving .art{animation:none;visibility:visible}.sticker-pocket.pocket-receiving{animation:none}}
+#wall-dialog .wall-sticker p{color:#65446f}
