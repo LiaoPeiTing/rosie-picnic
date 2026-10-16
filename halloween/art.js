@@ -36,10 +36,11 @@
     const gold='<g fill="#ffd762" stroke="#b17c27" stroke-width="1.5"><ellipse cx="0" cy="0" rx="10" ry="4"/><path d="M-10 0v9q10 7 20 0V0"/><ellipse cy="8" rx="10" ry="4"/></g>';
     const tree=(x)=>'<path d="M'+x+' 126V45" stroke="#795330" stroke-width="8"/><path d="M'+(x-24)+' 72q-12-49 24-49t24 49Z" fill="#92734b"/>';
     const ship='<g class="little-pirate-ship"><path d="M30 103h100l-18 24H51Z" fill="#795039" stroke="#3e2b25" stroke-width="3"/><path d="M80 103V30" stroke="#5f422c" stroke-width="4"/><path d="M84 36h35v43H84Z" fill="#4c345d"/><path d="M76 43 49 85h27Z" fill="#fff0c7"/><circle cx="101" cy="54" r="7" fill="#fff0cb"/><path d="M95 65h13" stroke="#fff0cb" stroke-width="3"/></g>';
+    const scenery=(crop,x=0,y=0,w=160,h=150)=>'<svg x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" viewBox="'+crop+'" preserveAspectRatio="none" overflow="hidden"><image href="'+new URL('assets/park-storybook-v1.png',document.baseURI).href+'" width="1774" height="887"/></svg>';
     let art='';
-    if(key==='under-swing') art='<path d="M24 133 40 28h80l18 105M57 28v48m47-48v48m-50 0h54" fill="none" stroke="#8f683b" stroke-width="5" stroke-linecap="round"/><circle cx="80" cy="27" r="13" fill="#70419d"/><path d="M63 24 48 11m17 17-20 4m52-8 15-13m-17 17 20 4" stroke="#e6b16a" stroke-width="3"/>'+piratePose(true,31,87,100,53);
-    if(key==='on-seesaw') art='<path d="m70 130 10-24 10 24" fill="#c19043"/><path d="M20 100h120" stroke="#e6b84b" stroke-width="9"/>'+use('pirate',37,30,50,70);
-    if(key==='between-trees') art=tree(30)+tree(130)+use('pirate',57,47,47,85);
+    if(key==='under-swing') art=scenery('450 230 430 350')+piratePose(true,45,111,82,38);
+    if(key==='on-seesaw') art=scenery('190 450 570 407')+piratePose(false,64,4,38,85);
+    if(key==='between-trees') art=scenery('0 0 1774 887')+piratePose(false,62,53,42,92);
     if(key==='gold-in-box') art='<path d="M36 81h88v50H36Z" fill="#8c5e36" stroke="#4b3022" stroke-width="3"/><path d="M36 79V48h88v31" fill="#bc8e52" stroke="#4b3022" stroke-width="3"/><g transform="translate(80 85)">'+gold+'</g>';
     if(key==='gold-on-bench') art='<path d="M26 99h108M38 99v34m84-34v34" stroke="#9c733f" stroke-width="8"/><g transform="translate(80 84)">'+gold+'</g>';
     if(key==='gold-under-swing') art='<path d="M25 130 43 35h75l20 95M61 35v55m40-55v55m-48 0h56" fill="none" stroke="#8f683b" stroke-width="5"/><g transform="translate(80 119)">'+gold+'</g>';
