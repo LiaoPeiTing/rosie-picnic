@@ -112,9 +112,9 @@
     } else {
       const location=(key,label)=>({key,label,picture:key});
       add('welcome',1,'story',[R('Welcome to Halloween Park! Let’s play hide-and-seek!'),R('The pirate is hiding. Let’s find him!')],{view:'park-hide'});
-      add('teach-under',1,'story',[R('Look! Under the slide. Under!')],{view:'park-under'});
-      add('find-pirate',1,'question',[R('Where is the pirate? Look under the slide!')],{view:'park-hide',choices:[location('under-slide','Under the slide'),location('on-seesaw','On the seesaw'),location('between-trees','Between the trees')],correct:['under-slide'],hint:[R('Look below the pink slide. Under the slide!')],retry:[R('Let’s look under the slide!')]});
-      add('pirate-found',1,'action',[G('You found me! I’m under the slide!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:3500});
+      add('teach-under',1,'story',[R('Look! Under the swing. Under!')],{view:'park-under'});
+      add('find-pirate',1,'question',[R('Where is the pirate? Look under the swing!')],{view:'park-hide',choices:[location('under-swing','Under the swing'),location('on-seesaw','On the seesaw'),location('between-trees','Between the trees')],correct:['under-swing'],hint:[R('Look below the spider swing. Under the swing!')],retry:[R('Let’s look under the swing!')]});
+      add('pirate-found',1,'action',[G('You found me! I’m under the swing!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:3500});
       checkpoint(1);
       add('gold-request',2,'story',[G('Can you help me find my gold?'),R('Look! A box. The gold is in the box!')],{view:'park-gold'});
       add('find-gold',2,'question',[G('Where is my gold?'),R('Find the gold in the box!')],{view:'park-gold',choices:[location('gold-under-swing','Under the swing'),location('gold-in-box','In the box'),location('gold-on-bench','On the bench')],correct:['gold-in-box'],hint:[R('Look inside the open box. In the box!')],retry:[R('In the box. Let’s look inside!')]});

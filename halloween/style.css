@@ -680,3 +680,10 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(max-width:700px){#wall-dialog .wall-items{grid-template-columns:1fr}#wall-dialog .wall-sticker .art{height:240px}.play .world .sticker-pocket{width:32cqh;height:29cqh;font-size:3cqh}}
 @media(prefers-reduced-motion:reduce){.sticker-preview.sticker-flying{animation:none;display:none}.sticker-pocket.pocket-receiving .art{animation:none;visibility:visible}.sticker-pocket.pocket-receiving{animation:none}}
 #wall-dialog .wall-sticker p{color:#65446f}
+
+/* The pirate rests on the ground directly below the spider swing. */
+.world.park .pirate-hiding-clue{left:39.5%;top:59%;bottom:auto;width:26cqh;height:13.5cqh;clip-path:none;transform:translateX(-50%);animation:pirate-rest-breathe 3.4s ease-in-out infinite;filter:drop-shadow(0 3px 2px #25182b99)}
+.world.park .pirate-hiding-clue>svg{display:block;width:100%;height:100%;overflow:hidden}
+@keyframes pirate-rest-breathe{50%{transform:translateX(-50%) translateY(-.3cqh)}}
+@media(prefers-reduced-motion:reduce){.world.park .pirate-hiding-clue{animation:none}}
+.world.park .pirate-hiding-clue{top:56%;width:24cqh;height:12.5cqh}
