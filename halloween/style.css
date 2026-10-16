@@ -588,3 +588,5 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .world.park:after,.world.park .halloween-bats{display:none}
 
 .world.park .park-illustration{display:block;width:100%;height:100%;object-fit:contain}.world.park .pirate-hiding-clue img{width:100%;height:100%;object-fit:contain}
+
+.world.bakery{background:#382839}.play .world.bakery .world-decor{filter:none}.world.bakery .bakery-candle{animation:bakery-candle-glow 2.6s ease-in-out infinite alternate}@keyframes bakery-candle-glow{to{opacity:.65}}@media(prefers-reduced-motion:reduce){.world.bakery .bakery-candle{animation:none}}
