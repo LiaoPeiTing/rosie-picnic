@@ -567,3 +567,7 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(prefers-reduced-motion:reduce){.play .world.park .park-search-actors .rosie,.world.park .pirate-hiding-clue,.park-sky-stars{animation:none!important}}
 
 .play .world.park .park-search-actors .rosie{left:27%;bottom:17%}
+
+/* Widen the park without stretching equipment; Rosie guides from the left. */
+.play .world.park .park-search-actors .rosie{left:1.5%;bottom:17%}
+.world.park .pirate-hiding-clue{left:77%;bottom:16%}
