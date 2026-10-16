@@ -128,9 +128,9 @@
       natural('happy-question',4,[G('Thank you, Stephanie! I’m happy!'),R('Are you happy?')],'park-sail');
       add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:4000,view:'park-sail'});
     }
-    add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 2600 });
+    add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 4800 });
     natural('goodbye', 4, [G(`Bye-bye, Stephanie!`)], 'reward');
-    if(['bakery','library'].includes(s.theme)) nodes[nodes.length-1].duration=8000;
+    nodes[nodes.length-1].duration=6000;
     return nodes;
   }
   const current = s => script(s)[s.index];

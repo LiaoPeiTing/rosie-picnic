@@ -660,3 +660,22 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 /* One readable spider palette for all three chapters. */
 .play .world .web-spider{filter:drop-shadow(0 2px 2px #160d26) drop-shadow(0 0 3px #d9b2ff99);opacity:1}
 .play .world .web-spider .spider-eyes{filter:drop-shadow(0 0 3px #ffcc57)}
+
+/* A readable sticker collection moment, shared by every chapter. */
+.play .world .sticker-pocket{width:36cqh;height:30cqh;right:18px;bottom:18px;z-index:30;font-size:3.4cqh;border:3px solid #f0c769;background:#fff4df;box-shadow:0 5px 20px #1b102b88;padding:1.5cqh}
+.play .world .sticker-pocket .art{width:18cqh;height:18cqh;flex:none}
+.play .world .sticker-preview{width:34cqh;height:34cqh;top:24%;right:calc(50% - 17cqh);z-index:31;border-color:#ffd477;box-shadow:0 0 18px #ffda6b99}
+.sticker-preview.sticker-flying{animation:sticker-collect-clear 4.8s ease-in-out forwards}
+.sticker-pocket.pocket-receiving .art{animation:sticker-received-clear 4.8s linear both}
+.sticker-pocket.pocket-receiving{animation:sticker-wall-welcome 4.8s ease-in-out both}
+.farewell-scene .sticker-pocket{opacity:1}
+.play:has(.reward-scene) .screen-bat{display:none}
+@keyframes sticker-collect-clear{0%,25%{top:24%;right:calc(50% - 17cqh);transform:scale(1) rotate(-6deg);opacity:1}65%{top:calc(100% - 18px - 30cqh);right:calc(18px + 1cqh);transform:scale(.85) rotate(5deg);opacity:1}75%{top:calc(100% - 18px - 32cqh);right:calc(18px + 1cqh);transform:scale(.65) rotate(0);opacity:1}82%,100%{top:calc(100% - 18px - 32cqh);right:calc(18px + 1cqh);transform:scale(.65);opacity:0}}
+@keyframes sticker-received-clear{0%,74%{opacity:0;visibility:hidden;transform:scale(.8)}75%{opacity:1;visibility:visible;transform:scale(1.2)}86%,100%{opacity:1;visibility:visible;transform:scale(1)}}
+@keyframes sticker-wall-welcome{0%,73%,100%{box-shadow:0 5px 20px #1b102b88}78%,90%{box-shadow:0 0 28px #ffdc66,0 0 8px #fff1b4; border-color:#fff1a4}}
+#wall-dialog{max-width:1440px;width:calc(100% - 32px);max-height:92vh;overflow:auto}
+#wall-dialog .wall-sticker .art{height:300px}
+#wall-dialog .wall-sticker p{font-size:24px;line-height:1.35}
+#wall-dialog .wall-sticker{padding:20px}
+@media(max-width:700px){#wall-dialog .wall-items{grid-template-columns:1fr}#wall-dialog .wall-sticker .art{height:240px}.play .world .sticker-pocket{width:32cqh;height:29cqh;font-size:3cqh}}
+@media(prefers-reduced-motion:reduce){.sticker-preview.sticker-flying{animation:none;display:none}.sticker-pocket.pocket-receiving .art{animation:none;visibility:visible}.sticker-pocket.pocket-receiving{animation:none}}
