@@ -551,3 +551,19 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes pirate-ship-sail{0%{transform:translateX(-50%) rotate(-2deg)}50%{transform:translateX(-30%) rotate(2deg)}100%{transform:translateX(10%) rotate(-2deg)}}
 .play .world.park .halloween-bats{opacity:.25}.play:has(.world.park) .screen-bat{display:none}.world.park .walking-skeleton{opacity:.25}
 @media(prefers-reduced-motion:reduce){.pirate-hiding-clue,.ship-sailing{animation:none!important}}
+
+/* A lively moonlit playground with clear ground placement and search clues. */
+.play .world.park .world-decor{filter:none;transform:scale(1.02);transform-origin:50% 100%}
+.play .world.park{background:linear-gradient(#46324e,#ad7e48 70%,#afa272)!important}
+.world.park:before{display:none}.world.park .world-decor:after{content:'Halloween Hide-and-Seek Park';position:absolute;top:3%;left:50%;transform:translateX(-50%);white-space:nowrap;color:#fff1be;font:600 clamp(18px,3.5cqh,34px) Georgia;text-shadow:0 2px 3px #392a33}
+.park-search-actors{position:static!important}
+.play .world.park .park-search-actors .rosie{position:absolute;left:36%;bottom:15%;height:48cqh;width:36cqh;z-index:8;animation:park-rosie-breathe 3s ease-in-out infinite;transform-origin:50% 100%}
+.world.park .pirate-hiding-clue{left:69%;top:auto;bottom:16%;width:16cqh;height:23cqh;clip-path:inset(0 0 60% 0);z-index:4;animation:park-pirate-peek 3.5s ease-in-out infinite}
+.park-sky-stars{animation:park-star-twinkle 3s ease-in-out infinite}.ghost-tongue-slide{filter:drop-shadow(0 3px 2px #36263a44)}.spider-swing{filter:drop-shadow(0 3px 2px #30232a44)}.bumblebee-seesaw{filter:drop-shadow(0 2px 2px #47352555)}
+.world.park .spooky-decor{background:none}.world.park .walking-skeleton{display:none}.world.park .web{width:18cqh;height:18cqh;opacity:.6}.world.park .halloween-bats{opacity:.35}
+@keyframes park-rosie-breathe{50%{transform:translateY(-3px) rotate(1deg)}}
+@keyframes park-pirate-peek{0%,100%{transform:translateY(4px) rotate(-3deg)}50%{transform:translateY(-4px) rotate(3deg)}}
+@keyframes park-star-twinkle{0%,100%{opacity:.5}50%{opacity:1;filter:drop-shadow(0 0 2px #ffe792)}}
+@media(prefers-reduced-motion:reduce){.play .world.park .park-search-actors .rosie,.world.park .pirate-hiding-clue,.park-sky-stars{animation:none!important}}
+
+.play .world.park .park-search-actors .rosie{left:27%;bottom:17%}
