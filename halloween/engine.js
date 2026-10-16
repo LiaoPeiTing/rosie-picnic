@@ -3,7 +3,7 @@
   const themes = {
     bakery: { name: 'Halloween Bakery', chapter: 'Ghost’s Party Box', guest: 'Ghost', badge: 'Candy Helper', word: 'pumpkin' },
     library: { name: 'Halloween Library', chapter: 'Princess’s Lost Book', guest: 'Princess', badge: 'Great Detective', word: 'crown' },
-    park: { name: 'Halloween Park', chapter: 'Pirate’s Parade', guest: 'Pirate', badge: 'Parade Star', word: 'parade' }
+    park: { name: 'Halloween Park', chapter: 'Pirate’s Hide-and-Seek Adventure', guest: 'Pirate', badge: 'Treasure Finder', word: 'treasure' }
   };
   const shuffle = (items, random) => {
     const result = [...items];
@@ -111,41 +111,23 @@
       natural('happy-question', 4, [G('I’m happy!'), R('Are you happy?')], 'library');
       add('celebrate', 4, 'action', [G('Let’s dance!')], { motion: 'celebrate', duration: 10000, view: 'library' });
     } else {
-      add('welcome', 1, 'story', [R('Welcome to Halloween Park! Look! Three friends!')], { view: 'guest-choices' });
-      if (c.correction) {
-        add('correct-rosie', 1, 'question', [R('Is this the pirate?')], { view: 'wrong-guest',
-          choices: [{ key: 'no', label: 'No', picture: 'no' }, ...pictureChoices([c.wrongObject])],
-          correct: ['no', c.wrongObject], hint: [R(`Look! ${pictureLabels[c.wrongObject]}.`)] });
-        add('oops', 1, 'story', [R('Oops! You’re right!'), R(c.wrongObject === 'witch' ? 'She is the witch!' : 'She is the princess!')], { view: 'wrong-guest' });
-      }
-      add('find-pirate', 1, 'question', [R('Find the pirate. Who is it?')], { view: 'guest-choices', choices: pictureChoices(c.guests),
-        correct: ['pirate'], hint: [R('Find the pirate.')], retry: [R('Good try. Find the pirate.')] });
-      add('pirate-arrives', 1, 'action', [R('Yes! He is the pirate!')], { effect: 'guest', motion: 'deliver', view: 'park' });
-      natural('hello', 1, [G('Hello, Stephanie!')], 'park');
-      add('prepare', 1, 'story', [G('Let’s play!'), R('Let’s help the pirate get ready!')], { view: 'park' });
+      const location=(key,label)=>({key,label,picture:key});
+      add('welcome',1,'story',[R('Welcome to Halloween Park! Let’s play hide-and-seek!'),R('The pirate is hiding. Let’s find him!')],{view:'park-hide'});
+      add('teach-under',1,'story',[R('Look! Under the slide. Under!')],{view:'park-under'});
+      add('find-pirate',1,'question',[R('Where is the pirate? Look under the slide!')],{view:'park-hide',choices:[location('under-slide','Under the slide'),location('on-seesaw','On the seesaw'),location('between-trees','Between the trees')],correct:['under-slide'],hint:[R('Look below the pink slide. Under the slide!')],retry:[R('Let’s look under the slide!')]});
+      add('pirate-found',1,'action',[G('You found me! I’m under the slide!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:3500});
       checkpoint(1);
-      add('command', 2, 'question', [G('Let’s get ready! What should I do?'), R('Tell the pirate what to do!')], { view: 'park',
-        choices: [{ key: 'clap', label: 'Clap your hands', picture: 'clap' }, { key: 'jump', label: 'Jump', picture: 'jump' }],
-        correct: ['clap', 'jump'], hint: [R('Clap your hands!')], default: 'clap' });
-      add('jump', 2, 'action', [G('That was fun!')], { motion: 'jump', view: 'park', only: 'jump' });
-      add('clap-command', 2, 'question', [R('Clap your hands!')], { view: 'park', only: 'jump',
-        choices: [{ key: 'clap', label: 'Clap your hands', picture: 'clap' }], correct: ['clap'], hint: [R('Clap your hands!')] });
-      add('clap-count', 2, 'action', c.first ? [R(Array.from({ length: c.count }, (_, i) => words[i + 1].toLowerCase()).join(', ') + '.')]
-        : [R('Watch the pirate!')], { effect: 'claps', motion: 'clap', duration: c.count * 600, view: 'claps' });
-      add('count-question', 2, 'question', [G('How many?')], { view: 'claps', choices: c.numbers, correct: [String(c.count)],
-        hint: [R(Array.from({ length: c.count }, (_, i) => words[i + 1].toLowerCase()).join(', ') + '.')], retry: [R('Good try. Let’s count again.')] });
-      add('extra-clap', 2, 'action', [R(`${words[c.count + 1]}!`)], { effect: 'extra', motion: 'clap', view: 'claps', duration: 600 });
-      add('ready', 2, 'story', [G('I’m ready!'), R('Let’s go!')], { view: 'park' });
+      add('gold-request',2,'story',[G('Can you help me find my gold?'),R('Look! A box. The gold is in the box!')],{view:'park-gold'});
+      add('find-gold',2,'question',[G('Where is my gold?'),R('Find the gold in the box!')],{view:'park-gold',choices:[location('gold-under-swing','Under the swing'),location('gold-in-box','In the box'),location('gold-on-bench','On the bench')],correct:['gold-in-box'],hint:[R('Look inside the open box. In the box!')],retry:[R('In the box. Let’s look inside!')]});
+      add('gold-found',2,'action',[G('My gold! Thank you, Stephanie!'),R('Yes! The gold is in the box!')],{effect:'gold',motion:'happy',view:'park-gold-found',duration:3500});
       checkpoint(2);
-      add('teach-parade', 3, 'action', [R(c.first ? 'Look! A parade! Parade!' : 'Look! A parade!')], { motion: 'card-parade', view: 'invitation' });
-      add('position-question', 3, 'question', [G('Where should I go?'), R('Which one?')], { view: 'positions', choices: [1, 2, 3].map(numeric),
-        correct: [String(c.position)], hint: [R(`One, two, three. Number ${p}.`)], retry: [R(`Look! Number ${p}.`)] });
-      add('join', 3, 'action', [G(`Number ${p}! Thank you, Stephanie!`), R(`Yes! The pirate is number ${p}!`)], {
-        effect: 'position', motion: 'join', view: 'positions' });
+      add('ship-request',3,'story',[G('Now let’s find my ship!'),R('Look! The ship is on the lake!')],{view:'park-ship'});
+      add('find-ship',3,'question',[G('Where is my ship?')],{view:'park-ship',choices:[location('ship-on-grass','On the grass'),location('ship-between-trees','Between the trees'),location('ship-on-lake','On the lake')],correct:['ship-on-lake'],hint:[R('Look at the blue water. On the lake!')],retry:[R('Let’s look on the lake!')]});
+      add('ship-found',3,'action',[G('There’s my ship!'),R('Let’s put the gold in the ship!')],{effect:'ship',motion:'deliver',view:'park-sail',duration:4500});
       checkpoint(3);
-      add('parade', 4, 'action', [G('Let’s go!'), R('A Halloween parade!')], { effect: 'parade', motion: 'parade', duration: 3500, view: 'parade' });
-      natural('happy-question', 4, [G('That was fun! Thank you, Stephanie! I’m happy!'), R('How do you feel?')], 'park');
-      add('celebrate', 4, 'action', [G('Let’s jump!')], { motion: 'celebrate', duration: 3000, view: 'park' });
+      add('sail-away',4,'action',[G('All aboard! Let’s go!'),R('You found the pirate, the gold, and the ship!')],{effect:'sail',motion:'sail',view:'park-sail',duration:6000});
+      natural('happy-question',4,[G('Thank you, Stephanie! I’m happy!'),R('Are you happy?')],'park-sail');
+      add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:4000,view:'park-sail'});
     }
     add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 2600 });
     natural('goodbye', 4, [G(`Bye-bye, Stephanie!`)], 'reward');
@@ -175,6 +157,9 @@
       case 'close': s.scene.open = false; break;
       case 'princess-move': s.scene.actions.push(s.scene.command || 'touch'); break;
       case 'guest': s.scene.guest = true; break;
+      case 'gold': s.scene.gold = true; break;
+      case 'ship': s.scene.ship = true; break;
+      case 'sail': s.scene.sailed = true; break;
       case 'claps': s.scene.claps = s.config.count; break;
       case 'extra': s.scene.claps = s.config.count + 1; break;
       case 'position': s.scene.position = s.config.position; break;
@@ -228,8 +213,8 @@
         if (stage >= 3) { s.scene.actions = []; s.scene.open = false; s.scene.reward = false; }
       } else {
         if (stage <= 1) s.scene = { actions: [], claps: 0 };
-        if (stage === 2) { s.scene.claps = 0; s.scene.command = null; }
-        if (stage >= 3) { s.scene.position = null; s.scene.parade = false; s.scene.reward = false; }
+        if (stage === 2) { s.scene.gold=false;s.scene.ship=false;s.scene.sailed=false; }
+        if (stage >= 3) { s.scene.ship=false;s.scene.sailed=false;s.scene.reward=false; }
       }
       const restartStage = Math.min(stage, 3);
       return enter(s, script(s).findIndex(n => n.stage === restartStage));

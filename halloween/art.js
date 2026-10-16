@@ -27,10 +27,26 @@
   }
   // Cookie art is distinct from the whole pumpkin used during teaching.
   const cookieDefs = `<symbol id="pink-cookie" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="#dfb184" stroke="#b98b60" stroke-width="4"/><circle cx="50" cy="50" r="33" fill="#edafc7"/><path d="m33 30 6 5m19-7 5 7m-40 16 7 3m28 14 7-4m-24 8 4 4m15-27 6 1" stroke="#fff0e6" stroke-width="5" stroke-linecap="round"/></symbol>`;
+
+  function parkLocation(key) {
+    const gold='<g fill="#ffd762" stroke="#b17c27" stroke-width="1.5"><ellipse cx="0" cy="0" rx="10" ry="4"/><path d="M-10 0v9q10 7 20 0V0"/><ellipse cy="8" rx="10" ry="4"/></g>';
+    const tree=(x)=>'<path d="M'+x+' 126V45" stroke="#795330" stroke-width="8"/><path d="M'+(x-24)+' 72q-12-49 24-49t24 49Z" fill="#92734b"/>';
+    const ship='<g class="little-pirate-ship"><path d="M30 103h100l-18 24H51Z" fill="#795039" stroke="#3e2b25" stroke-width="3"/><path d="M80 103V30" stroke="#5f422c" stroke-width="4"/><path d="M84 36h35v43H84Z" fill="#4c345d"/><path d="M76 43 49 85h27Z" fill="#fff0c7"/><circle cx="101" cy="54" r="7" fill="#fff0cb"/><path d="M95 65h13" stroke="#fff0cb" stroke-width="3"/></g>';
+    let art='';
+    if(key==='under-slide') art='<path d="M35 100V35h45l45 65" fill="none" stroke="#e89bb4" stroke-width="10"/><path d="M35 55h25m-25 20h25" stroke="#ae814a" stroke-width="4"/>'+use('pirate',51,76,45,65);
+    if(key==='on-seesaw') art='<path d="m70 130 10-24 10 24" fill="#c19043"/><path d="M20 100h120" stroke="#e6b84b" stroke-width="9"/>'+use('pirate',37,30,50,70);
+    if(key==='between-trees') art=tree(30)+tree(130)+use('pirate',57,47,47,85);
+    if(key==='gold-in-box') art='<path d="M36 81h88v50H36Z" fill="#8c5e36" stroke="#4b3022" stroke-width="3"/><path d="M36 79V48h88v31" fill="#bc8e52" stroke="#4b3022" stroke-width="3"/><g transform="translate(80 85)">'+gold+'</g>';
+    if(key==='gold-on-bench') art='<path d="M26 99h108M38 99v34m84-34v34" stroke="#9c733f" stroke-width="8"/><g transform="translate(80 84)">'+gold+'</g>';
+    if(key==='gold-under-swing') art='<path d="M25 130 43 35h75l20 95M61 35v55m40-55v55m-48 0h56" fill="none" stroke="#8f683b" stroke-width="5"/><g transform="translate(80 119)">'+gold+'</g>';
+    if(key.startsWith('ship-')) art=(key==='ship-on-lake'?'<ellipse cx="80" cy="127" rx="75" ry="19" fill="#78b7cb"/><path d="M20 131h25m40 7h32" stroke="#c4edf1" stroke-width="2"/>':key==='ship-on-grass'?'<ellipse cx="80" cy="130" rx="75" ry="15" fill="#a1ad6a"/>':tree(17)+tree(143))+ship;
+    return svg(art,'park-location','0 0 160 150');
+  }
   function icon(key, s) {
     if (['ghost', 'princess', 'witch', 'pirate'].includes(key)) return svg(use(key, 20, key === 'princess' ? 20 : 0, 120, key === 'princess' ? 125 : 145), 'character-card');
     if (key === 'number') return '';
     if (key === 'no') return svg('<circle cx="80" cy="72" r="45" fill="#f5e4ec"/><path d="M60 51 100 91m0-40L60 91" stroke="#b37a98" stroke-width="8" stroke-linecap="round"/>');
+    if (['under-slide','on-seesaw','between-trees','gold-in-box','gold-on-bench','gold-under-swing','ship-on-lake','ship-on-grass','ship-between-trees'].includes(key)) return parkLocation(key);
     if (['turn','wave','climb','rollerblade'].includes(key)) return svg(princessPose(key), 'stephanie-command', '0 -35 160 295');
     if (key === 'pumpkin') return svg(use('pumpkin', 32, 25, 96));
     if (key === 'pumpkin-cookie') return svg('<circle cx="80" cy="76" r="48" fill="#dcb38a" stroke="#b98b60" stroke-width="3"/>' + use('pumpkin', 44, 39, 72));
@@ -88,6 +104,6 @@
     return '<g class="says-skate-trails" fill="none" stroke="#eac785" stroke-width="2" opacity=".8"><path d="M15 242H-5m30-7H5m110 7h25m-15-7h20"/></g><g class="says-skater">'+skate('says-skate-left',65)+skate('says-skate-right',95)+base+glove('says-skate-arm-left','M58 109Q40 115 22 99',20,97)+glove('says-skate-arm-right','M102 109Q120 115 138 99',140,97)+'</g>';
   }
 
-  root.HalloweenArt = { defs: characterDefs, use, svg, icon, box, candies, princessPose };
+  root.HalloweenArt = { defs: characterDefs, use, svg, icon, box, candies, princessPose, parkLocation };
 })(window);
 

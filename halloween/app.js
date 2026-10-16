@@ -162,6 +162,12 @@
       const lineup=['witch','ghost']; lineup.splice(c.position-1,0,'pirate');
       actors=`<div class="parade-row ${s.phase==='acting'?'walking':''}">${lineup.map(k=>guest(k,'')).join('')}</div>`;
     }
+    if(s.theme==='park') {
+      if(!s.scene.guest) actors=`<div class="actor-row park-search-actors">${rosie()}<div class="pirate-hiding-clue" aria-label="The pirate is hiding under the slide">${A.svg(A.use('pirate',0,0,90,140),'','0 0 90 140')}</div></div>`;
+      if(view==='park-under') props+=`<div class="park-location-teaching">${A.parkLocation('under-slide')}<b>Under the slide</b></div>`;
+      if(['park-gold','park-gold-found'].includes(view)) props+=`<div class="park-story-prop gold-story ${s.scene.gold?'gold-collected':''}">${A.parkLocation('gold-in-box')}</div>`;
+      if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">✦</span>':''}</div>`;
+    }
     if (view==='reward') props+=`<div class="sticker-pocket ${n.id==='reward'&&s.phase==='reading'?'pocket-empty':n.id==='reward'&&s.phase==='acting'?'pocket-receiving':''}"><span>My Halloween Wall</span>${A.icon(role,s)}</div><div class="sticker-preview ${n.id==='reward'&&s.phase==='acting'?'sticker-flying':n.id==='goodbye'||s.phase==='ready'?'sticker-stored':''}">${A.icon(role,s)}</div>`;
     const decor=s.theme==='park'?halloweenParkBackdrop():s.theme==='library'?'<path d="M25 80h470M25 140h470" stroke="#c1aac7" stroke-width="8"/><path d="M40 65v-35m24 35v-45m30 45v-37m35 37v-42m250 102v-40m25 40v-48m30 48v-35" stroke="#b99fbd" stroke-width="17"/>':'<path d="M30 105h470" stroke="#d8b69b" stroke-width="6"/><path d="m40 28 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40" fill="none" stroke="#dcabbd" stroke-width="12"/>';
     const background=['bakery','library'].includes(s.theme)?A.svg(s.theme==='bakery'?`<rect x="-60" width="660" height="365" fill="#fff0d9"/><path d="M-60 248h660v117H-60Z" fill="#c1a17e"/>${bakeryBackdrop()}`:libraryBackdrop(),`${s.theme}-backdrop`,s.theme==='bakery'?'-60 0 660 365':'0 0 540 365'):A.svg(decor,'','0 0 540 365');

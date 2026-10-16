@@ -541,3 +541,13 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes park-spider-swing{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
 @keyframes park-bee-rock{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
 @media(prefers-reduced-motion:reduce){.spider-swing-seat,.bee-seesaw-beam{animation:none!important}}
+
+/* Hide-and-seek park: clues, clear location pictures, treasure and ship. */
+.play .world.park .scene-choices{width:min(96%,125cqh);z-index:18}.play .world.park .scene-choices .choice .art{height:25cqh;width:100%}.play .world.park .choice-label{font-size:clamp(12px,2cqh,18px)}
+.park-search-actors .rosie{position:absolute;left:32%;bottom:22%}.pirate-hiding-clue{position:absolute;left:76%;top:56%;width:9cqh;height:12cqh;overflow:hidden;clip-path:inset(38% 0 0);animation:pirate-peek 3s ease-in-out infinite}.pirate-hiding-clue .art{width:100%;height:100%}
+.park-location-teaching{position:absolute;z-index:10;left:52%;top:44%;width:29cqh;transform:translateX(-50%);padding:1cqh;background:#fff0ce;border:3px solid #d4a24c;border-radius:18px;color:#4b2c19;text-align:center}.park-location-teaching .art{width:100%;height:26cqh}.park-location-teaching b{font:700 2.5cqh system-ui}
+.park-story-prop{position:absolute;left:50%;bottom:2cqh;width:36cqh;height:30cqh;transform:translateX(-50%);pointer-events:none;z-index:9}.park-story-prop .art{width:100%;height:100%}.world.park:has(.scene-choices) .park-story-prop{display:none}.gold-collected{filter:drop-shadow(0 0 5px #ffdf65)}.ship-story{width:55cqh;height:32cqh}.ship-sailing{animation:pirate-ship-sail 6s ease-in-out both}.gold-on-board{position:absolute;left:44%;top:58%;font-size:5cqh;color:#ffdf5c}
+@keyframes pirate-peek{50%{transform:translateY(-5px)}}
+@keyframes pirate-ship-sail{0%{transform:translateX(-50%) rotate(-2deg)}50%{transform:translateX(-30%) rotate(2deg)}100%{transform:translateX(10%) rotate(-2deg)}}
+.play .world.park .halloween-bats{opacity:.25}.play:has(.world.park) .screen-bat{display:none}.world.park .walking-skeleton{opacity:.25}
+@media(prefers-reduced-motion:reduce){.pirate-hiding-clue,.ship-sailing{animation:none!important}}
