@@ -56,9 +56,8 @@
       add('welcome', 1, 'story', [R('Welcome to the Halloween Bakery!'), R('Look! The ghost has a box.')], { view: 'bakery' });
       natural('hello', 1, [G('Hello, Stephanie!')], 'bakery');
       add('request-cookie', 1, 'story', [G('A pumpkin cookie, please!')], { view: 'pumpkin' });
-      if (c.first) add('teach-pumpkin', 1, 'story', [R('Look! A pumpkin. Pumpkin.'), R('A pumpkin cookie.')], { view: 'pumpkin' });
       if (c.correction) {
-        add('correct-rosie', 1, 'question', [R('Is this the pumpkin?')], { effect: c.wrongObject === 'pink' ? 'pick-pink' : 'pick-ghost',
+        add('correct-rosie', 1, 'question', [R('Is this the pumpkin cookie?')], { effect: c.wrongObject === 'pink' ? 'pick-pink' : 'pick-ghost',
           view: 'wrong-cookie', choices: [{ key: 'no', label: 'No', picture: 'no' }, ...pictureChoices([c.wrongObject])],
           correct: ['no', c.wrongObject], hint: [R('Look at this cookie. Is it a pumpkin cookie?')] });
         add('oops', 1, 'story', [R('Oops! You’re right!')], { view: 'wrong-cookie' });
