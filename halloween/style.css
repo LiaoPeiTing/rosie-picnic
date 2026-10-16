@@ -656,3 +656,7 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(max-aspect-ratio:3/2){.play .world.bakery .world-decor>.bakery-backdrop,.world.park .park-illustration{width:100%;margin-left:0}.world.park .park-illustration{object-fit:contain}}
 
 .world.bakery{--bakery-inset:10%;--bakery-span:80%}@media(max-aspect-ratio:3/2){.world.bakery{--bakery-inset:0%;--bakery-span:100%}}
+
+/* One readable spider palette for all three chapters. */
+.play .world .web-spider{filter:drop-shadow(0 2px 2px #160d26) drop-shadow(0 0 3px #d9b2ff99);opacity:1}
+.play .world .web-spider .spider-eyes{filter:drop-shadow(0 0 3px #ffcc57)}
