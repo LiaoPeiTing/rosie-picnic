@@ -25,7 +25,7 @@
     return A.svg(`<rect width="200" height="120" fill="#e7f4fc"/><circle cx="175" cy="16" r="10" fill="#f6d579"/><path d="M0 84q40-25 80 0t120-4v40H0Z" fill="#b4d59c"/><path d="M0 104q100-16 200 0" fill="none" stroke="#eed8a5" stroke-width="12"/>${rider(6,true)}${rider(102,false)}<path d="M100 0v120" stroke="#d6c2a4" stroke-width="2"/>`,'riding-story','0 0 200 120');
   }
   function libraryBackdrop() {
-    return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302');
+    return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
   function guest(role, motion = '') {
     if(role==='princess'&&['turn','wave','climb','rollerblade'].includes(motion)) return `<div class="guest princess says-performing says-${motion} ${speaking?'talking':''}">${A.svg(A.princessPose(motion),'','0 -35 160 295')}</div>`;

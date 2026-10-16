@@ -613,3 +613,10 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .world.library .library-illustration{filter:brightness(.62) saturate(.72)}
 .world.library .library-storybook-scene .library-display-icons{filter:brightness(.8) saturate(.85)}
 .play .world.library .rosie,.play .world.library .guest.princess{filter:brightness(1.09) saturate(1.12) drop-shadow(0 3px 6px #180d2b99) drop-shadow(0 0 5px #ffe7ee33)}
+
+/* Wider library framing and balanced warm character lighting. */
+.world.library .library-storybook-scene{inset:0 10%;}
+.world.library .library-illustration{object-fit:fill;filter:brightness(.78) saturate(.84)}
+.world.library .library-storybook-scene .library-display-icons{filter:brightness(.88) saturate(.85)}
+.play .world.library .rosie,.play .world.library .guest.princess{filter:brightness(.97) saturate(.96) sepia(.06) drop-shadow(0 3px 5px #1d12284d)}
+@media(max-aspect-ratio:3/2){.world.library .library-storybook-scene{inset:0}.world.library .library-illustration{object-fit:contain}}
