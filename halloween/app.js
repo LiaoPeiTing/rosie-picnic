@@ -186,7 +186,6 @@
     }
     if(s.theme==='park') {
       if(!s.scene.guest) actors=`<div class="actor-row park-search-actors">${rosie()}<div class="pirate-hiding-clue" aria-label="The pirate is lying under the swing">${A.piratePose(true,0,0,240,125)}</div></div>`;
-      if(view==='park-under') props+=`<div class="park-location-teaching">${A.parkLocation('under-swing')}<b>Under the swing</b></div>`;
       if(['park-gold','park-gold-found'].includes(view)) props+=`<div class="park-story-prop gold-story ${s.scene.gold?'gold-collected':''}">${A.parkLocation('gold-in-box')}</div>`;
       if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">✦</span>':''}</div>`;
     }
