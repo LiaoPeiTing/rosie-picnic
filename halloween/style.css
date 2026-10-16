@@ -687,3 +687,5 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes pirate-rest-breathe{50%{transform:translateX(-50%) translateY(-.3cqh)}}
 @media(prefers-reduced-motion:reduce){.world.park .pirate-hiding-clue{animation:none}}
 .world.park .pirate-hiding-clue{top:56%;width:24cqh;height:12.5cqh}
+
+.says-ladder{filter:drop-shadow(0 2px 2px #15223866)}.says-skate-boot{filter:drop-shadow(0 1px 1px #181f3855)}
