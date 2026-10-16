@@ -643,3 +643,16 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .play .world.bakery .farewell-duet .guest.ghost>.art{width:100%;height:100%}
 .play .world.library .farewell-duet .guest.princess{position:relative!important;left:auto!important;bottom:auto!important;transform:none!important}
 .farewell-scene .princess-crown{display:block!important;opacity:1!important}
+
+/* Continuous scenery: extend atmosphere into the side wings. */
+.play .world.bakery .world-decor{transform:none;filter:none;background:linear-gradient(180deg,#302333 0 68%,#493142 68%)}
+.play .world.bakery .world-decor:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#95634b44,transparent 70%),repeating-linear-gradient(90deg,transparent 0 54px,#1e172a55 55px 58px);pointer-events:none}
+.play .world.bakery .world-decor>.bakery-backdrop{position:relative;width:80%;height:100%;margin-left:10%;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.play .world.bakery .bakery-backdrop>rect:first-child{fill:#352534;stroke:none}
+.play .world.park .world-decor{overflow:hidden;background:#302441}
+.play .world.park .world-decor:before{content:'';position:absolute;inset:-25px;background:url('assets/park-storybook-v1.png') center/cover no-repeat;filter:blur(18px) brightness(.53) saturate(.7);transform:scale(1.04);pointer-events:none}
+.world.park .park-illustration{position:relative;width:80%;height:100%;margin-left:10%;object-fit:fill;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.play .world.park .park-search-actors .rosie{left:2%;bottom:2%}
+@media(max-aspect-ratio:3/2){.play .world.bakery .world-decor>.bakery-backdrop,.world.park .park-illustration{width:100%;margin-left:0}.world.park .park-illustration{object-fit:contain}}
+
+.world.bakery{--bakery-inset:10%;--bakery-span:80%}@media(max-aspect-ratio:3/2){.world.bakery{--bakery-inset:0%;--bakery-span:100%}}
