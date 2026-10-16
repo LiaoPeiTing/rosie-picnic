@@ -620,3 +620,26 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .world.library .library-storybook-scene .library-display-icons{filter:brightness(.88) saturate(.85)}
 .play .world.library .rosie,.play .world.library .guest.princess{filter:brightness(.97) saturate(.96) sepia(.06) drop-shadow(0 3px 5px #1d12284d)}
 @media(max-aspect-ratio:3/2){.world.library .library-storybook-scene{inset:0}.world.library .library-illustration{object-fit:contain}}
+
+/* Finale: both friends approach and wave with two raised hands. */
+.farewell-duet{position:absolute;inset:0;z-index:10;display:flex;align-items:flex-end;justify-content:center;gap:4cqh;padding-bottom:1cqh;pointer-events:none}
+.play .world .farewell-duet .rosie{position:relative;height:91.8cqh;width:61.2cqh;flex:none;animation:farewell-sway 3s ease-in-out infinite;transform-origin:50% 100%}
+.play .world .farewell-duet .guest.ghost{height:91.8cqh;width:70.2cqh;flex:none;animation:farewell-sway 3s ease-in-out -.5s infinite}
+.play .world .farewell-duet .guest.princess{position:relative;left:auto;bottom:auto;height:95.4cqh;width:61.2cqh;flex:none;transform:none;animation:none}
+.farewell-duet .art{width:100%;height:100%;overflow:visible}
+.farewell-paw{transform-box:view-box;animation:farewell-paw-left 1.05s ease-in-out infinite alternate}
+.farewell-paw-right{animation-name:farewell-paw-right;animation-delay:-.35s}
+.farewell-ghost-hand{transform-box:view-box;animation:farewell-ghost-left 1.2s ease-in-out infinite alternate;transform-origin:46px 106px}
+.farewell-ghost-hand.right{transform-origin:120px 112px;animation-name:farewell-ghost-right;animation-delay:-.4s}
+.farewell-scene .party-box,.farewell-scene .animated-book,.farewell-scene .sticker-pocket,.farewell-scene .sticker-preview{opacity:.15}
+@keyframes farewell-sway{50%{transform:translateY(-1cqh) rotate(1deg)}}
+@keyframes farewell-paw-left{from{transform:rotate(-5deg)}to{transform:rotate(9deg)}}
+@keyframes farewell-paw-right{from{transform:rotate(5deg)}to{transform:rotate(-9deg)}}
+@keyframes farewell-ghost-left{from{transform:rotate(8deg)}to{transform:rotate(24deg)}}
+@keyframes farewell-ghost-right{from{transform:rotate(-8deg)}to{transform:rotate(-24deg)}}
+@media(max-aspect-ratio:1/1){.farewell-duet{gap:0}.play .world .farewell-duet .rosie,.play .world .farewell-duet .guest.ghost,.play .world .farewell-duet .guest.princess{height:70cqh;width:44cqh}}
+@media(prefers-reduced-motion:reduce){.farewell-paw,.farewell-ghost-hand,.farewell-duet .rosie,.farewell-duet .guest.ghost{animation:none!important}}
+.play .world .farewell-duet .farewell-bunny>.art{overflow:hidden}
+.play .world.bakery .farewell-duet .guest.ghost>.art{width:100%;height:100%}
+.play .world.library .farewell-duet .guest.princess{position:relative!important;left:auto!important;bottom:auto!important;transform:none!important}
+.farewell-scene .princess-crown{display:block!important;opacity:1!important}

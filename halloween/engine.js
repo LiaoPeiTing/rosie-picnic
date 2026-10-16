@@ -130,6 +130,7 @@
     }
     add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 2600 });
     natural('goodbye', 4, [G(`Bye-bye, Stephanie!`)], 'reward');
+    if(['bakery','library'].includes(s.theme)) nodes[nodes.length-1].duration=8000;
     return nodes;
   }
   const current = s => script(s)[s.index];
