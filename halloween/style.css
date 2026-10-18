@@ -714,3 +714,12 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes pirate-hello-talk{from{transform:scaleY(.78)}to{transform:scaleY(1.12)}}
 .world.paused .pirate-hello-arm,.world.paused .pirate-hello-head,.world.paused .pirate-hello-mouth{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.pirate-hello-arm,.pirate-hello-head,.pirate-hello-mouth{animation:none}}
+
+/* Found mermaid gets an unobstructed foreground portrait. */
+.world.park .park-mermaid.mermaid-discovered{left:50%;top:50%;width:min(78vw,120cqh);height:88cqh;transform:translate(-50%,-50%);z-index:18;animation:mermaid-arrive 1.2s cubic-bezier(.2,.7,.2,1) both;filter:drop-shadow(0 8px 14px #183a6b77)}
+.mermaid-reveal-scene .world-decor{filter:brightness(.72) saturate(.85);transition:filter .8s}
+.mermaid-reveal-scene .halloween-bats,.mermaid-reveal-scene .spooky-decor{opacity:0;pointer-events:none}
+@keyframes mermaid-arrive{from{opacity:.4;transform:translate(15%,-45%) scale(.25)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(prefers-reduced-motion:reduce){.world.park .park-mermaid.mermaid-discovered{animation:none}}
+
+.world.park.mermaid-reveal-scene .halloween-bats,.world.park.mermaid-reveal-scene .spooky-decor{display:none!important}.world.park.mermaid-reveal-scene .world-decor{filter:brightness(.65) saturate(.8)!important}

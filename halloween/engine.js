@@ -117,7 +117,7 @@
       checkpoint(1);
       add('mermaid-request',2,'story',[G('Stephanie, can you help me find the mermaid?')],{view:'park-mermaid'});
       add('find-mermaid',2,'question',[G('Where is the mermaid?')],{view:'park-mermaid',choices:[location('mermaid-on-bench','On the bench'),location('mermaid-in-sea','In the sea'),location('mermaid-between-trees','Between the trees')],correct:['mermaid-in-sea'],hint:[R('Look around. Can you see her tail?')],retry:[G('Take another look. Where is the mermaid?')]});
-      add('mermaid-found',2,'action',[G('Yes! The mermaid is in the sea!'),R('Hello, mermaid!')],{effect:'mermaid',motion:'happy',view:'park-mermaid',duration:4500});
+      add('mermaid-found',2,'action',[G('Yes! The mermaid is in the sea!'),R('Hello, mermaid!')],{effect:'mermaid',motion:'happy',view:'park-mermaid',duration:6000});
       add('gold-request',2,'story',[G('Can you help me find my gold?'),G('Some gold fell out of my treasure chest!')],{view:'park-gold'});
       add('find-gold',2,'question',[G('Where is my gold?'),G('Can you find it, Stephanie?')],{view:'park-gold',choices:[location('gold-under-swing','Under the swing'),location('gold-on-ground','On the ground'),location('gold-on-bench','On the bench')],correct:['gold-on-ground'],hint:[R('Look near the treasure chest.')],retry:[G('Look carefully. Where is my gold?')]});
       add('gold-found',2,'action',[G('My gold! Thank you, Stephanie!'),G('The gold is on the ground!')],{effect:'gold',motion:'happy',view:'park-gold-found',duration:3500});
