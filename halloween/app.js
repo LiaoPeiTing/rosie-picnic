@@ -38,12 +38,21 @@
   function libraryBackdrop() {
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
+  function mermaidHello() {
+    const pic='<image href="assets/mermaid-pearl-v1.png" width="160" height="150" preserveAspectRatio="xMidYMid meet"/>';
+    const arm='M1 77 26 76 42 79 62 84 65 96 50 101 28 94 1 91Z';
+    return '<defs><mask id="mermaid-wave-body"><rect width="160" height="150" fill="white"/><path d="'+arm+'" fill="black"/></mask><clipPath id="mermaid-wave-arm"><path d="'+arm+'"/></clipPath><clipPath id="mermaid-hi-mouth"><ellipse cx="43" cy="57" rx="4" ry="2.5"/></clipPath></defs><g mask="url(#mermaid-wave-body)">'+pic+'</g><g class="mermaid-wave-hand"><g clip-path="url(#mermaid-wave-arm)">'+pic+'</g></g><ellipse cx="43" cy="57" rx="3.8" ry="2.3" fill="#f4c8b8"/><g class="mermaid-hi-mouth" clip-path="url(#mermaid-hi-mouth)">'+pic+'</g><text x="89" y="32" class="mermaid-hi-text" fill="#fff1cd" stroke="#573f69" stroke-width=".35" paint-order="stroke" font-size="7" font-weight="bold">Hi, Stephanie!</text>';
+  }
   function guest(role, motion = '') {
     if(role==='pirate'&&H.current(state).id==='pirate-found') {
       const img='<image href="assets/pirate-moon-captain-v2.png" width="1983" height="793"/>';
       const arm='M0 200H160L250 275 338 296 319 412 190 425 0 358Z';
       const head='M214 0H680V238L571 303 361 305 274 251 208 228Z';
       return '<div class="guest pirate pirate-hello"><svg class="art" viewBox="-35 -25 810 850" overflow="visible"><defs><mask id="pirate-hello-body"><rect width="740" height="793" fill="white"/><path d="'+arm+'" fill="black"/><path d="'+head+'" fill="black"/></mask><clipPath id="pirate-hello-arm"><path d="'+arm+'"/></clipPath><clipPath id="pirate-hello-head"><path d="'+head+'"/></clipPath><clipPath id="pirate-hello-mouth"><ellipse cx="450" cy="230" rx="36" ry="17"/></clipPath></defs><ellipse cx="308" cy="346" rx="40" ry="62" fill="#245e3e"/><g mask="url(#pirate-hello-body)">'+img+'</g><g class="pirate-hello-head"><g clip-path="url(#pirate-hello-head)">'+img+'</g><g class="pirate-hello-mouth" clip-path="url(#pirate-hello-mouth)">'+img+'</g></g><g class="pirate-hello-arm"><g clip-path="url(#pirate-hello-arm)">'+img+'</g></g></svg><span class="pirate-hello-bubble">Hello, Stephanie!</span></div>';
+    }
+    if(role==='pirate') {
+      const pic='<image href="assets/pirate-moon-captain-v2.png" width="1983" height="793"/>';
+      return '<div class="guest pirate '+(speaking?'pirate-speaking':'')+'"><svg class="art" viewBox="0 0 740 793" preserveAspectRatio="none"><defs><clipPath id="pirate-speaking-frame"><rect width="740" height="793"/></clipPath><clipPath id="pirate-speaking-mouth"><ellipse cx="450" cy="230" rx="39" ry="20"/></clipPath></defs><g clip-path="url(#pirate-speaking-frame)">'+pic+'<ellipse class="pirate-mouth-cover" cx="450" cy="230" rx="37" ry="18" fill="#edb18a"/><g class="pirate-speaking-mouth" clip-path="url(#pirate-speaking-mouth)">'+pic+'</g></g></svg></div>';
     }
     if(role==='princess'&&['turn','wave','climb','rollerblade'].includes(motion)) return `<div class="guest princess says-performing says-${motion} ${speaking?'talking':''}">${A.svg(A.princessPose(motion),'','0 -35 160 295')}</div>`;
     // Inline the symbol so hand and mouth animation targets remain addressable.
@@ -64,9 +73,8 @@
       drawing+='<g class="princess-poised-hands"><path d="M71 141Q75 137 80 141l7 3q3 4-2 6l-10-1-5-3Z" fill="url(#princess-lace-glove)" stroke="#d5c8d2" stroke-width=".6"/><path d="M89 141q-4-4-8 0l-7 3q-3 4 2 6l10-1 5-3Z" fill="url(#princess-lace-glove)" stroke="#d5c8d2" stroke-width=".6"/></g>';
     }
     if(role==='ghost'&&motion==='happy-spin') {
-      const joyFace='<defs><radialGradient id="ghost-happy-white"><stop stop-color="#fffefe"/><stop offset="1" stop-color="#e7e5ed"/></radialGradient></defs><g class="ghost-joy-face"><ellipse cx="66" cy="71" rx="14" ry="14" fill="url(#ghost-happy-white)"/><ellipse cx="100" cy="79" rx="14" ry="15" fill="url(#ghost-happy-white)"/><g fill="none" stroke="#493c4e" stroke-width="2.8" stroke-linecap="round"><path d="M56 74Q65 61 75 73"/><path d="M90 82Q100 69 110 81"/></g><ellipse cx="50" cy="87" rx="7" ry="3" fill="#f5a6b6" opacity=".55"/><ellipse cx="114" cy="93" rx="7" ry="3" fill="#f5a6b6" opacity=".55"/></g>';
       const joyBits=Array.from({length:10},(_,i)=>'<text class="ghost-joy-bit" x="80" y="90" style="--joy-x:'+Math.round(Math.cos(i*Math.PI/5)*95)+'px;--joy-y:'+Math.round(Math.sin(i*Math.PI/5)*78)+'px;--joy-delay:'+(-i*.19)+'s" fill="'+['#ffd65b','#ff9fae','#c2a1ff'][i%3]+'" font-size="'+(i%2?10:15)+'">'+(i%2?'✦':'★')+'</text>').join('');
-      drawing='<g class="ghost-close-dance">'+drawing+joyFace+'</g><g aria-hidden="true">'+joyBits+'</g>';
+      drawing='<g class="ghost-close-dance">'+drawing+'</g><g aria-hidden="true">'+joyBits+'</g>';
     }
     if(role==='princess'&&motion==='climb') {
       drawing=drawing.replace(/<path class="left-arm"[^>]*(?:><\/path>|\/>)/,'<path class="left-arm climbing-left" d="M58 109Q40 97 45 68" fill="none" stroke="url(#princess-lace-glove)" stroke-width="8" stroke-linecap="round"/>').replace(/<path class="right-arm"[^>]*(?:><\/path>|\/>)/,'<path class="right-arm climbing-right" d="M102 109Q120 97 115 68" fill="none" stroke="url(#princess-lace-glove)" stroke-width="8" stroke-linecap="round"/>');
@@ -193,9 +201,10 @@
     if(s.theme==='park') {
       if(!s.scene.guest) actors=`<div class="actor-row park-search-actors">${rosie()}<div class="pirate-hiding-clue" aria-label="The pirate is lying under the swing">${A.piratePose(true,0,0,240,125)}</div></div>`;
       if(n.id==='mermaid-found') actors='';
-      props+=`<div class="park-mermaid ${n.id==='mermaid-found'?'mermaid-discovered':view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(n.id==='mermaid-found'?'<image href="assets/mermaid-pearl-v1.png" width="160" height="150" preserveAspectRatio="xMidYMid meet"/>':A.mermaid(),'','0 0 160 150')}</div>`;
-      if(['park-gold','park-gold-found'].includes(view)) props+=`<div class="park-story-prop gold-story ${s.scene.gold?'gold-collected':''}">${A.parkLocation('gold-on-ground')}</div>`;
-      if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">✦</span>':''}</div>`;
+      props+=`<div class="park-mermaid ${n.id==='mermaid-found'?'mermaid-discovered':view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(n.id==='mermaid-found'?mermaidHello():A.mermaid(),'','0 0 160 150')}</div>`;
+      if(!s.scene.gold&&n.id!=='mermaid-found') props+=`<div class="park-ring-clue" aria-label="Vampire ring on the bench">${A.svg(A.vampireRing())}</div>`;
+      if(view==='park-gold-found') props+=`<div class="park-ring-found">${A.svg(A.vampireRing())}</div>`;
+      if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">'+A.svg(A.vampireRing())+'</span>':''}</div>`;
     }
     if (view==='reward') props+=`<div class="sticker-pocket ${n.id==='reward'&&s.phase==='reading'?'pocket-empty':n.id==='reward'&&s.phase==='acting'?'pocket-receiving':''}"><span>My Halloween Wall</span>${A.icon(role,s)}</div><div class="sticker-preview ${n.id==='reward'&&s.phase==='acting'?'sticker-flying':n.id==='goodbye'||s.phase==='ready'?'sticker-stored':''}">${A.icon(role,s)}</div>`;
     const decor=s.theme==='park'?halloweenParkBackdrop():s.theme==='library'?'<path d="M25 80h470M25 140h470" stroke="#c1aac7" stroke-width="8"/><path d="M40 65v-35m24 35v-45m30 45v-37m35 37v-42m250 102v-40m25 40v-48m30 48v-35" stroke="#b99fbd" stroke-width="17"/>':'<path d="M30 105h470" stroke="#d8b69b" stroke-width="6"/><path d="m40 28 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40" fill="none" stroke="#dcabbd" stroke-width="12"/>';

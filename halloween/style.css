@@ -723,3 +723,13 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(prefers-reduced-motion:reduce){.world.park .park-mermaid.mermaid-discovered{animation:none}}
 
 .world.park.mermaid-reveal-scene .halloween-bats,.world.park.mermaid-reveal-scene .spooky-decor{display:none!important}.world.park.mermaid-reveal-scene .world-decor{filter:brightness(.65) saturate(.8)!important}
+
+/* Shared speech mouth for every standing pirate scene. */
+.pirate-mouth-cover{opacity:0}.pirate-speaking .pirate-mouth-cover{opacity:1}.pirate-speaking-mouth{transform-origin:450px 220px}.pirate-speaking .pirate-speaking-mouth{animation:pirate-speech .28s ease-in-out infinite alternate}
+@keyframes pirate-speech{from{transform:scaleY(.48)}to{transform:scaleY(1.15)}}
+.mermaid-wave-hand{transform-origin:60px 88px;animation:mermaid-hi-wave 1.1s ease-in-out infinite}.mermaid-hi-mouth{transform-origin:43px 56px;animation:mermaid-hi-speech .3s ease-in-out infinite alternate}
+@keyframes mermaid-hi-wave{0%,100%{transform:rotate(2deg)}50%{transform:rotate(30deg)}}@keyframes mermaid-hi-speech{from{transform:scaleY(.65)}to{transform:scaleY(1.4)}}
+.world.paused .mermaid-wave-hand,.world.paused .mermaid-hi-mouth,.world.paused .pirate-speaking-mouth{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.mermaid-wave-hand,.mermaid-hi-mouth,.pirate-speaking .pirate-speaking-mouth{animation:none}}
+
+.world.park .park-ring-clue{position:absolute;left:81.3%;top:61%;width:9cqh;height:8cqh;z-index:7;filter:drop-shadow(0 0 3px #ffc472)}.park-ring-clue .art{width:100%;height:100%}.world.park .park-ring-found{position:absolute;left:50%;top:30%;width:35cqh;height:30cqh;transform:translateX(-50%);z-index:16;filter:drop-shadow(0 0 12px #ffcb7799)}.park-ring-found .art{width:100%;height:100%}
