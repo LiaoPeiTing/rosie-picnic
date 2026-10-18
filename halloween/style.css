@@ -733,3 +733,9 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(prefers-reduced-motion:reduce){.mermaid-wave-hand,.mermaid-hi-mouth,.pirate-speaking .pirate-speaking-mouth{animation:none}}
 
 .world.park .park-ring-clue{position:absolute;left:81.3%;top:61%;width:9cqh;height:8cqh;z-index:7;filter:drop-shadow(0 0 3px #ffc472)}.park-ring-clue .art{width:100%;height:100%}.world.park .park-ring-found{position:absolute;left:50%;top:30%;width:35cqh;height:30cqh;transform:translateX(-50%);z-index:16;filter:drop-shadow(0 0 12px #ffcb7799)}.park-ring-found .art{width:100%;height:100%}
+
+/* Full drawings alternate: shoulders, elbows and wrists remain connected. */
+.mermaid-whole-wave{overflow:hidden!important}.mermaid-whole-wave.wave-a{animation:mermaid-frame-a 1.25s steps(1,end) infinite}.mermaid-whole-wave.wave-b{animation:mermaid-frame-b 1.25s steps(1,end) infinite}
+@keyframes mermaid-frame-a{0%,49.99%{opacity:1}50%,100%{opacity:0}}@keyframes mermaid-frame-b{0%,49.99%{opacity:0}50%,100%{opacity:1}}
+.world.paused .mermaid-whole-wave{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.mermaid-whole-wave.wave-a{animation:none;opacity:1}.mermaid-whole-wave.wave-b{animation:none;opacity:0}}

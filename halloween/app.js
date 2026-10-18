@@ -39,9 +39,8 @@
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
   function mermaidHello() {
-    const pic='<image href="assets/mermaid-pearl-v1.png" width="160" height="150" preserveAspectRatio="xMidYMid meet"/>';
-    const arm='M1 77 26 76 42 79 62 84 65 96 50 101 28 94 1 91Z';
-    return '<defs><mask id="mermaid-wave-body"><rect width="160" height="150" fill="white"/><path d="'+arm+'" fill="black"/></mask><clipPath id="mermaid-wave-arm"><path d="'+arm+'"/></clipPath><clipPath id="mermaid-hi-mouth"><ellipse cx="43" cy="57" rx="4" ry="2.5"/></clipPath></defs><g mask="url(#mermaid-wave-body)">'+pic+'</g><g class="mermaid-wave-hand"><g clip-path="url(#mermaid-wave-arm)">'+pic+'</g></g><ellipse cx="43" cy="57" rx="3.8" ry="2.3" fill="#f4c8b8"/><g class="mermaid-hi-mouth" clip-path="url(#mermaid-hi-mouth)">'+pic+'</g><text x="89" y="32" class="mermaid-hi-text" fill="#fff1cd" stroke="#573f69" stroke-width=".35" paint-order="stroke" font-size="7" font-weight="bold">Hi, Stephanie!</text>';
+    const pic='<image href="assets/mermaid-wave-sheet-v2.png" width="1983" height="793"/>';
+    return '<svg x="0" y="8" width="160" height="132" viewBox="0 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-a">'+pic+'</svg><svg x="0" y="8" width="160" height="132" viewBox="991.5 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-b">'+pic+'</svg><text x="86" y="10" fill="#fff1cd" stroke="#573f69" stroke-width=".35" paint-order="stroke" font-size="7" font-weight="bold">Hi, Stephanie!</text>';
   }
   function guest(role, motion = '') {
     if(role==='pirate'&&H.current(state).id==='pirate-found') {
@@ -204,7 +203,6 @@
       props+=`<div class="park-mermaid ${n.id==='mermaid-found'?'mermaid-discovered':view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(n.id==='mermaid-found'?mermaidHello():A.mermaid(),'','0 0 160 150')}</div>`;
       if(!s.scene.gold&&n.id!=='mermaid-found') props+=`<div class="park-ring-clue" aria-label="Vampire ring on the bench">${A.svg(A.vampireRing())}</div>`;
       if(view==='park-gold-found') props+=`<div class="park-ring-found">${A.svg(A.vampireRing())}</div>`;
-      if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">'+A.svg(A.vampireRing())+'</span>':''}</div>`;
     }
     if (view==='reward') props+=`<div class="sticker-pocket ${n.id==='reward'&&s.phase==='reading'?'pocket-empty':n.id==='reward'&&s.phase==='acting'?'pocket-receiving':''}"><span>My Halloween Wall</span>${A.icon(role,s)}</div><div class="sticker-preview ${n.id==='reward'&&s.phase==='acting'?'sticker-flying':n.id==='goodbye'||s.phase==='ready'?'sticker-stored':''}">${A.icon(role,s)}</div>`;
     const decor=s.theme==='park'?halloweenParkBackdrop():s.theme==='library'?'<path d="M25 80h470M25 140h470" stroke="#c1aac7" stroke-width="8"/><path d="M40 65v-35m24 35v-45m30 45v-37m35 37v-42m250 102v-40m25 40v-48m30 48v-35" stroke="#b99fbd" stroke-width="17"/>':'<path d="M30 105h470" stroke="#d8b69b" stroke-width="6"/><path d="m40 28 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40" fill="none" stroke="#dcabbd" stroke-width="12"/>';
