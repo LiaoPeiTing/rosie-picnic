@@ -115,15 +115,18 @@
       add('find-pirate',1,'question',[R('Where is the pirate?')],{view:'park-hide',choices:[location('under-swing','Under the swing'),location('on-seesaw','On the seesaw'),location('between-trees','Between the trees')],correct:['under-swing'],hint:[R('Look around the park. Can you see him?')],retry:[R('Take another look. Where is the pirate?')]});
       add('pirate-found',1,'action',[G('You found me! I’m under the swing!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:3500});
       checkpoint(1);
-      add('gold-request',2,'story',[G('Can you help me find my gold?'),R('Look! A box. The gold is in the box!')],{view:'park-gold'});
-      add('find-gold',2,'question',[G('Where is my gold?'),R('Find the gold in the box!')],{view:'park-gold',choices:[location('gold-under-swing','Under the swing'),location('gold-in-box','In the box'),location('gold-on-bench','On the bench')],correct:['gold-in-box'],hint:[R('Look inside the open box. In the box!')],retry:[R('In the box. Let’s look inside!')]});
-      add('gold-found',2,'action',[G('My gold! Thank you, Stephanie!'),R('Yes! The gold is in the box!')],{effect:'gold',motion:'happy',view:'park-gold-found',duration:3500});
+      add('mermaid-request',2,'story',[G('Stephanie, can you help me find the mermaid?')],{view:'park-mermaid'});
+      add('find-mermaid',2,'question',[G('Where is the mermaid?')],{view:'park-mermaid',choices:[location('mermaid-on-bench','On the bench'),location('mermaid-in-sea','In the sea'),location('mermaid-between-trees','Between the trees')],correct:['mermaid-in-sea'],hint:[R('Look around. Can you see her tail?')],retry:[G('Take another look. Where is the mermaid?')]});
+      add('mermaid-found',2,'action',[G('Yes! The mermaid is in the sea!'),R('Hello, mermaid!')],{effect:'mermaid',motion:'happy',view:'park-mermaid',duration:4500});
+      add('gold-request',2,'story',[G('Can you help me find my gold?'),G('Some gold fell out of my treasure chest!')],{view:'park-gold'});
+      add('find-gold',2,'question',[G('Where is my gold?'),G('Can you find it, Stephanie?')],{view:'park-gold',choices:[location('gold-under-swing','Under the swing'),location('gold-on-ground','On the ground'),location('gold-on-bench','On the bench')],correct:['gold-on-ground'],hint:[R('Look near the treasure chest.')],retry:[G('Look carefully. Where is my gold?')]});
+      add('gold-found',2,'action',[G('My gold! Thank you, Stephanie!'),G('The gold is on the ground!')],{effect:'gold',motion:'happy',view:'park-gold-found',duration:3500});
       checkpoint(2);
-      add('ship-request',3,'story',[G('Now let’s find my ship!'),R('Look! The ship is on the lake!')],{view:'park-ship'});
-      add('find-ship',3,'question',[G('Where is my ship?')],{view:'park-ship',choices:[location('ship-on-grass','On the grass'),location('ship-between-trees','Between the trees'),location('ship-on-lake','On the lake')],correct:['ship-on-lake'],hint:[R('Look at the blue water. On the lake!')],retry:[R('Let’s look on the lake!')]});
+      add('ship-request',3,'story',[G('Now let’s find my ship!'),R('Let’s look around!')],{view:'park-ship'});
+      add('find-ship',3,'question',[G('Where is my ship?')],{view:'park-ship',choices:[location('ship-on-grass','On the grass'),location('ship-between-trees','Between the trees'),location('ship-on-lake','On the sea')],correct:['ship-on-lake'],hint:[R('Look at the blue water. On the sea!')],retry:[R('Let’s look on the sea!')]});
       add('ship-found',3,'action',[G('There’s my ship!'),R('Let’s put the gold in the ship!')],{effect:'ship',motion:'deliver',view:'park-sail',duration:4500});
       checkpoint(3);
-      add('sail-away',4,'action',[G('All aboard! Let’s go!'),R('You found the pirate, the gold, and the ship!')],{effect:'sail',motion:'sail',view:'park-sail',duration:6000});
+      add('sail-away',4,'action',[G('All aboard! Let’s go!'),R('You found the pirate, the mermaid, the gold, and the ship!')],{effect:'sail',motion:'sail',view:'park-sail',duration:6000});
       natural('happy-question',4,[G('Thank you, Stephanie! I’m happy!'),R('Are you happy?')],'park-sail');
       add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:4000,view:'park-sail'});
     }
@@ -156,6 +159,7 @@
       case 'close': s.scene.open = false; break;
       case 'princess-move': s.scene.actions.push(s.scene.command || 'touch'); break;
       case 'guest': s.scene.guest = true; break;
+      case 'mermaid': s.scene.mermaid = true; break;
       case 'gold': s.scene.gold = true; break;
       case 'ship': s.scene.ship = true; break;
       case 'sail': s.scene.sailed = true; break;

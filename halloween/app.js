@@ -186,7 +186,8 @@
     }
     if(s.theme==='park') {
       if(!s.scene.guest) actors=`<div class="actor-row park-search-actors">${rosie()}<div class="pirate-hiding-clue" aria-label="The pirate is lying under the swing">${A.piratePose(true,0,0,240,125)}</div></div>`;
-      if(['park-gold','park-gold-found'].includes(view)) props+=`<div class="park-story-prop gold-story ${s.scene.gold?'gold-collected':''}">${A.parkLocation('gold-in-box')}</div>`;
+      props+=`<div class="park-mermaid ${view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(A.mermaid(),'','0 0 160 150')}</div>`;
+      if(['park-gold','park-gold-found'].includes(view)) props+=`<div class="park-story-prop gold-story ${s.scene.gold?'gold-collected':''}">${A.parkLocation('gold-on-ground')}</div>`;
       if(['park-ship','park-sail'].includes(view)) props+=`<div class="park-story-prop ship-story ${s.scene.sailed?'ship-sailing':''}">${A.parkLocation('ship-on-lake')}${s.scene.ship?'<span class="gold-on-board">✦</span>':''}</div>`;
     }
     if (view==='reward') props+=`<div class="sticker-pocket ${n.id==='reward'&&s.phase==='reading'?'pocket-empty':n.id==='reward'&&s.phase==='acting'?'pocket-receiving':''}"><span>My Halloween Wall</span>${A.icon(role,s)}</div><div class="sticker-preview ${n.id==='reward'&&s.phase==='acting'?'sticker-flying':n.id==='goodbye'||s.phase==='ready'?'sticker-stored':''}">${A.icon(role,s)}</div>`;
