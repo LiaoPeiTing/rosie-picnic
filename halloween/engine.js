@@ -113,7 +113,7 @@
       const location=(key,label)=>({key,label,picture:key});
       add('welcome',1,'story',[R('Welcome to Halloween Park! Let’s play hide-and-seek!'),R('The pirate is hiding. Let’s find him!')],{view:'park-hide'});
       add('find-pirate',1,'question',[R('Where is the pirate?')],{view:'park-hide',choices:[location('under-swing','Under the swing'),location('on-seesaw','On the seesaw'),location('between-trees','Between the trees')],correct:['under-swing'],hint:[R('Look around the park. Can you see him?')],retry:[R('Take another look. Where is the pirate?')]});
-      add('pirate-found',1,'action',[G('You found me! I’m under the swing!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:3500});
+      add('pirate-found',1,'action',[G('You found me! I’m under the swing!'),G('Hello, Stephanie!')],{effect:'guest',motion:'deliver',view:'park-found',duration:6000});
       checkpoint(1);
       add('mermaid-request',2,'story',[G('Stephanie, can you help me find the mermaid?')],{view:'park-mermaid'});
       add('find-mermaid',2,'question',[G('Where is the mermaid?')],{view:'park-mermaid',choices:[location('mermaid-on-bench','On the bench'),location('mermaid-in-sea','In the sea'),location('mermaid-between-trees','Between the trees')],correct:['mermaid-in-sea'],hint:[R('Look around. Can you see her tail?')],retry:[G('Take another look. Where is the mermaid?')]});

@@ -39,6 +39,12 @@
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
   function guest(role, motion = '') {
+    if(role==='pirate'&&H.current(state).id==='pirate-found') {
+      const img='<image href="assets/pirate-moon-captain-v2.png" width="1983" height="793"/>';
+      const arm='M0 200H160L250 275 338 296 319 412 190 425 0 358Z';
+      const head='M214 0H680V238L571 303 361 305 274 251 208 228Z';
+      return '<div class="guest pirate pirate-hello"><svg class="art" viewBox="-35 -25 810 850" overflow="visible"><defs><mask id="pirate-hello-body"><rect width="740" height="793" fill="white"/><path d="'+arm+'" fill="black"/><path d="'+head+'" fill="black"/></mask><clipPath id="pirate-hello-arm"><path d="'+arm+'"/></clipPath><clipPath id="pirate-hello-head"><path d="'+head+'"/></clipPath><clipPath id="pirate-hello-mouth"><ellipse cx="450" cy="230" rx="36" ry="17"/></clipPath></defs><ellipse cx="308" cy="346" rx="40" ry="62" fill="#245e3e"/><g mask="url(#pirate-hello-body)">'+img+'</g><g class="pirate-hello-head"><g clip-path="url(#pirate-hello-head)">'+img+'</g><g class="pirate-hello-mouth" clip-path="url(#pirate-hello-mouth)">'+img+'</g></g><g class="pirate-hello-arm"><g clip-path="url(#pirate-hello-arm)">'+img+'</g></g></svg><span class="pirate-hello-bubble">Hello, Stephanie!</span></div>';
+    }
     if(role==='princess'&&['turn','wave','climb','rollerblade'].includes(motion)) return `<div class="guest princess says-performing says-${motion} ${speaking?'talking':''}">${A.svg(A.princessPose(motion),'','0 -35 160 295')}</div>`;
     // Inline the symbol so hand and mouth animation targets remain addressable.
     const symbol = document.querySelector(`#${role}`);
@@ -195,7 +201,7 @@
     const background=s.theme==='library'?'<div class="library-storybook-scene"><img class="library-illustration" src="assets/library-storybook-v2.png?v=readers7" alt="Halloween Library with magical bookshelves, moonlit windows, pumpkins and candles">'+libraryBackdrop()+'</div>':s.theme==='park'?'<img class="park-illustration" src="assets/park-storybook-v1.png?v=park3" alt="Halloween park with a ghost slide, spider swing, bee seesaw, lake and pirate ship">':['bakery','library'].includes(s.theme)?A.svg(s.theme==='bakery'?`<rect x="-60" width="660" height="365" fill="#352534"/><path d="M-60 248h660v117H-60Z" fill="#493142"/>${bakeryBackdrop()}`:libraryBackdrop(),`${s.theme}-backdrop`,s.theme==='bakery'?'-60 0 660 365':'0 0 540 365').replace('<svg ', '<svg preserveAspectRatio="none" '):A.svg(decor,'',s.theme==='park'?'-90 0 720 365':'0 0 540 365');
     props+=halloweenDecor();
     const bats=`<div class="halloween-bats" aria-hidden="true">${[0,1,2,3].map(i=>`<div class="flying-bat bat-${i}"><svg viewBox="0 0 100 50"><path class="bat-wing wing-left" d="M48 25Q27 0 2 7L12 27Q23 18 29 34Q37 24 48 33Z"/><path class="bat-wing wing-right" d="M52 25Q73 0 98 7L88 27Q77 18 71 34Q63 24 52 33Z"/><path d="M43 14 40 3 49 12 57 3 57 16Q65 32 50 42Q36 33 43 14Z"/><circle class="bat-eye" cx="46" cy="22" r="2.5"/><circle class="bat-eye" cx="55" cy="22" r="2.5"/></svg></div>`).join('')}</div>`;
-    return `<div class="world ${s.theme} ${s.scene.crown?'crowned':''} ${n.id==='goodbye'?'farewell-scene':n.id==='reward'?'reward-scene':''} ${s.paused?'paused':''}"><div class="world-decor">${background}</div>${actors}${props}${bats}${s.paused?'<div class="paused-cover"><div><h2>Paused</h2><p>Take your time. Your story is waiting.</p></div></div>':''}</div>`;
+    return `<div class="world ${s.theme} ${n.id==='pirate-found'?'pirate-greeting-scene':''} ${s.scene.crown?'crowned':''} ${n.id==='goodbye'?'farewell-scene':n.id==='reward'?'reward-scene':''} ${s.paused?'paused':''}"><div class="world-decor">${background}</div>${actors}${props}${bats}${s.paused?'<div class="paused-cover"><div><h2>Paused</h2><p>Take your time. Your story is waiting.</p></div></div>':''}</div>`;
   }
   function play() {
     const n=H.current(state), t=H.themes[state.theme], disabled=state.paused;
