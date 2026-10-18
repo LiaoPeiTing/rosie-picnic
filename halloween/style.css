@@ -699,3 +699,5 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 
 /* Sea friend and scattered treasure stay anchored in the illustrated park. */
 .world.park .park-mermaid{position:absolute;left:73%;top:40%;width:16cqh;height:16cqh;z-index:3;filter:drop-shadow(0 2px 2px #163b6980);animation:mermaid-bob 3s ease-in-out infinite}.park-mermaid .art{width:100%;height:100%}.world.park .park-story-prop.gold-story{left:78%;top:78%;bottom:auto;width:20cqh;height:12cqh;transform:none;background:none;border:0;box-shadow:none;padding:0}.world.park .park-story-prop.gold-story .art{width:100%;height:100%}@keyframes mermaid-bob{50%{transform:translateY(-5px) rotate(2deg)}}@media(prefers-reduced-motion:reduce){.world.park .park-mermaid{animation:none}}
+
+.world.park .park-mermaid{left:70%;top:46%;width:25cqh;height:18cqh;filter:drop-shadow(0 2px 2px #193e6b66)}
