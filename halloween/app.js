@@ -38,6 +38,10 @@
   function libraryBackdrop() {
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
+  function ringHello() {
+    const pic='<image href="assets/vampire-ring-v1.png" width="1536" height="1024"/>';
+    return A.svg('<defs><clipPath id="ring-laugh-mouth"><ellipse cx="880" cy="440" rx="130" ry="82"/></clipPath></defs>'+pic+'<g class="ring-laugh-mouth"><g clip-path="url(#ring-laugh-mouth)">'+pic+'</g></g>','ring-speaking-art','0 0 1536 1024')+'<span class="ring-hello-bubble">You found me!</span>';
+  }
   function partyClapper(role) {
     const row=role==='pirate'?0:state.costume==='cat'?2:state.costume==='pumpkin'?3:1;
     const top=[0,383,765,1115][row], height=[379,382,350,421][row];
@@ -164,6 +168,7 @@
   }
   function world(n) {
     const s=state, c=s.config, view=n.view, role=H.themes[s.theme].guest.toLowerCase();
+    const aboard=s.theme==='park'&&(s.scene.ship||n.id==='ship-found');
     const happyGhost=s.theme==='bakery'&&n.id==='happy-description';
     const motion = s.theme==='library'&&n.id==='celebrate' ? 'party-dance' : role==='princess'&&n.id==='find-book'&&s.phase==='reading' ? 'search-book' : role==='princess'&&n.id==='hello' ? 'royal-hello' : role==='ghost'&&n.id==='hello' ? 'hello-wave' : s.theme==='library'&&n.id==='crown-on' ? 'skirt-jump' : happyGhost ? 'happy-spin' : s.phase==='acting' ? (n.motion==='chosen'?s.scene.command:n.motion) : '';
     let props='', actors=`<div class="actor-row">${rosie(motion==='happy'||motion==='reward'||motion==='celebrate')}${guest(role,motion)}</div>`;
@@ -210,17 +215,18 @@
     }
     if(s.theme==='park') {
       if(!s.scene.guest) actors=`<div class="actor-row park-search-actors">${rosie()}<div class="pirate-hiding-clue" aria-label="The pirate is lying under the swing">${A.piratePose(true,0,0,240,125)}</div></div>`;
-      if(n.id==='mermaid-found') actors='';
-      props+=`<div class="park-mermaid ${n.id==='mermaid-found'?'mermaid-discovered':view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(n.id==='mermaid-found'?mermaidHello():A.mermaid(),'','0 0 160 150')}</div>`;
-      if(!s.scene.gold&&n.id!=='mermaid-found') props+=`<div class="park-ring-clue" aria-label="Vampire ring on the bench">${A.svg(A.vampireRing())}</div>`;
-      if(view==='park-gold-found') props+=`<div class="park-ring-found">${A.svg(A.vampireRing())}</div>`;
+      if(['mermaid-found','gold-found'].includes(n.id)) actors='';
+      if(!aboard) props+=`<div class="park-mermaid ${n.id==='mermaid-found'?'mermaid-discovered':view==='park-mermaid'?'mermaid-focus':''}" aria-label="Mermaid in the sea">${A.svg(n.id==='mermaid-found'?mermaidHello():A.mermaid(),'','0 0 160 150')}</div>`;
+      if(!s.scene.gold&&!['mermaid-found','gold-found'].includes(n.id)) props+=`<div class="park-ring-clue" aria-label="Vampire ring on the bench">${A.svg(A.vampireRing())}</div>`;
+      if(view==='park-gold-found') props+=`<div class="park-ring-found ring-reveal" aria-label="Vampire ring laughing and saying You found me">${ringHello()}</div>`;
     }
     if (view==='reward') props+=`<div class="sticker-pocket ${n.id==='reward'&&s.phase==='reading'?'pocket-empty':n.id==='reward'&&s.phase==='acting'?'pocket-receiving':''}"><span>My Halloween Wall</span>${A.icon(role,s)}</div><div class="sticker-preview ${n.id==='reward'&&s.phase==='acting'?'sticker-flying':n.id==='goodbye'||s.phase==='ready'?'sticker-stored':''}">${A.icon(role,s)}</div>`;
     const decor=s.theme==='park'?halloweenParkBackdrop():s.theme==='library'?'<path d="M25 80h470M25 140h470" stroke="#c1aac7" stroke-width="8"/><path d="M40 65v-35m24 35v-45m30 45v-37m35 37v-42m250 102v-40m25 40v-48m30 48v-35" stroke="#b99fbd" stroke-width="17"/>':'<path d="M30 105h470" stroke="#d8b69b" stroke-width="6"/><path d="m40 28 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40 40 40 40-40" fill="none" stroke="#dcabbd" stroke-width="12"/>';
-    const background=s.theme==='library'?'<div class="library-storybook-scene"><img class="library-illustration" src="assets/library-storybook-v2.png?v=readers7" alt="Halloween Library with magical bookshelves, moonlit windows, pumpkins and candles">'+libraryBackdrop()+'</div>':s.theme==='park'?'<img class="park-illustration" src="assets/park-storybook-v1.png?v=park3" alt="Halloween park with a ghost slide, spider swing, bee seesaw, lake and pirate ship">':['bakery','library'].includes(s.theme)?A.svg(s.theme==='bakery'?`<rect x="-60" width="660" height="365" fill="#352534"/><path d="M-60 248h660v117H-60Z" fill="#493142"/>${bakeryBackdrop()}`:libraryBackdrop(),`${s.theme}-backdrop`,s.theme==='bakery'?'-60 0 660 365':'0 0 540 365').replace('<svg ', '<svg preserveAspectRatio="none" '):A.svg(decor,'',s.theme==='park'?'-90 0 720 365':'0 0 540 365');
-    props+=halloweenDecor();
+    const background=s.theme==='library'?'<div class="library-storybook-scene"><img class="library-illustration" src="assets/library-storybook-v2.png?v=readers7" alt="Halloween Library with magical bookshelves, moonlit windows, pumpkins and candles">'+libraryBackdrop()+'</div>':s.theme==='park'?(aboard?'<img class="aboard-illustration" src="assets/park-aboard-v1.png" alt="Halloween pirate ship on the moonlit sea">':'<img class="park-illustration" src="assets/park-storybook-v1.png?v=park3" alt="Halloween park with a ghost slide, spider swing, bee seesaw, lake and pirate ship">'):['bakery','library'].includes(s.theme)?A.svg(s.theme==='bakery'?`<rect x="-60" width="660" height="365" fill="#352534"/><path d="M-60 248h660v117H-60Z" fill="#493142"/>${bakeryBackdrop()}`:libraryBackdrop(),`${s.theme}-backdrop`,s.theme==='bakery'?'-60 0 660 365':'0 0 540 365').replace('<svg ', '<svg preserveAspectRatio="none" '):A.svg(decor,'',s.theme==='park'?'-90 0 720 365':'0 0 540 365');
+    if(!aboard) props+=halloweenDecor();
+    if(aboard) props+='<img class="aboard-front-rail" src="assets/park-aboard-v1.png" alt="">';
     const bats=`<div class="halloween-bats" aria-hidden="true">${[0,1,2,3].map(i=>`<div class="flying-bat bat-${i}"><svg viewBox="0 0 100 50"><path class="bat-wing wing-left" d="M48 25Q27 0 2 7L12 27Q23 18 29 34Q37 24 48 33Z"/><path class="bat-wing wing-right" d="M52 25Q73 0 98 7L88 27Q77 18 71 34Q63 24 52 33Z"/><path d="M43 14 40 3 49 12 57 3 57 16Q65 32 50 42Q36 33 43 14Z"/><circle class="bat-eye" cx="46" cy="22" r="2.5"/><circle class="bat-eye" cx="55" cy="22" r="2.5"/></svg></div>`).join('')}</div>`;
-    return `<div class="world ${s.theme} ${n.id==='pirate-found'?'pirate-greeting-scene':''} ${n.id==='mermaid-found'?'mermaid-reveal-scene':''} ${s.scene.crown?'crowned':''} ${n.id==='goodbye'?'farewell-scene':n.id==='reward'?'reward-scene':''} ${s.paused?'paused':''}"><div class="world-decor">${background}</div>${actors}${props}${bats}${s.paused?'<div class="paused-cover"><div><h2>Paused</h2><p>Take your time. Your story is waiting.</p></div></div>':''}</div>`;
+    return `<div class="world ${s.theme} ${aboard?'aboard-scene':''} ${n.id==='pirate-found'?'pirate-greeting-scene':''} ${n.id==='mermaid-found'?'mermaid-reveal-scene':''} ${n.id==='gold-found'?'ring-reveal-scene':''} ${s.scene.crown?'crowned':''} ${n.id==='goodbye'?'farewell-scene':n.id==='reward'?'reward-scene':''} ${s.paused?'paused':''}"><div class="world-decor">${background}</div>${actors}${props}${bats}${s.paused?'<div class="paused-cover"><div><h2>Paused</h2><p>Take your time. Your story is waiting.</p></div></div>':''}</div>`;
   }
   function play() {
     const n=H.current(state), t=H.themes[state.theme], disabled=state.paused;

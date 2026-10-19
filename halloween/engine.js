@@ -120,7 +120,7 @@
       add('mermaid-found',2,'action',[G('Yes! The mermaid is in the sea!'),{who:'Mermaid',text:'Hi, Stephanie!'}],{effect:'mermaid',motion:'happy',view:'park-mermaid',duration:6000});
       add('gold-request',2,'story',[G('Can you help me find my vampire ring?'),G('It has red eyes and bat wings!')],{view:'park-gold'});
       add('find-gold',2,'question',[G('Where is my vampire ring?'),G('Can you find it, Stephanie?')],{view:'park-gold',choices:[location('ring-under-swing','Under the swing'),location('ring-on-ground','On the ground'),location('ring-on-bench','On the bench')],correct:['ring-on-bench'],hint:[R('Look around the park. Can you see the red eyes?')],retry:[G('Look carefully. Where is my vampire ring?')]});
-      add('gold-found',2,'action',[G('My vampire ring! Thank you, Stephanie!'),G('The vampire ring is on the bench!')],{effect:'gold',motion:'happy',view:'park-gold-found',duration:3500});
+      add('gold-found',2,'action',[{who:'Vampire ring',text:'You found me! Thank you, Stephanie!'},{who:'Vampire ring',text:'I was on the bench!'}],{effect:'gold',motion:'happy',view:'park-gold-found',duration:6500});
       checkpoint(2);
       add('ship-request',3,'story',[G('Now let’s find my ship!'),R('Let’s look around!')],{view:'park-ship'});
       add('find-ship',3,'question',[G('Where is my ship?')],{view:'park-ship',choices:[location('ship-on-grass','On the grass'),location('ship-between-trees','Between the trees'),location('ship-on-lake','On the sea')],correct:['ship-on-lake'],hint:[R('Look at the blue water. On the sea!')],retry:[R('Let’s look on the sea!')]});

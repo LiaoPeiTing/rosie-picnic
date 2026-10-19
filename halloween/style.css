@@ -755,3 +755,19 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @media(prefers-reduced-motion:reduce){.park-clapper,.clap-frame,.clap-impact,.park-party-ribbons i{animation:none}.clap-contact,.clap-impact{opacity:0}.clap-open{opacity:1}.park-party-ribbons{display:none}}
 
 .play .world.park .actor-row.park-clapping-duet>.rosie{width:66cqh;height:73cqh}.play .world.park .actor-row.park-clapping-duet>.guest.pirate{width:74cqh;height:82cqh}.park-clapper>.art{display:block;overflow:hidden}
+
+/* Ring discovery: solo portrait with a broad animated laugh. */
+.world.park .park-ring-found.ring-reveal{left:50%;top:50%;width:min(88vw,112cqh);height:85cqh;transform:translate(-50%,-50%);z-index:18;filter:drop-shadow(0 0 20px #f1c88055);animation:ring-reveal-in .85s ease-out both}
+.ring-reveal .ring-speaking-art{width:100%;height:100%;overflow:visible}.ring-laugh-mouth{transform-origin:880px 395px;animation:ring-laugh-talk .4s ease-in-out infinite alternate}
+.ring-hello-bubble{position:absolute;right:0;top:2%;background:#fff0cc;color:#573443;border:2px solid #e0b568;border-radius:1em;padding:.45em .8em;font-size:clamp(18px,4cqh,34px);font-weight:bold;white-space:nowrap;box-shadow:0 3px 10px #24192b55}
+.world.park.ring-reveal-scene .world-decor{filter:brightness(.55) saturate(.8)!important}.world.park.ring-reveal-scene .halloween-bats,.world.park.ring-reveal-scene .spooky-decor{display:none!important}.world.park.ring-reveal-scene .park-mermaid{opacity:.3}
+@keyframes ring-laugh-talk{from{transform:scale(1.12,1.06)}to{transform:scale(1.2,1.48)}}@keyframes ring-reveal-in{from{opacity:.3;transform:translate(-50%,-30%) scale(.35)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+.world.paused .ring-laugh-mouth,.world.paused .ring-reveal{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.ring-laugh-mouth,.world.park .ring-reveal{animation:none}.ring-laugh-mouth{transform:scale(1.12,1.15)}}
+
+/* Ship found: move the story onto the foreground deck. */
+.world.park.aboard-scene .aboard-illustration,.world.park.aboard-scene .aboard-front-rail{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;display:block}
+.world.park.aboard-scene .aboard-front-rail{z-index:10;pointer-events:none;clip-path:polygon(41.8% 73.6%,52% 73.7%,60% 72.2%,65.8% 69.2%,68% 66.5%,74% 79%,74% 100%,41.8% 100%)}
+.play .world.park.aboard-scene .actor-row:not(.park-search-actors){left:43%;right:auto;bottom:17%;width:28%;gap:0;justify-content:center;z-index:8;height:auto}
+.play .world.park.aboard-scene .actor-row:not(.park-search-actors)>.rosie{height:32cqh;width:25cqh}.play .world.park.aboard-scene .actor-row:not(.park-search-actors)>.guest.pirate{height:38cqh;width:29cqh}
+.play .world.park.aboard-scene .actor-row.park-clapping-duet>.rosie{width:34cqh;height:36cqh}.play .world.park.aboard-scene .actor-row.park-clapping-duet>.guest.pirate{width:39cqh;height:41cqh}
+.aboard-scene .halloween-bats{display:none!important}.aboard-scene .world-decor:before,.aboard-scene .world-decor:after{display:none!important}
