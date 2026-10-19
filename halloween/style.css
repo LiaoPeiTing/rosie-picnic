@@ -771,3 +771,9 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .play .world.park.aboard-scene .actor-row:not(.park-search-actors)>.rosie{height:32cqh;width:25cqh}.play .world.park.aboard-scene .actor-row:not(.park-search-actors)>.guest.pirate{height:38cqh;width:29cqh}
 .play .world.park.aboard-scene .actor-row.park-clapping-duet>.rosie{width:34cqh;height:36cqh}.play .world.park.aboard-scene .actor-row.park-clapping-duet>.guest.pirate{width:39cqh;height:41cqh}
 .aboard-scene .halloween-bats{display:none!important}.aboard-scene .world-decor:before,.aboard-scene .world-decor:after{display:none!important}
+
+/* Natural whole-face expressions; no stretching mouth cutouts. */
+.ring-natural-open{overflow:hidden!important;animation:ring-natural-speech 1.6s ease-in-out infinite}
+@keyframes ring-natural-speech{0%,12%,40%,51%,82%,100%{opacity:0}20%,31%,61%,72%{opacity:1}}
+.world.paused .ring-natural-open{animation-play-state:paused}.world.park.ring-reveal-scene .park-mermaid{display:none}
+@media(prefers-reduced-motion:reduce){.ring-natural-open{animation:none;opacity:0}}

@@ -39,8 +39,10 @@
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
   function ringHello() {
-    const pic='<image href="assets/vampire-ring-v1.png" width="1536" height="1024"/>';
-    return A.svg('<defs><clipPath id="ring-laugh-mouth"><ellipse cx="880" cy="440" rx="130" ry="82"/></clipPath></defs>'+pic+'<g class="ring-laugh-mouth"><g clip-path="url(#ring-laugh-mouth)">'+pic+'</g></g>','ring-speaking-art','0 0 1536 1024')+'<span class="ring-hello-bubble">You found me!</span>';
+    const pic='<image href="assets/vampire-ring-talk-v2.png" width="1774" height="887"/>';
+    const smile='<defs><clipPath id="ring-smile-cell"><rect width="887" height="887"/></clipPath><clipPath id="ring-open-cell"><rect x="887" width="887" height="887"/></clipPath></defs><g clip-path="url(#ring-smile-cell)">'+pic+'</g>';
+    const open='<g clip-path="url(#ring-open-cell)">'+pic+'</g>';
+    return A.svg(smile+'<svg class="ring-natural-open" width="887" height="887" viewBox="887 0 887 887" overflow="hidden">'+open+'</svg>','ring-speaking-art','0 0 887 887')+'<span class="ring-hello-bubble">You found me!</span>';
   }
   function partyClapper(role) {
     const row=role==='pirate'?0:state.costume==='cat'?2:state.costume==='pumpkin'?3:1;
@@ -255,7 +257,7 @@
       dock.classList.add('play-dock');
       dock.append(app.querySelector('.parent-panel'));
       const bat=app.querySelector('.flying-bat svg');
-      if(bat) app.querySelector('.play').insertAdjacentHTML('beforeend',`<div class="screen-bat ${state.paused?'paused':''}" aria-hidden="true">${bat.outerHTML}</div>`);
+      if(bat&&!['gold-found','mermaid-found','ship-found','sail-away','celebrate'].includes(H.current(state).id)) app.querySelector('.play').insertAdjacentHTML('beforeend',`<div class="screen-bat ${state.paused?'paused':''}" aria-hidden="true">${bat.outerHTML}</div>`);
     }
   }
   function syncTimer() {
