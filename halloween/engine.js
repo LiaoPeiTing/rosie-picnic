@@ -128,7 +128,7 @@
       checkpoint(3);
       add('sail-away',4,'action',[G('All aboard! Let’s go!'),R('You found the pirate, the mermaid, the vampire ring, and the ship!')],{effect:'sail',motion:'sail',view:'park-sail',duration:6000});
       natural('happy-question',4,[G('Thank you, Stephanie! I’m happy!'),R('Are you happy?')],'park-sail');
-      add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:4000,view:'park-sail'});
+      add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:7000,view:'park-sail'});
     }
     add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 4800 });
     natural('goodbye', 4, [G(`Bye-bye, Stephanie!`)], 'reward');

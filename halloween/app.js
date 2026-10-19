@@ -38,6 +38,12 @@
   function libraryBackdrop() {
     return A.svg(['crown','hat','shoes'].map((k,i)=>A.use(k,190+i*52,78,34,34)).join(''),'library-display-icons','0 0 540 302').replace('<svg ', '<svg preserveAspectRatio="none" ');
   }
+  function partyClapper(role) {
+    const row=role==='pirate'?0:state.costume==='cat'?2:state.costume==='pumpkin'?3:1;
+    const top=[0,383,765,1115][row], height=[379,382,350,421][row];
+    const pic='<defs><clipPath id="party-row-'+row+'"><rect y="'+top+'" width="1024" height="'+height+'"/></clipPath></defs><g clip-path="url(#party-row-'+row+')"><image href="assets/park-clap-sheet-v1.png" width="1024" height="1536"/></g>';
+    return '<div class="'+(role==='pirate'?'guest pirate':'rosie')+' park-clapper" aria-label="'+(role==='pirate'?'Pirate clapping and speaking':'Rosie clapping')+'"><svg class="art" viewBox="0 0 420 420"><svg class="clap-frame clap-open" x="0" y="0" width="420" height="420" viewBox="100 '+top+' 420 '+height+'" overflow="hidden">'+pic+'</svg><svg class="clap-frame clap-contact" x="0" y="0" width="420" height="420" viewBox="510 '+top+' 420 '+height+'" overflow="hidden">'+pic+'</svg></svg><span class="clap-impact" aria-hidden="true">✦</span></div>';
+  }
   function mermaidHello() {
     const pic='<image href="assets/mermaid-wave-sheet-v2.png" width="1983" height="793"/>';
     return '<svg x="0" y="8" width="160" height="132" viewBox="0 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-a">'+pic+'</svg><svg x="0" y="8" width="160" height="132" viewBox="991.5 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-b">'+pic+'</svg><text x="86" y="10" fill="#fff1cd" stroke="#573f69" stroke-width=".35" paint-order="stroke" font-size="7" font-weight="bold">Hi, Stephanie!</text>';
@@ -161,6 +167,11 @@
     const happyGhost=s.theme==='bakery'&&n.id==='happy-description';
     const motion = s.theme==='library'&&n.id==='celebrate' ? 'party-dance' : role==='princess'&&n.id==='find-book'&&s.phase==='reading' ? 'search-book' : role==='princess'&&n.id==='hello' ? 'royal-hello' : role==='ghost'&&n.id==='hello' ? 'hello-wave' : s.theme==='library'&&n.id==='crown-on' ? 'skirt-jump' : happyGhost ? 'happy-spin' : s.phase==='acting' ? (n.motion==='chosen'?s.scene.command:n.motion) : '';
     let props='', actors=`<div class="actor-row">${rosie(motion==='happy'||motion==='reward'||motion==='celebrate')}${guest(role,motion)}</div>`;
+    if(s.theme==='park'&&['sail-away','celebrate'].includes(n.id)) {
+      actors='<div class="actor-row park-clapping-duet">'+partyClapper('rosie')+partyClapper('pirate')+'</div>';
+      const colors=['#ff6caa','#54d9f4','#ffdb54','#b58aff','#7fe39a','#ffa36a'];
+      props+='<div class="park-party-ribbons" aria-hidden="true">'+Array.from({length:96},(_,i)=>'<i class="party-confetti" style="--party-x:'+((i*37)%100)+'%;--party-delay:'+(-i*.083)+'s;--party-color:'+colors[i%6]+';--party-speed:'+(3+i%5*.37)+'s;--party-drift:'+(i%2?35:-35)+'px"></i>').join('')+Array.from({length:22},(_,i)=>'<i class="party-streamer" style="--party-x:'+((i*17)%100)+'%;--party-delay:'+(-i*.27)+'s;--party-color:'+colors[(i+2)%6]+';--party-speed:'+(4+i%3*.4)+'s;--party-drift:'+(i%2?70:-70)+'px"></i>').join('')+'</div>';
+    }
     if(n.id==='goodbye'&&['bakery','library'].includes(s.theme)) actors='<div class="farewell-duet">'+goodbyeRosie()+(s.theme==='library'?guest('princess','wave'):goodbyeGhost())+'</div>';
     if(happyGhost) props+=`<div class="happy-sparkles" aria-hidden="true">${[0,1,2,3,4].map(i=>`<span style="--i:${i}">★</span>`).join('')}</div>`;
     const packing=n.id==='candy-in'&&!s.replaying&&!s.override&&['reading','acting'].includes(s.phase);

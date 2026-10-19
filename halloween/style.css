@@ -739,3 +739,19 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 @keyframes mermaid-frame-a{0%,49.99%{opacity:1}50%,100%{opacity:0}}@keyframes mermaid-frame-b{0%,49.99%{opacity:0}50%,100%{opacity:1}}
 .world.paused .mermaid-whole-wave{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.mermaid-whole-wave.wave-a{animation:none;opacity:1}.mermaid-whole-wave.wave-b{animation:none;opacity:0}}
+
+/* Park finale: whole character frames clap with a broad, readable movement. */
+.play .world.park .park-clapping-duet{gap:5%;bottom:2%;height:82cqh;align-items:flex-end}
+.play .world.park .park-clapping-duet>.rosie{width:66cqh;height:73cqh}
+.play .world.park .park-clapping-duet>.guest.pirate{width:74cqh;height:82cqh}
+.park-clapper{position:relative;transform-origin:center bottom;animation:party-clap-bounce .8s ease-in-out infinite;filter:drop-shadow(0 5px 4px #1f14264d)}.park-clapper>.art{width:100%;height:100%}.clap-frame{overflow:hidden!important}.clap-open{animation:party-open-frame .8s steps(1,end) infinite}.clap-contact{animation:party-contact-frame .8s steps(1,end) infinite}
+.clap-impact{position:absolute;left:48%;top:49%;font-size:7cqh;color:#ffe17e;text-shadow:0 0 10px #fff6bb;animation:party-impact .8s ease-out infinite}
+@keyframes party-open-frame{0%,49.99%{opacity:1}50%,100%{opacity:0}}@keyframes party-contact-frame{0%,49.99%{opacity:0}50%,100%{opacity:1}}
+@keyframes party-clap-bounce{0%,100%{transform:translateY(0) rotate(-1deg)}45%{transform:translateY(-1.8cqh) rotate(1deg)}55%{transform:translateY(0) scaleY(.98)}}
+@keyframes party-impact{0%,48%,85%,100%{opacity:0;transform:scale(.6)}52%{opacity:1;transform:scale(1.3)}70%{opacity:.7;transform:scale(1.7)}}
+.park-party-ribbons{position:absolute;inset:0;z-index:13;pointer-events:none;overflow:hidden}.park-party-ribbons i{position:absolute;left:var(--party-x);top:-15%;background:var(--party-color);animation:park-party-fall var(--party-speed) linear infinite;animation-delay:var(--party-delay)}.party-confetti{width:1cqh;height:2cqh;border-radius:2px}.party-streamer{width:1.3cqh;height:10cqh;border-radius:60% 0 60% 0;border:1px solid #ffffff99;box-shadow:inset 2px 0 #ffffff66}
+@keyframes park-party-fall{0%{opacity:0;transform:translate(0,-5cqh) rotate(0)}8%,88%{opacity:1}50%{transform:translate(var(--party-drift),52cqh) rotate(180deg)}100%{opacity:0;transform:translate(0,122cqh) rotate(380deg)}}
+.world.paused .park-clapper,.world.paused .clap-frame,.world.paused .clap-impact,.world.paused .park-party-ribbons i{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.park-clapper,.clap-frame,.clap-impact,.park-party-ribbons i{animation:none}.clap-contact,.clap-impact{opacity:0}.clap-open{opacity:1}.park-party-ribbons{display:none}}
+
+.play .world.park .actor-row.park-clapping-duet>.rosie{width:66cqh;height:73cqh}.play .world.park .actor-row.park-clapping-duet>.guest.pirate{width:74cqh;height:82cqh}.park-clapper>.art{display:block;overflow:hidden}
