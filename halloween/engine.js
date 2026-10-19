@@ -131,7 +131,7 @@
       add('celebrate',4,'action',[G('Hooray! You’re a great treasure finder!')],{motion:'celebrate',duration:7000,view:'park-sail'});
     }
     add('reward', 4, 'action', [R(`You did it! You got a ${themes[s.theme].guest} sticker!`)], { effect: 'reward', motion: 'reward', view: 'reward', duration: 4800 });
-    natural('goodbye', 4, [G(`Bye-bye, Stephanie!`)], 'reward');
+    natural('goodbye', 4, [G(`Bye-bye, Stephanie!`),...(s.theme==='park'?[R('Bye-bye! See you soon!')]:[])], 'reward');
     nodes[nodes.length-1].duration=6000;
     return nodes;
   }
