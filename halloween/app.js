@@ -42,7 +42,7 @@
     const pic='<image href="assets/vampire-ring-talk-v2.png" width="1774" height="887"/>';
     const smile='<defs><clipPath id="ring-smile-cell"><rect width="887" height="887"/></clipPath><clipPath id="ring-open-cell"><rect x="887" width="887" height="887"/></clipPath></defs><g clip-path="url(#ring-smile-cell)">'+pic+'</g>';
     const open='<g clip-path="url(#ring-open-cell)">'+pic+'</g>';
-    return A.svg(smile+'<svg class="ring-natural-open" width="887" height="887" viewBox="887 0 887 887" overflow="hidden">'+open+'</svg>','ring-speaking-art','0 0 887 887')+'<span class="ring-hello-bubble">You found me!</span>';
+    return A.svg(smile+'<svg class="ring-natural-open" width="887" height="887" viewBox="887 0 887 887" overflow="hidden">'+open+'</svg>','ring-speaking-art','0 0 887 887');
   }
   function partyClapper(role) {
     const row=role==='pirate'?0:state.costume==='cat'?2:state.costume==='pumpkin'?3:1;
@@ -52,14 +52,14 @@
   }
   function mermaidHello() {
     const pic='<image href="assets/mermaid-wave-sheet-v2.png" width="1983" height="793"/>';
-    return '<svg x="0" y="8" width="160" height="132" viewBox="0 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-a">'+pic+'</svg><svg x="0" y="8" width="160" height="132" viewBox="991.5 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-b">'+pic+'</svg><text x="86" y="10" fill="#fff1cd" stroke="#573f69" stroke-width=".35" paint-order="stroke" font-size="7" font-weight="bold">Hi, Stephanie!</text>';
+    return '<svg x="0" y="8" width="160" height="132" viewBox="0 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-a">'+pic+'</svg><svg x="0" y="8" width="160" height="132" viewBox="991.5 0 991.5 793" overflow="hidden" class="mermaid-whole-wave wave-b">'+pic+'</svg>';
   }
   function guest(role, motion = '') {
     if(role==='pirate'&&['pirate-found','goodbye'].includes(H.current(state).id)) {
       const img='<image href="assets/pirate-moon-captain-v2.png" width="1983" height="793"/>';
       const arm='M0 200H160L250 275 338 296 319 412 190 425 0 358Z';
       const head='M214 0H680V238L571 303 361 305 274 251 208 228Z';
-      return '<div class="guest pirate pirate-hello"><svg class="art" viewBox="-35 -25 810 850" overflow="visible"><defs><mask id="pirate-hello-body"><rect width="740" height="793" fill="white"/><path d="'+arm+'" fill="black"/><path d="'+head+'" fill="black"/></mask><clipPath id="pirate-hello-arm"><path d="'+arm+'"/></clipPath><clipPath id="pirate-hello-head"><path d="'+head+'"/></clipPath><clipPath id="pirate-hello-mouth"><ellipse cx="450" cy="230" rx="36" ry="17"/></clipPath></defs><ellipse cx="308" cy="346" rx="40" ry="62" fill="#245e3e"/><g mask="url(#pirate-hello-body)">'+img+'</g><g class="pirate-hello-head"><g clip-path="url(#pirate-hello-head)">'+img+'</g><g class="pirate-hello-mouth" clip-path="url(#pirate-hello-mouth)">'+img+'</g></g><g class="pirate-hello-arm"><g clip-path="url(#pirate-hello-arm)">'+img+'</g></g></svg><span class="pirate-hello-bubble">'+(H.current(state).id==='goodbye'?'Bye-bye!':'Hello, Stephanie!')+'</span></div>';
+      return '<div class="guest pirate pirate-hello"><svg class="art" viewBox="-35 -25 810 850" overflow="visible"><defs><mask id="pirate-hello-body"><rect width="740" height="793" fill="white"/><path d="'+arm+'" fill="black"/><path d="'+head+'" fill="black"/></mask><clipPath id="pirate-hello-arm"><path d="'+arm+'"/></clipPath><clipPath id="pirate-hello-head"><path d="'+head+'"/></clipPath><clipPath id="pirate-hello-mouth"><ellipse cx="450" cy="230" rx="36" ry="17"/></clipPath></defs><ellipse cx="308" cy="346" rx="40" ry="62" fill="#245e3e"/><g mask="url(#pirate-hello-body)">'+img+'</g><g class="pirate-hello-head"><g clip-path="url(#pirate-hello-head)">'+img+'</g><g class="pirate-hello-mouth" clip-path="url(#pirate-hello-mouth)">'+img+'</g></g><g class="pirate-hello-arm"><g clip-path="url(#pirate-hello-arm)">'+img+'</g></g></svg></div>';
     }
     if(role==='pirate') {
       const pic='<image href="assets/pirate-moon-captain-v2.png" width="1983" height="793"/>';
@@ -174,7 +174,7 @@
     const happyGhost=s.theme==='bakery'&&n.id==='happy-description';
     const motion = s.theme==='library'&&n.id==='celebrate' ? 'party-dance' : role==='princess'&&n.id==='find-book'&&s.phase==='reading' ? 'search-book' : role==='princess'&&n.id==='hello' ? 'royal-hello' : role==='ghost'&&n.id==='hello' ? 'hello-wave' : s.theme==='library'&&n.id==='crown-on' ? 'skirt-jump' : happyGhost ? 'happy-spin' : s.phase==='acting' ? (n.motion==='chosen'?s.scene.command:n.motion) : '';
     let props='', actors=`<div class="actor-row">${rosie(motion==='happy'||motion==='reward'||motion==='celebrate')}${guest(role,motion)}</div>`;
-    if(s.theme==='park'&&['sail-away','celebrate'].includes(n.id)) {
+    if(s.theme==='park'&&n.id==='celebrate') {
       actors='<div class="actor-row park-clapping-duet">'+partyClapper('rosie')+partyClapper('pirate')+'</div>';
       const colors=['#ff6caa','#54d9f4','#ffdb54','#b58aff','#7fe39a','#ffa36a'];
       props+='<div class="park-party-ribbons" aria-hidden="true">'+Array.from({length:96},(_,i)=>'<i class="party-confetti" style="--party-x:'+((i*37)%100)+'%;--party-delay:'+(-i*.083)+'s;--party-color:'+colors[i%6]+';--party-speed:'+(3+i%5*.37)+'s;--party-drift:'+(i%2?35:-35)+'px"></i>').join('')+Array.from({length:22},(_,i)=>'<i class="party-streamer" style="--party-x:'+((i*17)%100)+'%;--party-delay:'+(-i*.27)+'s;--party-color:'+colors[(i+2)%6]+';--party-speed:'+(4+i%3*.4)+'s;--party-drift:'+(i%2?70:-70)+'px"></i>').join('')+'</div>';
