@@ -1,0 +1,20 @@
+[
+  {
+    "mobile": false,
+    "played": 36,
+    "roles": 6,
+    "errors": [],
+    "exportedSelections": 6,
+    "persisted": true,
+    "manualListening": "pending"
+  },
+  {
+    "mobile": true,
+    "played": 36,
+    "roles": 6,
+    "errors": [],
+    "exportedSelections": 6,
+    "persisted": true,
+    "manualListening": "pending"
+  }
+]

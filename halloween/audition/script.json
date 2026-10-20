@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "scope": "audition-only",
+  "language": "en-US",
+  "model": "hexgrad/Kokoro-82M",
+  "speed": 1,
+  "roles": [
+    {
+      "id": "rosie",
+      "name": "Rosie",
+      "primary": "af_heart",
+      "alternate": "af_sky",
+      "direction": "可愛、甜美、活潑的小女孩感",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "rosie-greeting-v1",
+          "text": "Welcome to the Halloween Bakery!",
+          "emotion": "親切歡迎",
+          "source": "game",
+          "gameLineId": "fc4665027fae",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "welcome",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "rosie-question-v1",
+          "text": "Which one is the pumpkin cookie?",
+          "emotion": "好奇提問",
+          "source": "game",
+          "gameLineId": "210f1877eaca",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "find-cookie",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "rosie-joy-v1",
+          "text": "Yes! The party box is ready!",
+          "emotion": "開心肯定",
+          "source": "game",
+          "gameLineId": "198a4c4ff127",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "box-delivered",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "primary": "am_puck",
+      "alternate": "am_echo",
+      "direction": "頑皮、淘氣、活潑的小男孩感",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "ghost-greeting-v1",
+          "text": "Hello, Stephanie!",
+          "emotion": "活潑打招呼",
+          "source": "game",
+          "gameLineId": "04e55a9caccc",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "hello",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "ghost-question-v1",
+          "text": "Where is my party box?",
+          "emotion": "尋找與期待",
+          "source": "game",
+          "gameLineId": "6d7b80206bc6",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "find-box",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "ghost-joy-v1",
+          "text": "Yummy! Thank you!",
+          "emotion": "開心感謝",
+          "source": "game",
+          "gameLineId": "d0879fdb2482",
+          "uses": [
+            {
+              "theme": "bakery",
+              "node": "happy-question",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "princess",
+      "name": "Princess",
+      "primary": "af_bella",
+      "alternate": "af_jessica",
+      "direction": "溫柔、優雅、親切的大姊姊",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "princess-greeting-v1",
+          "text": "Hello, Stephanie!",
+          "emotion": "溫柔打招呼",
+          "source": "game",
+          "gameLineId": "2d6e3847593e",
+          "uses": [
+            {
+              "theme": "library",
+              "node": "hello",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "princess-question-v1",
+          "text": "Where is my book? My book has a crown.",
+          "emotion": "好奇找書",
+          "source": "game",
+          "gameLineId": "e4467e8f315f",
+          "uses": [
+            {
+              "theme": "library",
+              "node": "find-book",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "princess-joy-v1",
+          "text": "I found my book! Thank you, Stephanie!",
+          "emotion": "開心感謝",
+          "source": "game",
+          "gameLineId": "26ef55a6c462",
+          "uses": [
+            {
+              "theme": "library",
+              "node": "book-found",
+              "kind": "lines",
+              "line": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pirate",
+      "name": "Pirate",
+      "primary": "am_fenrir",
+      "alternate": "am_adam",
+      "direction": "粗獷、低沉、略沙啞的老船長",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "pirate-greeting-v1",
+          "text": "Hello, Stephanie!",
+          "emotion": "熱情打招呼",
+          "source": "game",
+          "gameLineId": "002778364133",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "pirate-found",
+              "kind": "lines",
+              "line": 1
+            }
+          ]
+        },
+        {
+          "id": "pirate-question-v1",
+          "text": "Where is my ship?",
+          "emotion": "好奇尋找",
+          "source": "game",
+          "gameLineId": "db5f31f4fea1",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "find-ship",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "pirate-joy-v1",
+          "text": "Hooray! You’re a great treasure finder!",
+          "emotion": "豪邁鼓勵",
+          "source": "game",
+          "gameLineId": "379621e2e508",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "celebrate",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "primary": "af_sarah",
+      "alternate": "af_nicole",
+      "direction": "知性、成熟、柔美的大姊姊",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "mermaid-greeting-v1",
+          "text": "Hi, Stephanie!",
+          "emotion": "溫柔打招呼",
+          "source": "game",
+          "gameLineId": "48f715345e8d",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "mermaid-found",
+              "kind": "lines",
+              "line": 1
+            }
+          ]
+        },
+        {
+          "id": "mermaid-question-v1",
+          "text": "Can you see my sparkling tail?",
+          "emotion": "好奇邀請",
+          "source": "audition-only",
+          "gameLineId": null,
+          "uses": []
+        },
+        {
+          "id": "mermaid-joy-v1",
+          "text": "You found me! What a lovely surprise!",
+          "emotion": "開心感謝",
+          "source": "audition-only",
+          "gameLineId": null,
+          "uses": []
+        }
+      ]
+    },
+    {
+      "id": "vampire_ring",
+      "name": "Vampire ring",
+      "primary": "am_onyx",
+      "alternate": "am_michael",
+      "direction": "神祕、磁性低沉而不驚嚇",
+      "approvedVoice": null,
+      "lines": [
+        {
+          "id": "vampire_ring-greeting-v1",
+          "text": "You found me! Thank you, Stephanie!",
+          "emotion": "開心被找到",
+          "source": "game",
+          "gameLineId": "699908caaf04",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "gold-found",
+              "kind": "lines",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "id": "vampire_ring-reveal-v1",
+          "text": "I was on the bench!",
+          "emotion": "俏皮揭曉",
+          "source": "game",
+          "gameLineId": "9a12b3f3f5db",
+          "uses": [
+            {
+              "theme": "park",
+              "node": "gold-found",
+              "kind": "lines",
+              "line": 1
+            }
+          ]
+        },
+        {
+          "id": "vampire_ring-question-v1",
+          "text": "Can you see my red eyes and bat wings?",
+          "emotion": "神祕好奇",
+          "source": "audition-only",
+          "gameLineId": null,
+          "uses": []
+        }
+      ]
+    }
+  ]
+}

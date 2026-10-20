@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Rosie’s Halloween · 聲線試音室</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a href="../">Rosie’s Halloween</a><span class="badge">獨立試音 · 尚未套用遊戲</span></header>
+<main>
+<section class="intro"><p class="eyebrow">THE VOICE ROOM</p><h1>為六位朋友，<br>找到適合的聲音。</h1><p>選角色，聽同一句的兩種聲線，再儲存你的喜好。這裡是 Kokoro 本機生成的英文試音，沒有背景音樂干擾。</p><p class="note">「情緒」是台詞的試聽方向，並非模型保證的情緒控制；童趣、年齡感與自然度請以實際聽感判斷。所有選擇只存本機，正式遊戲不會因此改變。</p></section>
+<nav id="roles" aria-label="選擇角色"></nav>
+<section id="studio" aria-live="polite"><p>正在載入試音清單…</p></section>
+<section class="review"><div class="section-head"><div><p class="eyebrow">YOUR CAST</p><h2>你的聲線選擇</h2></div><button id="export" disabled>下載選聲結果</button></div><div id="selections"></div><p class="note">下載後把結果或六個聲線名稱回傳給 Codex，才會進入正式錄音階段。此頁不會自動上傳選擇。</p></section>
+<footer><p>AI 合成聲音 · 無麥克風、無錄音 · 不模仿指定真人 · 原速，無變調</p><a href="README.md">安裝、生成與環境說明</a> · <a href="LICENSES.md">模型與素材授權</a> · <a href="manifest.json">音檔清單</a><p id="status" role="status"></p></footer>
+</main><script src="app.js"></script>
+</body></html>

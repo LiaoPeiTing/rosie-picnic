@@ -1,0 +1,14 @@
+{
+  "primary": 18,
+  "alternate": 18,
+  "files": 36,
+  "totalBytes": 4122384,
+  "durationSeconds": 85.85,
+  "allPcm24kMono": true,
+  "uniqueAudioHashes": 36,
+  "clippedFiles": 0,
+  "silentFiles": 0,
+  "sourceTextMatches": true,
+  "manualListening": "pending",
+  "productionModified": false
+}
