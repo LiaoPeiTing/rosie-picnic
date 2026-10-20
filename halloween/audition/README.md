@@ -56,7 +56,7 @@ powershell -ExecutionPolicy Bypass -File .\tools\setup.ps1 -Python 'C:\你的Pyt
 
 `--limit` 計算新生成的段數；已驗證檔案會跳過。`--force` 才覆蓋同名試音。腳本只處理 script.json 的 18 句，每句兩種候選，不會掃描並批量生成全遊戲。
 
-預覽可執行 `python -m http.server 4186` 再開 localhost:4186；不要直接用 file://，因為瀏覽器需要讀取 manifest.json。發布只包含頁面、WAV、manifest、腳本和授權說明，不發布 .venv、.cache 或模型權重。
+可直接雙擊 index.html 本機試音，manifest.js 讓 file:// 不需 fetch 即可載入角色。也可執行 `python -m http.server 4186` 再開 localhost:4186。生成程式會同步更新 manifest.json 與 manifest.js。發布只包含頁面、WAV、manifest、腳本和授權說明，不發布 .venv、.cache 或模型權重。
 
 ## 正式整合的下一步（本輪不執行）
 

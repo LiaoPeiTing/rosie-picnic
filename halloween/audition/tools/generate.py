@@ -62,7 +62,9 @@ def main():
                     model={**lock, 'weightsSha256': sha(weights), 'configSha256': sha(config)},
                     packages=versions, roles=script['roles'])
     def save():
-        manifest_path.write_text(json.dumps({**metadata, 'assets': list(assets.values())}, ensure_ascii=False, indent=2), encoding='utf-8')
+        result = {**metadata, 'assets': list(assets.values())}
+        manifest_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        (ROOT / 'manifest.js').write_text('window.RosieAuditionManifest=' + json.dumps(result, ensure_ascii=False) + ';\n', encoding='utf-8')
     generated = 0
     for role in script['roles']:
         if args.role not in ['all', role['id']]:
