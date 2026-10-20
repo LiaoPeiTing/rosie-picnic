@@ -650,7 +650,7 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .play .world.bakery .world-decor>.bakery-backdrop{position:relative;width:80%;height:100%;margin-left:10%;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
 .play .world.bakery .bakery-backdrop>rect:first-child{fill:#352534;stroke:none}
 .play .world.park .world-decor{overflow:hidden;background:#302441}
-.play .world.park .world-decor:before{content:'';position:absolute;inset:-25px;background:url('assets/park-storybook-v1.png') center/cover no-repeat;filter:blur(18px) brightness(.53) saturate(.7);transform:scale(1.04);pointer-events:none}
+.play .world.park .world-decor:before{content:'';position:absolute;inset:-25px;background:url('assets/park-storybook-v1.webp') center/cover no-repeat;filter:blur(18px) brightness(.53) saturate(.7);transform:scale(1.04);pointer-events:none}
 .world.park .park-illustration{position:relative;width:80%;height:100%;margin-left:10%;object-fit:fill;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
 .play .world.park .park-search-actors .rosie{left:2%;bottom:2%}
 @media(max-aspect-ratio:3/2){.play .world.bakery .world-decor>.bakery-backdrop,.world.park .park-illustration{width:100%;margin-left:0}.world.park .park-illustration{object-fit:contain}}
