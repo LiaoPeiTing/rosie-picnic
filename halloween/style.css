@@ -784,3 +784,6 @@ body:has(.play) .mode-pill,body:has(.play) .wall-toggle{background:#352418;color
 .sailing-wake{position:absolute;left:7%;bottom:6%;width:38%;height:14%;opacity:.65;z-index:3;animation:departure-wake 2s ease-out infinite}.sailing-wake .art{width:100%;height:100%}
 @keyframes ship-forward{from{transform:translateX(0) scale(1)}to{transform:translateX(13%) scale(.94)}}@keyframes ship-depart-rock{0%,100%{transform:translateY(0) rotate(-.35deg)}50%{transform:translateY(.5cqh) rotate(.35deg)}}@keyframes departure-wake{from{transform:scaleX(.8);opacity:.7}to{transform:translateX(-4%) scaleX(1.3);opacity:0}}
 .world.paused .departure-vessel,.world.paused .departure-ship-group,.world.paused .sailing-wake{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.departure-vessel,.departure-ship-group,.sailing-wake{animation:none}}
+
+/* One subtitle line follows the current spoken sentence. */
+.dialogue-line[hidden]{display:none!important}.active-subtitle{min-width:0;flex:1}.active-subtitle p{font-size:clamp(20px,2.5vw,30px);line-height:1.35}.voice-status:empty{display:none}.pirate-hello:not(.voice-speaking) .pirate-hello-mouth{animation:none}.world.paused .talking{animation-play-state:paused}
