@@ -1,0 +1,3180 @@
+{
+  "version": 1,
+  "scope": "Bakery pilot; other chapters keep device-voice fallback",
+  "voiceRegistry": {
+    "Rosie": {
+      "id": "rosie",
+      "direction": "Bright, sweet young-girl character; clear en-US, curious questions; no imitation.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "5–7 girl character",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    },
+    "Ghost": {
+      "id": "ghost",
+      "direction": "Playful boy character, bouncy, mildly nasal, friendly not scary.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "6–8 boy character",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    },
+    "Princess": {
+      "id": "princess",
+      "direction": "Warm elegant young-adult sister, gentle and clear; lively during games.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "20–26 sister character",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    },
+    "Pirate": {
+      "id": "pirate",
+      "direction": "Warm older captain, gravelly low chest voice; no shouting.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "55–65 older captain",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    },
+    "Mermaid": {
+      "id": "mermaid",
+      "direction": "Mature silky knowledgeable sister, gentle mysterious warmth.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "25–32 sister character",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    },
+    "Vampire ring": {
+      "id": "vampire_ring",
+      "direction": "Magnetic low male magical noble, mischievous not frightening.",
+      "voiceId": null,
+      "provider": null,
+      "language": "en-US",
+      "ageFeel": "30–45 noble male character",
+      "approved": false,
+      "prohibitRealPersonImitation": true
+    }
+  },
+  "voiceLines": {
+    "Rosie|Welcome to the Halloween Bakery!": {
+      "id": "fc4665027fae",
+      "role": "rosie",
+      "text": "Welcome to the Halloween Bakery!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/fc4665027fae.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "welcome",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Look! The ghost has a box.": {
+      "id": "14f2e7ed37b8",
+      "role": "rosie",
+      "text": "Look! The ghost has a box.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/14f2e7ed37b8.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "welcome",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Ghost|Hello, Stephanie!": {
+      "id": "04e55a9caccc",
+      "role": "ghost",
+      "text": "Hello, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/04e55a9caccc.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "hello",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|A pumpkin cookie, please!": {
+      "id": "d52edebe1b28",
+      "role": "ghost",
+      "text": "A pumpkin cookie, please!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/d52edebe1b28.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "request-cookie",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Is this the pumpkin cookie?": {
+      "id": "a6264f00a341",
+      "role": "rosie",
+      "text": "Is this the pumpkin cookie?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/a6264f00a341.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "correct-rosie",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Look at this cookie. Is it a pumpkin cookie?": {
+      "id": "3184b1dfa947",
+      "role": "rosie",
+      "text": "Look at this cookie. Is it a pumpkin cookie?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/3184b1dfa947.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "correct-rosie",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Oops! You’re right!": {
+      "id": "0c1de0790d28",
+      "role": "rosie",
+      "text": "Oops! You’re right!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/0c1de0790d28.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "oops",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Which one is the pumpkin cookie?": {
+      "id": "210f1877eaca",
+      "role": "rosie",
+      "text": "Which one is the pumpkin cookie?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/210f1877eaca.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-cookie",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Pumpkin. Find the pumpkin cookie.": {
+      "id": "9de4e1ca4480",
+      "role": "rosie",
+      "text": "Pumpkin. Find the pumpkin cookie.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/9de4e1ca4480.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-cookie",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. Find the pumpkin cookie.": {
+      "id": "0d4c0f348e55",
+      "role": "rosie",
+      "text": "Good try. Find the pumpkin cookie.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/0d4c0f348e55.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-cookie",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Pumpkin! Yes, a pumpkin cookie!": {
+      "id": "1331be4decd5",
+      "role": "rosie",
+      "text": "Pumpkin! Yes, a pumpkin cookie!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/1331be4decd5.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "cookie-in",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Thank you!": {
+      "id": "8f52487d1ee4",
+      "role": "ghost",
+      "text": "Thank you!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/8f52487d1ee4.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "cookie-in",
+          "kind": "lines",
+          "line": 1
+        },
+        {
+          "theme": "bakery",
+          "node": "almost-ready",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Two candies, please!": {
+      "id": "def2b84f80e9",
+      "role": "ghost",
+      "text": "Two candies, please!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/def2b84f80e9.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|How many candies?": {
+      "id": "9f05bd22bb84",
+      "role": "rosie",
+      "text": "How many candies?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/9f05bd22bb84.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "lines",
+          "line": 1
+        },
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "hint",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|one, two.": {
+      "id": "bbcf28bec7a9",
+      "role": "rosie",
+      "text": "one, two.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/bbcf28bec7a9.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "hint",
+          "line": 0
+        },
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Good try. Let’s count again.": {
+      "id": "4458114905b3",
+      "role": "rosie",
+      "text": "Good try. Let’s count again.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/4458114905b3.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Count with me!": {
+      "id": "e7679619f328",
+      "role": "rosie",
+      "text": "Count with me!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/e7679619f328.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Yes! Two candies!": {
+      "id": "ebbc11faf50b",
+      "role": "rosie",
+      "text": "Yes! Two candies!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/ebbc11faf50b.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 2
+        }
+      ]
+    },
+    "Rosie|The box is almost ready!": {
+      "id": "3f610d38b79b",
+      "role": "rosie",
+      "text": "The box is almost ready!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/3f610d38b79b.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "almost-ready",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Look at the party boxes!": {
+      "id": "d7833f172192",
+      "role": "rosie",
+      "text": "Look at the party boxes!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/d7833f172192.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "boxes-arrive",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Where is my party box?": {
+      "id": "6d7b80206bc6",
+      "role": "ghost",
+      "text": "Where is my party box?",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/6d7b80206bc6.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|One pumpkin cookie and two candies. Which one is correct?": {
+      "id": "35e02f047beb",
+      "role": "rosie",
+      "text": "One pumpkin cookie and two candies. Which one is correct?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/35e02f047beb.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Pumpkin cookie. Two candies.": {
+      "id": "f09128d7957d",
+      "role": "rosie",
+      "text": "Pumpkin cookie. Two candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/f09128d7957d.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. One pumpkin cookie and two candies.": {
+      "id": "8dd1ca750df8",
+      "role": "rosie",
+      "text": "Good try. One pumpkin cookie and two candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/8dd1ca750df8.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Yes! The party box is ready!": {
+      "id": "198a4c4ff127",
+      "role": "rosie",
+      "text": "Yes! The party box is ready!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/198a4c4ff127.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "box-delivered",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Yummy! Thank you!": {
+      "id": "d0879fdb2482",
+      "role": "ghost",
+      "text": "Yummy! Thank you!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/d0879fdb2482.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Is the ghost happy?": {
+      "id": "81a095222285",
+      "role": "rosie",
+      "text": "Is the ghost happy?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/81a095222285.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|The ghost is happy!": {
+      "id": "0711d91b063b",
+      "role": "rosie",
+      "text": "The ghost is happy!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/0711d91b063b.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "happy-description",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|You did it! You got a Ghost sticker!": {
+      "id": "acbbe8bcd110",
+      "role": "rosie",
+      "text": "You did it! You got a Ghost sticker!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/acbbe8bcd110.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "reward",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Bye-bye, Stephanie!": {
+      "id": "bf0c74e97661",
+      "role": "ghost",
+      "text": "Bye-bye, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/bf0c74e97661.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "goodbye",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Three candies, please!": {
+      "id": "d59c24bb700b",
+      "role": "ghost",
+      "text": "Three candies, please!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/d59c24bb700b.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|one, two, three.": {
+      "id": "be206e219f8d",
+      "role": "rosie",
+      "text": "one, two, three.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/be206e219f8d.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "hint",
+          "line": 0
+        },
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Yes! Three candies!": {
+      "id": "2256f80da861",
+      "role": "rosie",
+      "text": "Yes! Three candies!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/2256f80da861.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 2
+        }
+      ]
+    },
+    "Rosie|One pumpkin cookie and three candies. Which one is correct?": {
+      "id": "c6fc2427ad43",
+      "role": "rosie",
+      "text": "One pumpkin cookie and three candies. Which one is correct?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/c6fc2427ad43.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Pumpkin cookie. Three candies.": {
+      "id": "d45fedc48345",
+      "role": "rosie",
+      "text": "Pumpkin cookie. Three candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/d45fedc48345.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. One pumpkin cookie and three candies.": {
+      "id": "54930455281a",
+      "role": "rosie",
+      "text": "Good try. One pumpkin cookie and three candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/54930455281a.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Four candies, please!": {
+      "id": "8692b87b2290",
+      "role": "ghost",
+      "text": "Four candies, please!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/8692b87b2290.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|one, two, three, four.": {
+      "id": "729eea17817c",
+      "role": "rosie",
+      "text": "one, two, three, four.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/729eea17817c.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "hint",
+          "line": 0
+        },
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Yes! Four candies!": {
+      "id": "1c7cbe42c590",
+      "role": "rosie",
+      "text": "Yes! Four candies!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/1c7cbe42c590.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 2
+        }
+      ]
+    },
+    "Rosie|One pumpkin cookie and four candies. Which one is correct?": {
+      "id": "fb7288590cda",
+      "role": "rosie",
+      "text": "One pumpkin cookie and four candies. Which one is correct?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/fb7288590cda.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Pumpkin cookie. Four candies.": {
+      "id": "77da586207a7",
+      "role": "rosie",
+      "text": "Pumpkin cookie. Four candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/77da586207a7.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. One pumpkin cookie and four candies.": {
+      "id": "3697764ae16b",
+      "role": "rosie",
+      "text": "Good try. One pumpkin cookie and four candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/3697764ae16b.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Ghost|Five candies, please!": {
+      "id": "3c976f07313f",
+      "role": "ghost",
+      "text": "Five candies, please!",
+      "status": "missing",
+      "src": "assets/audio/voice/ghost/3c976f07313f.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|one, two, three, four, five.": {
+      "id": "79e66c39bbe7",
+      "role": "rosie",
+      "text": "one, two, three, four, five.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/79e66c39bbe7.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-question",
+          "kind": "hint",
+          "line": 0
+        },
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Yes! Five candies!": {
+      "id": "7d8ba37f01cf",
+      "role": "rosie",
+      "text": "Yes! Five candies!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/7d8ba37f01cf.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "lines",
+          "line": 2
+        }
+      ]
+    },
+    "Rosie|One pumpkin cookie and five candies. Which one is correct?": {
+      "id": "af45bda65c71",
+      "role": "rosie",
+      "text": "One pumpkin cookie and five candies. Which one is correct?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/af45bda65c71.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Pumpkin cookie. Five candies.": {
+      "id": "381374d5646b",
+      "role": "rosie",
+      "text": "Pumpkin cookie. Five candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/381374d5646b.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. One pumpkin cookie and five candies.": {
+      "id": "fd726a535ce5",
+      "role": "rosie",
+      "text": "Good try. One pumpkin cookie and five candies.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/fd726a535ce5.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "find-box",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Welcome to the Halloween Library!": {
+      "id": "6b3709906cda",
+      "role": "rosie",
+      "text": "Welcome to the Halloween Library!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/6b3709906cda.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "welcome",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|A crown. Crown.": {
+      "id": "be2271d416fb",
+      "role": "rosie",
+      "text": "A crown. Crown.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/be2271d416fb.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "teach-crown",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|A crown. A pink dress. Who is it?": {
+      "id": "2b029cf9467b",
+      "role": "rosie",
+      "text": "A crown. A pink dress. Who is it?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/2b029cf9467b.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-princess",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Crown. Pink dress.": {
+      "id": "76c8a4f41bad",
+      "role": "rosie",
+      "text": "Crown. Pink dress.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/76c8a4f41bad.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-princess",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. Look for the pink dress.": {
+      "id": "0d249725e09a",
+      "role": "rosie",
+      "text": "Good try. Look for the pink dress.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/0d249725e09a.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-princess",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Yes! She is the princess! The princess has a crown!": {
+      "id": "8d493d1128ae",
+      "role": "rosie",
+      "text": "Yes! She is the princess! The princess has a crown!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/8d493d1128ae.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "crown-on",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Hello, Stephanie!": {
+      "id": "2d6e3847593e",
+      "role": "princess",
+      "text": "Hello, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/2d6e3847593e.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "hello",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Where is my book? My book has a crown.": {
+      "id": "e4467e8f315f",
+      "role": "princess",
+      "text": "Where is my book? My book has a crown.",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/e4467e8f315f.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-book",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Find the crown book. Which one?": {
+      "id": "de0ef8900b8c",
+      "role": "rosie",
+      "text": "Find the crown book. Which one?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/de0ef8900b8c.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-book",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Crown. Find the crown book.": {
+      "id": "efdbba087726",
+      "role": "rosie",
+      "text": "Crown. Find the crown book.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/efdbba087726.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-book",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Good try. Look for the crown.": {
+      "id": "b4df0df289f6",
+      "role": "rosie",
+      "text": "Good try. Look for the crown.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/b4df0df289f6.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "find-book",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Yes! The crown book!": {
+      "id": "f3196ec16dcf",
+      "role": "rosie",
+      "text": "Yes! The crown book!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/f3196ec16dcf.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "book-found",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|I found my book! Thank you, Stephanie!": {
+      "id": "26ef55a6c462",
+      "role": "princess",
+      "text": "I found my book! Thank you, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/26ef55a6c462.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "book-found",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Princess|Let’s open the book!": {
+      "id": "fa25a52918fc",
+      "role": "princess",
+      "text": "Let’s open the book!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/fa25a52918fc.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "open-book",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|This is a magic book! Let’s play Stephanie Says!": {
+      "id": "d6af83f6f4ab",
+      "role": "princess",
+      "text": "This is a magic book! Let’s play Stephanie Says!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/d6af83f6f4ab.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "stephanie-says",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|You’re the teacher, Stephanie. I’ll follow you!": {
+      "id": "101895446e84",
+      "role": "princess",
+      "text": "You’re the teacher, Stephanie. I’ll follow you!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/101895446e84.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "stephanie-says",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Princess|I’m ready, Teacher Stephanie!": {
+      "id": "a92be2df5d02",
+      "role": "princess",
+      "text": "I’m ready, Teacher Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/a92be2df5d02.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "command-1",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Turn around, wave your hands, climb, or rollerblade?": {
+      "id": "c98facf1b2fd",
+      "role": "princess",
+      "text": "Turn around, wave your hands, climb, or rollerblade?",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/c98facf1b2fd.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "command-1",
+          "kind": "lines",
+          "line": 1
+        },
+        {
+          "theme": "library",
+          "node": "command-2",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Choose one. Tell me: “Stephanie says…”": {
+      "id": "b97abec0c4e0",
+      "role": "rosie",
+      "text": "Choose one. Tell me: “Stephanie says…”",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/b97abec0c4e0.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "command-1",
+          "kind": "lines",
+          "line": 2
+        },
+        {
+          "theme": "library",
+          "node": "command-2",
+          "kind": "lines",
+          "line": 2
+        }
+      ]
+    },
+    "Rosie|Say: “Stephanie says, wave your hands!”": {
+      "id": "ef7432986d61",
+      "role": "rosie",
+      "text": "Say: “Stephanie says, wave your hands!”",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/ef7432986d61.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "command-1",
+          "kind": "hint",
+          "line": 0
+        },
+        {
+          "theme": "library",
+          "node": "command-2",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Stephanie says… I’ll do it!": {
+      "id": "9dfac98fd130",
+      "role": "princess",
+      "text": "Stephanie says… I’ll do it!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/9dfac98fd130.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "move-1",
+          "kind": "lines",
+          "line": 0
+        },
+        {
+          "theme": "library",
+          "node": "move-2",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Your turn again, Stephanie! What should I do?": {
+      "id": "3a629370e952",
+      "role": "princess",
+      "text": "Your turn again, Stephanie! What should I do?",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/3a629370e952.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "command-2",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|You’re a great teacher, Stephanie!": {
+      "id": "522b2540e1c4",
+      "role": "rosie",
+      "text": "You’re a great teacher, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/522b2540e1c4.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "pages",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|I loved playing Stephanie Says with you!": {
+      "id": "c9307989e5f1",
+      "role": "princess",
+      "text": "I loved playing Stephanie Says with you!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/c9307989e5f1.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "pages",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Great job, Stephanie!": {
+      "id": "813f4d0295f7",
+      "role": "rosie",
+      "text": "Great job, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/813f4d0295f7.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "close-book",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|I’m happy!": {
+      "id": "c9fc7659f213",
+      "role": "princess",
+      "text": "I’m happy!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/c9fc7659f213.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Are you happy?": {
+      "id": "2ed03236f86f",
+      "role": "rosie",
+      "text": "Are you happy?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/2ed03236f86f.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 1
+        },
+        {
+          "theme": "park",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Princess|Let’s dance!": {
+      "id": "c79d10b735cc",
+      "role": "princess",
+      "text": "Let’s dance!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/c79d10b735cc.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "celebrate",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|You did it! You got a Princess sticker!": {
+      "id": "5112093b54d8",
+      "role": "rosie",
+      "text": "You did it! You got a Princess sticker!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/5112093b54d8.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "reward",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Princess|Bye-bye, Stephanie!": {
+      "id": "bee2c9705a87",
+      "role": "princess",
+      "text": "Bye-bye, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/princess/bee2c9705a87.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "library",
+          "node": "goodbye",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Welcome to Halloween Park! Let’s play hide-and-seek!": {
+      "id": "752999549af2",
+      "role": "rosie",
+      "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/752999549af2.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "welcome",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|The pirate is hiding. Let’s find him!": {
+      "id": "c0ac00a3771d",
+      "role": "rosie",
+      "text": "The pirate is hiding. Let’s find him!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/c0ac00a3771d.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "welcome",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Where is the pirate?": {
+      "id": "fcdcf59c9e8a",
+      "role": "rosie",
+      "text": "Where is the pirate?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/fcdcf59c9e8a.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-pirate",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Look around the park. Can you see him?": {
+      "id": "3fd698672237",
+      "role": "rosie",
+      "text": "Look around the park. Can you see him?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/3fd698672237.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-pirate",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Take another look. Where is the pirate?": {
+      "id": "b8dae979a606",
+      "role": "rosie",
+      "text": "Take another look. Where is the pirate?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/b8dae979a606.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-pirate",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|You found me! I’m under the swing!": {
+      "id": "1354ff20f43a",
+      "role": "pirate",
+      "text": "You found me! I’m under the swing!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/1354ff20f43a.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "pirate-found",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Hello, Stephanie!": {
+      "id": "002778364133",
+      "role": "pirate",
+      "text": "Hello, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/002778364133.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "pirate-found",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Stephanie, can you help me find the mermaid?": {
+      "id": "240aec2a5632",
+      "role": "pirate",
+      "text": "Stephanie, can you help me find the mermaid?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/240aec2a5632.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "mermaid-request",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Where is the mermaid?": {
+      "id": "5051048ae1d0",
+      "role": "pirate",
+      "text": "Where is the mermaid?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/5051048ae1d0.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-mermaid",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Look around. Can you see her tail?": {
+      "id": "7d1d780ac138",
+      "role": "rosie",
+      "text": "Look around. Can you see her tail?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/7d1d780ac138.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-mermaid",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Take another look. Where is the mermaid?": {
+      "id": "3d8872e461f1",
+      "role": "pirate",
+      "text": "Take another look. Where is the mermaid?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/3d8872e461f1.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-mermaid",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Yes! The mermaid is in the sea!": {
+      "id": "126c7e8354ec",
+      "role": "pirate",
+      "text": "Yes! The mermaid is in the sea!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/126c7e8354ec.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "mermaid-found",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Mermaid|Hi, Stephanie!": {
+      "id": "48f715345e8d",
+      "role": "mermaid",
+      "text": "Hi, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/mermaid/48f715345e8d.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "mermaid-found",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Can you help me find my vampire ring?": {
+      "id": "3815bfd69441",
+      "role": "pirate",
+      "text": "Can you help me find my vampire ring?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/3815bfd69441.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "gold-request",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|It has red eyes and bat wings!": {
+      "id": "632cb1c34e6e",
+      "role": "pirate",
+      "text": "It has red eyes and bat wings!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/632cb1c34e6e.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "gold-request",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Where is my vampire ring?": {
+      "id": "c2c985a13356",
+      "role": "pirate",
+      "text": "Where is my vampire ring?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/c2c985a13356.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-gold",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Can you find it, Stephanie?": {
+      "id": "7eeae3484400",
+      "role": "pirate",
+      "text": "Can you find it, Stephanie?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/7eeae3484400.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-gold",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Look around the park. Can you see the red eyes?": {
+      "id": "b9959c950161",
+      "role": "rosie",
+      "text": "Look around the park. Can you see the red eyes?",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/b9959c950161.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-gold",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Look carefully. Where is my vampire ring?": {
+      "id": "61403bf6c6e2",
+      "role": "pirate",
+      "text": "Look carefully. Where is my vampire ring?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/61403bf6c6e2.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-gold",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Vampire ring|You found me! Thank you, Stephanie!": {
+      "id": "699908caaf04",
+      "role": "vampire_ring",
+      "text": "You found me! Thank you, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/vampire_ring/699908caaf04.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "gold-found",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Vampire ring|I was on the bench!": {
+      "id": "9a12b3f3f5db",
+      "role": "vampire_ring",
+      "text": "I was on the bench!",
+      "status": "missing",
+      "src": "assets/audio/voice/vampire_ring/9a12b3f3f5db.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "gold-found",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Now let’s find my ship!": {
+      "id": "0235707eb856",
+      "role": "pirate",
+      "text": "Now let’s find my ship!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/0235707eb856.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "ship-request",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Let’s look around!": {
+      "id": "6a347585b3eb",
+      "role": "rosie",
+      "text": "Let’s look around!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/6a347585b3eb.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "ship-request",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Where is my ship?": {
+      "id": "db5f31f4fea1",
+      "role": "pirate",
+      "text": "Where is my ship?",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/db5f31f4fea1.mp3",
+      "emotion": "curious",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-ship",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Look at the blue water. On the sea!": {
+      "id": "117b4f3a30a4",
+      "role": "rosie",
+      "text": "Look at the blue water. On the sea!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/117b4f3a30a4.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-ship",
+          "kind": "hint",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Let’s look on the sea!": {
+      "id": "e9c65b611e80",
+      "role": "rosie",
+      "text": "Let’s look on the sea!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/e9c65b611e80.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "find-ship",
+          "kind": "retry",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|There’s my ship!": {
+      "id": "81084ab4b8d5",
+      "role": "pirate",
+      "text": "There’s my ship!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/81084ab4b8d5.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "ship-found",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Let’s take my vampire ring to the ship!": {
+      "id": "d487b4960e66",
+      "role": "pirate",
+      "text": "Let’s take my vampire ring to the ship!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/d487b4960e66.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "ship-found",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|All aboard! Let’s go!": {
+      "id": "bd40e559488e",
+      "role": "pirate",
+      "text": "All aboard! Let’s go!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/bd40e559488e.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "sail-away",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|You found the pirate, the mermaid, the vampire ring, and the ship!": {
+      "id": "923319799265",
+      "role": "rosie",
+      "text": "You found the pirate, the mermaid, the vampire ring, and the ship!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/923319799265.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "sail-away",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Pirate|Thank you, Stephanie! I’m happy!": {
+      "id": "de1c03a9bb2b",
+      "role": "pirate",
+      "text": "Thank you, Stephanie! I’m happy!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/de1c03a9bb2b.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "happy-question",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Hooray! You’re a great treasure finder!": {
+      "id": "379621e2e508",
+      "role": "pirate",
+      "text": "Hooray! You’re a great treasure finder!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/379621e2e508.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "celebrate",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|You did it! You got a Pirate sticker!": {
+      "id": "c349d5c2b6fd",
+      "role": "rosie",
+      "text": "You did it! You got a Pirate sticker!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/c349d5c2b6fd.mp3",
+      "emotion": "happy",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "reward",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Pirate|Bye-bye, Stephanie!": {
+      "id": "823c6843f497",
+      "role": "pirate",
+      "text": "Bye-bye, Stephanie!",
+      "status": "missing",
+      "src": "assets/audio/voice/pirate/823c6843f497.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "goodbye",
+          "kind": "lines",
+          "line": 0
+        }
+      ]
+    },
+    "Rosie|Bye-bye! See you soon!": {
+      "id": "95e6091026c2",
+      "role": "rosie",
+      "text": "Bye-bye! See you soon!",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/95e6091026c2.mp3",
+      "emotion": "warm",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "park",
+          "node": "goodbye",
+          "kind": "lines",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|One.": {
+      "id": "43dd4943cf2f",
+      "role": "rosie",
+      "text": "One.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/43dd4943cf2f.mp3",
+      "emotion": "counting",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "count-word",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Two.": {
+      "id": "00e946adac5b",
+      "role": "rosie",
+      "text": "Two.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/00e946adac5b.mp3",
+      "emotion": "counting",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "count-word",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Three.": {
+      "id": "15420af4231c",
+      "role": "rosie",
+      "text": "Three.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/15420af4231c.mp3",
+      "emotion": "counting",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "count-word",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Four.": {
+      "id": "8010b0ee4974",
+      "role": "rosie",
+      "text": "Four.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/8010b0ee4974.mp3",
+      "emotion": "counting",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "count-word",
+          "line": 1
+        }
+      ]
+    },
+    "Rosie|Five.": {
+      "id": "0dfc50726b0c",
+      "role": "rosie",
+      "text": "Five.",
+      "status": "missing",
+      "src": "assets/audio/voice/rosie/0dfc50726b0c.mp3",
+      "emotion": "counting",
+      "license": {
+        "verified": false,
+        "source": null,
+        "terms": null
+      },
+      "visemes": [],
+      "uses": [
+        {
+          "theme": "bakery",
+          "node": "candy-in",
+          "kind": "count-word",
+          "line": 1
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "bakery": {
+      "welcome": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "hello": {
+        "kind": "natural",
+        "stage": 1,
+        "motion": null,
+        "duration": 3000
+      },
+      "request-cookie": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "correct-rosie": {
+        "kind": "question",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "oops": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-cookie": {
+        "kind": "question",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "cookie-in": {
+        "kind": "action",
+        "stage": 1,
+        "motion": "deliver",
+        "duration": 1200
+      },
+      "checkpoint-1": {
+        "kind": "checkpoint",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "candy-question": {
+        "kind": "question",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "candy-in": {
+        "kind": "action",
+        "stage": 2,
+        "motion": "candies",
+        "duration": 16500
+      },
+      "almost-ready": {
+        "kind": "story",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "checkpoint-2": {
+        "kind": "checkpoint",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "boxes-arrive": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "boxes",
+        "duration": 1200
+      },
+      "find-box": {
+        "kind": "question",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "box-delivered": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "happy",
+        "duration": 1200
+      },
+      "checkpoint-3": {
+        "kind": "checkpoint",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "happy-question": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 3000
+      },
+      "happy-description": {
+        "kind": "story",
+        "stage": 4,
+        "motion": null,
+        "duration": 1200
+      },
+      "reward": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "reward",
+        "duration": 4800
+      },
+      "goodbye": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 6000
+      }
+    },
+    "library": {
+      "welcome": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "teach-crown": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-princess": {
+        "kind": "question",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "crown-on": {
+        "kind": "action",
+        "stage": 1,
+        "motion": "dance",
+        "duration": 1200
+      },
+      "hello": {
+        "kind": "natural",
+        "stage": 1,
+        "motion": null,
+        "duration": 3000
+      },
+      "checkpoint-1": {
+        "kind": "checkpoint",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-book": {
+        "kind": "question",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "book-found": {
+        "kind": "action",
+        "stage": 2,
+        "motion": "deliver",
+        "duration": 1200
+      },
+      "checkpoint-2": {
+        "kind": "checkpoint",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "open-book": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "open",
+        "duration": 1200
+      },
+      "stephanie-says": {
+        "kind": "story",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "command-1": {
+        "kind": "question",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "move-1": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "chosen",
+        "duration": 8000
+      },
+      "command-2": {
+        "kind": "question",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "move-2": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "chosen",
+        "duration": 8000
+      },
+      "pages": {
+        "kind": "story",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "checkpoint-3": {
+        "kind": "checkpoint",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "close-book": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "close",
+        "duration": 1200
+      },
+      "happy-question": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 3000
+      },
+      "celebrate": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "celebrate",
+        "duration": 10000
+      },
+      "reward": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "reward",
+        "duration": 4800
+      },
+      "goodbye": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 6000
+      }
+    },
+    "park": {
+      "welcome": {
+        "kind": "story",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-pirate": {
+        "kind": "question",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "pirate-found": {
+        "kind": "action",
+        "stage": 1,
+        "motion": "deliver",
+        "duration": 6000
+      },
+      "checkpoint-1": {
+        "kind": "checkpoint",
+        "stage": 1,
+        "motion": null,
+        "duration": 1200
+      },
+      "mermaid-request": {
+        "kind": "story",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-mermaid": {
+        "kind": "question",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "mermaid-found": {
+        "kind": "action",
+        "stage": 2,
+        "motion": "happy",
+        "duration": 6000
+      },
+      "gold-request": {
+        "kind": "story",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-gold": {
+        "kind": "question",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "gold-found": {
+        "kind": "action",
+        "stage": 2,
+        "motion": "happy",
+        "duration": 6500
+      },
+      "checkpoint-2": {
+        "kind": "checkpoint",
+        "stage": 2,
+        "motion": null,
+        "duration": 1200
+      },
+      "ship-request": {
+        "kind": "story",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "find-ship": {
+        "kind": "question",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "ship-found": {
+        "kind": "action",
+        "stage": 3,
+        "motion": "deliver",
+        "duration": 4500
+      },
+      "checkpoint-3": {
+        "kind": "checkpoint",
+        "stage": 3,
+        "motion": null,
+        "duration": 1200
+      },
+      "sail-away": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "sail",
+        "duration": 6000
+      },
+      "happy-question": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 3000
+      },
+      "celebrate": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "celebrate",
+        "duration": 7000
+      },
+      "reward": {
+        "kind": "action",
+        "stage": 4,
+        "motion": "reward",
+        "duration": 4800
+      },
+      "goodbye": {
+        "kind": "natural",
+        "stage": 4,
+        "motion": null,
+        "duration": 6000
+      }
+    }
+  },
+  "events": {
+    "ui.costume.select": {
+      "type": "procedural",
+      "cue": "costume"
+    },
+    "ui.chapter.select": {
+      "type": "procedural",
+      "cue": "tap"
+    },
+    "bakery.cookie.select": {
+      "type": "procedural",
+      "cue": "pop"
+    },
+    "bakery.cookie.deliver": {
+      "type": "procedural",
+      "cue": "box"
+    },
+    "bakery.candy.count": {
+      "type": "procedural",
+      "cue": "count"
+    },
+    "bakery.box.complete": {
+      "type": "procedural",
+      "cue": "magic"
+    },
+    "game.answer.correct": {
+      "type": "procedural",
+      "cue": "correct"
+    },
+    "game.answer.wrong": {
+      "type": "procedural",
+      "cue": "retry"
+    },
+    "game.reward.show": {
+      "type": "procedural",
+      "cue": "reward"
+    },
+    "game.goodbye": {
+      "type": "procedural",
+      "cue": "goodbye"
+    }
+  },
+  "music": {
+    "home": {
+      "status": "procedural-original",
+      "bpm": 100,
+      "source": "audio-manager.js original score"
+    },
+    "bakery": {
+      "status": "procedural-original",
+      "bpm": 108,
+      "source": "audio-manager.js original score"
+    },
+    "library": {
+      "status": "not-implemented"
+    },
+    "park": {
+      "status": "not-implemented"
+    }
+  },
+  "licenses": {
+    "procedural": {
+      "verified": true,
+      "source": "Original synthesized notes/noise and score written for this project; no sampled external recordings."
+    },
+    "voice": {
+      "verified": false,
+      "source": "No licensed fixed voice recordings supplied"
+    }
+  }
+}

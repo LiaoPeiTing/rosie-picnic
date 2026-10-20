@@ -4,15 +4,23 @@
   const storageKey = 'rosie-halloween-completions-v1';
   let saved = {}; try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch (_) {}
   let state = H.initial(saved), speaking = false, timer = null, timerKey = '', deadline = 0, remaining = 0, glow = false;
-  const narrator = new window.HalloweenNarrator(window.speechSynthesis,window.SpeechSynthesisUtterance);
+  const audio = new window.HalloweenAudioManager(window.HalloweenAudioManifest);
+  const playback = new window.HalloweenPlaybackController();
+  const narrator = new window.HalloweenNarrator(window.speechSynthesis,window.SpeechSynthesisUtterance,{audio,gap:350});
+  let voiceEnergy=0;
+  let voiceMode='device', retryTimelineVoice=null, skipTimelineVoice=null, voiceQueue=Promise.resolve();
+  function quietMouth(){voiceEnergy=0;speaking=false;voiceWho='';app.querySelectorAll('.talking,.voice-speaking,.pirate-speaking').forEach(el=>el.classList.remove('talking','voice-speaking','pirate-speaking','energy-mouth'));}
+  function audioControls(){return '<details class="audio-controls"><summary>Sound · '+(voiceMode==='recorded'?'Recorded voice':'Device voice fallback')+'</summary><p>Bakery audio pilot. Fixed character recordings are pending.</p>'+Object.entries({master:'Master',voice:'Voice',music:'Music',sfx:'Effects'}).map(([k,label])=>'<label>'+label+' <input type="range" min="0" max="1" step="0.05" data-volume="'+k+'" value="'+audio.settings[k]+'"></label>').join('')+'<button data-action="enable-sound">Enable sound</button></details>';}
+  function voiceOptions(){return {onLine:updateVoiceLine,onLineEnd:quietMouth,onMode:mode=>{voiceMode=mode;const el=app.querySelector('.audio-controls summary');if(el)el.textContent='Sound · '+(mode==='recorded'?'Recorded voice':'Device voice fallback');},onEnergy:value=>{voiceEnergy=value;app.querySelectorAll('.voice-speaking').forEach(el=>{el.classList.add('energy-mouth');el.style.setProperty('--voice-energy',Math.min(1,value*12));});}};}
+  function timelineVoice(line,index){const generation=playback.generation;voiceQueue=voiceQueue.then(()=>new Promise(resolve=>{if(generation!==playback.generation){resolve();return;}const run=()=>narrator.play([line],{...voiceOptions(),key:'timeline:'+voiceRevision+':'+index+':'+line.text,onLine:(_,l)=>updateVoiceLine(index,l),onDone:()=>{retryTimelineVoice=null;resolve();},onError:()=>{retryTimelineVoice=run;skipTimelineVoice=resolve;dispatch('pause');const el=app.querySelector('.voice-status');if(el)el.innerHTML=button('voice-retry','Tap to hear the voice','primary')+' '+button('voice-skip','Continue with subtitles');}});run();}));return voiceQueue;}
   let voiceRevision=0, voiceWho='', voiceError='', voiceLine=0;
   function updateVoiceLine(index,line) {
     voiceLine=index;voiceWho=line.who;speaking=true;voiceError='';
-    app.querySelectorAll('.dialogue-line').forEach((el,i)=>{el.hidden=i!==index;el.classList.toggle('active-subtitle',i===index);});
+    app.querySelectorAll('.dialogue-line').forEach((el,i)=>{el.hidden=i!==index;el.classList.toggle('active-subtitle',i===index);if(i===index){el.querySelector('p').textContent=line.text;el.querySelector('.speaker').textContent=line.who;}});
     app.querySelectorAll('.rosie,.guest').forEach(el=>{const active=(el.classList.contains('rosie')&&line.who==='Rosie')||el.classList.contains(line.who.toLowerCase());el.classList.toggle('talking',active);el.classList.toggle('voice-speaking',active);el.classList.toggle('pirate-speaking',active&&el.classList.contains('pirate'));});
     const status=app.querySelector('.voice-status');if(status)status.textContent='';
   }
-  function syncNarration(){if(state.screen!=='play'||state.phase!=='reading'||state.paused)return;const n=H.current(state);narrator.play(state.override||n.lines,{key:voiceRevision+':'+state.theme+':'+state.index,onLine:updateVoiceLine,onDone:()=>{speaking=false;voiceWho='';dispatch('read');if(state.phase==='ready')dispatch('continue');},onError:message=>{speaking=false;voiceWho='';voiceError=message;const status=app.querySelector('.voice-status');if(status)status.innerHTML=button('voice-retry','Tap to hear the voice','primary');}});}
+  function syncNarration(){if(state.screen!=='play'||state.phase!=='reading'||state.paused)return;const n=H.current(state);let lines=state.override||n.lines;if(state.theme==='bakery'&&n.id==='candy-in'&&!state.replaying&&!state.override)lines=[n.lines[0]];narrator.play(lines,{...voiceOptions(),onLine:(i,line)=>{updateVoiceLine(i,line);if(i===0&&state.theme==='bakery'&&n.id==='goodbye')audio.event('game.goodbye');},key:voiceRevision+':'+state.theme+':'+state.index,onDone:()=>{quietMouth();dispatch('read');if(state.phase==='ready')dispatch('continue');},onError:()=>{quietMouth();voiceError='retry';const status=app.querySelector('.voice-status');if(status)status.innerHTML=button('voice-retry','Tap to hear the voice','primary');}});}
   const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const button = (action, text, cls = 'secondary', value = '', disabled = false) => `<button class="${cls}" data-action="${action}" data-value="${value}" ${disabled ? 'disabled' : ''}>${text}</button>`;
   document.querySelector('#svg-library').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg">${A.defs}</svg>`;
@@ -132,7 +140,7 @@
     app.querySelectorAll('.candy-count-step').forEach((el,i)=>{el.style.animation='none';el.style.opacity=i===arrived-1?'1':'0';});
   }
   setInterval(updatePackingDisplay,80);
-  function packingElapsed(){return state.phase==='acting'?Math.max(0,H.current(state).duration-(state.paused?remaining:Math.max(0,deadline-performance.now()))):0;}
+  function packingElapsed(){if(playback.key)return playback.elapsed();return state.phase==='acting'?Math.max(0,H.current(state).duration-(state.paused?remaining:Math.max(0,deadline-performance.now()))):0;}
   let pickupAnimated=false;
   function bakeryHalloweenTrim() {
     const web=(x,flip)=>'<g transform="translate('+x+' 0) scale('+flip+' 1)" fill="none" stroke="#d5c0d9" stroke-width=".8" opacity=".72"><path d="M0 0H76M0 0 68 30M0 0 50 54M0 0 24 73M0 0V80M18 0 16 8 12 13 6 17 0 18M38 0 33 15 25 27 12 36 0 39M63 0 55 25 42 45 20 60 0 64"/></g>';
@@ -248,7 +256,7 @@
     if(state.phase==='checkpoint') controls=`<h2>A lovely little step!</h2><p class="small-note">Ready for the next part, or try this part again.</p>${button('got-it','Got it','primary','',disabled)} ${button('again','Again','secondary','',disabled)}`;
     else {
       controls=`${(state.override||n.lines).map((l,i)=>`<div class="dialogue-line" ${i===(state.phase==='reading'?0:Math.min(voiceLine,(state.override||n.lines).length-1))?'':'hidden'}><span class="speaker">${l.who}</span><p>${esc(l.text)}</p></div>`).join('')}`;
-      if(state.phase==='reading') controls+='<div class="voice-status" aria-live="polite"></div>';
+      controls+='<div class="voice-status" aria-live="polite"></div>';
       if(state.phase==='waiting') controls+='<p class="question-hint">Let your child speak first. Choose their answer in the scene.</p>';
       if(state.phase==='natural') controls+='<p class="feedback">A little space to say hello, share a feeling or say goodbye. No answer button needed.</p>';
       if(state.phase==='acting') controls+='<p class="feedback">Watch our friend move!</p>';
@@ -263,6 +271,8 @@
     else if(state.screen==='play') app.innerHTML=play();
     else if(state.screen==='ended') app.innerHTML=`<section class="completion"><p class="eyebrow">SEE YOU SOON</p><h1>Our story can wait.</h1><p>This round has ended. You can start a new story whenever you like.</p>${button('home','Back to the Party','primary')}</section>`;
     else {const t=H.themes[state.theme];app.innerHTML=`<section class="completion"><p class="eyebrow">A LITTLE ADVENTURE, TOGETHER</p><div class="reward-illustration">${A.icon(t.guest.toLowerCase(),state)}${A.icon('star',state)}</div><span class="badge">${t.badge}</span><h1>You did it!</h1><p>${t.guest}’s sticker is on your Halloween Wall.</p><div class="completion-actions">${button('play-again','Play Again','primary')}${button('home','Back to the Party')}</div></section>`;}
+    app.insertAdjacentHTML('beforeend',audioControls());
+    if(audio.context?.state==='running')audio.setScene(state.screen==='home'?'home':state.screen==='play'?state.theme:'');
     queueMicrotask(syncNarration);
     document.querySelector('#clear-wall').disabled=state.screen!=='home';
     if(state.screen==='play') {
@@ -274,6 +284,15 @@
     }
   }
   function syncTimer() {
+    if(state.screen==='play'&&state.theme==='bakery'&&state.phase==='acting'&&!state.replaying&&!state.override){
+      clearTimeout(timer);timer=null;timerKey='';const n=H.current(state),key='bakery:'+state.index;
+      if(playback.key!==key){voiceQueue=Promise.resolve();const events=[];
+        if(n.id==='candy-in'){for(let i=0;i<state.scene.candies;i++)events.push({at:i*3000+2000,run:()=>{audio.event('bakery.candy.count',i);return timelineVoice({who:'Rosie',text:['One.','Two.','Three.','Four.','Five.'][i]},1);}});events.push({at:state.scene.candies*3000+100,run:()=>timelineVoice(n.lines[2],2)});}
+        else events.push({at:n.motion==='deliver'?700:250,run:()=>audio.event(n.id==='reward'?'game.reward.show':n.id==='box-delivered'?'bakery.box.complete':n.motion==='deliver'?'bakery.cookie.deliver':'bakery.cookie.select')});
+        playback.start(key,n.duration,events,()=>dispatch('elapsed'));
+      }if(state.paused)playback.pause();return;
+    }
+    if(playback.key)playback.stop();
     const active=state.screen==='play'&&['acting','natural','waiting'].includes(state.phase);
     const key=active?`${state.theme}:${state.index}:${state.phase}`:'';
     if(key!==timerKey){clearTimeout(timer);timer=null;timerKey=key;remaining=active?(state.phase==='waiting'?5000:H.current(state).duration):0;glow=false;}
@@ -281,12 +300,20 @@
     if(active&&!timer&&remaining>0){deadline=performance.now()+remaining;timer=setTimeout(()=>{timer=null;remaining=0;if(state.phase==='waiting'){glow=true;render();}else dispatch('elapsed');},remaining);}
   }
   function dispatch(action,value) {
-    if(action==='voice-retry'){voiceRevision++;voiceError='';syncNarration();return;}
-    if(action==='pause'){narrator.pause();}else if(action==='resume'){narrator.resume();}else{narrator.stop();voiceRevision++;speaking=false;voiceWho='';if(action!=='read')voiceLine=0;voiceError='';}
-    state=H.reduce(state,action,value);syncTimer();render();
+    if(action==='enable-sound'){if(state.paused)return;audio.unlock().then(ok=>{if(ok){audio.scene='';audio.setScene(state.screen==='home'?'home':state.theme);audio.cue('tap');}});return;}
+    if(action==='voice-skip'){if(skipTimelineVoice){const finish=skipTimelineVoice;skipTimelineVoice=null;retryTimelineVoice=null;dispatch('resume');finish();}else{dispatch('read');if(state.phase==='ready')dispatch('continue');}return;}
+    if(action==='voice-retry'){voiceRevision++;voiceError='';if(retryTimelineVoice){dispatch('resume');retryTimelineVoice();}else syncNarration();return;}
+    if(action==='pause'){narrator.pause();playback.pause();audio.pause();}else if(action==='resume'){audio.resume();narrator.resume();playback.resume();}else{playback.stop();voiceQueue=Promise.resolve();retryTimelineVoice=null;skipTimelineVoice=null;audio.stopEffects();narrator.stop();voiceRevision++;speaking=false;voiceWho='';if(action!=='read')voiceLine=0;voiceError='';}
+    const before=state;state=H.reduce(state,action,value);
+    if(action==='answer')audio.event(state.index!==before.index?'game.answer.correct':'game.answer.wrong');
+    else if(action==='costume')audio.event('ui.costume.select',['witch','cat','pumpkin'].indexOf(value));
+    else if(['start','got-it','again'].includes(action))audio.event('ui.chapter.select');
+    else if(['end','home'].includes(action))audio.destroy();
+    syncTimer();render();
     try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(state.collected.map(k=>[k,true]))));}catch(_){}
   }
-  app.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b||b.disabled)return;if(b.dataset.action==='gesture'){speaking=!speaking;render();return;}dispatch(b.dataset.action,b.dataset.value);});
+  app.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b||b.disabled)return;if(!state.paused)audio.unlock().then(ok=>{if(ok)audio.setScene(state.screen==='home'?'home':state.screen==='play'?state.theme:'');});if(b.dataset.action==='gesture'){speaking=!speaking;render();return;}dispatch(b.dataset.action,b.dataset.value);});
+  app.addEventListener('input',e=>{if(e.target.dataset.volume)audio.setVolume(e.target.dataset.volume,e.target.value);});
   document.querySelector('#brand').onclick=e=>{e.preventDefault();if(state.screen!=='play')dispatch('home');};
   function wall(){document.querySelector('#wall-items').innerHTML=Object.entries(H.themes).map(([k,t])=>`<div class="wall-sticker ${state.collected.includes(k)?'':'locked'}">${A.icon(t.guest.toLowerCase(),state)}<p>${t.guest}<br>${state.collected.includes(k)?t.badge:'An adventure to come'}</p></div>`).join('');}
   document.querySelector('#wall-toggle').onclick=()=>{if(state.screen==='play'&&!state.paused)dispatch('pause');wall();document.querySelector('#wall-dialog').showModal();};
@@ -294,8 +321,10 @@
   document.querySelector('#clear-wall').onclick=()=>document.querySelector('#reset-confirm').hidden=false;
   document.querySelector('#cancel-reset').onclick=()=>document.querySelector('#reset-confirm').hidden=true;
   document.querySelector('#confirm-reset').onclick=()=>{dispatch('clear');wall();document.querySelector('#reset-confirm').hidden=true;};
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.screen==='play'&&!state.paused)dispatch('pause');});
+  window.addEventListener('pagehide',()=>{narrator.stop();playback.stop();audio.destroy();});
   let frame=0;
-  setInterval(()=>{if(state.paused)return;frame++;document.querySelectorAll('.rosie').forEach(r=>{if(r.classList.contains('happy'))return;const pose=speaking&&voiceWho==='Rosie'?(frame%2?'speak-small-hand':'speak-wide-hand'):frame%19===0?'blink':'idle';r.querySelectorAll('.frame').forEach(img=>img.classList.toggle('active',img.dataset.pose===pose));});},220);
+  setInterval(()=>{if(state.paused)return;frame++;document.querySelectorAll('.rosie').forEach(r=>{if(r.classList.contains('happy'))return;const pose=speaking&&voiceWho==='Rosie'?(voiceMode==='recorded'?(voiceEnergy>.025?'speak-wide-hand':voiceEnergy>.006?'speak-small-hand':'idle'):(frame%2?'speak-small-hand':'speak-wide-hand')):frame%19===0?'blink':'idle';r.querySelectorAll('.frame').forEach(img=>img.classList.toggle('active',img.dataset.pose===pose));});},220);
   render();
 })();
 
