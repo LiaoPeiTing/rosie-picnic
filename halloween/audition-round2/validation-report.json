@@ -1,0 +1,28 @@
+{
+  "generatedNew": 3,
+  "missingNew": 6,
+  "clips": [
+    {
+      "id": "rosie-greeting-v1__qwen_rosie_r2",
+      "rate": 24000,
+      "seconds": 2.696875,
+      "peak": 0.999969482421875,
+      "rms": 0.1615392314864433
+    },
+    {
+      "id": "rosie-question-v1__qwen_rosie_r2",
+      "rate": 24000,
+      "seconds": 2.07,
+      "peak": 0.999969482421875,
+      "rms": 0.14205825179639286
+    },
+    {
+      "id": "rosie-joy-v1__qwen_rosie_r2",
+      "rate": 24000,
+      "seconds": 2.309375,
+      "peak": 0.999969482421875,
+      "rms": 0.17263003861502302
+    }
+  ],
+  "manualReview": "pending"
+}

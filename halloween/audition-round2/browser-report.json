@@ -1,0 +1,16 @@
+[
+  {
+    "mobile": false,
+    "played": 12,
+    "roles": 3,
+    "missingNew": 6,
+    "errors": []
+  },
+  {
+    "mobile": true,
+    "played": 12,
+    "roles": 3,
+    "missingNew": 6,
+    "errors": []
+  }
+]
