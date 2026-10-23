@@ -1,0 +1,339 @@
+{
+  "zip": "selected_53_fce34328.zip",
+  "zipSha256": "5b402e9d99fbfb7804895919c5a0c463efda511e3b478a640b48e659c8c9fe63",
+  "originalZip": "bakery-generated-review (2).zip",
+  "originalManifestSha256": "132254f6fad10877c5eead9efc13938714ea2fcc69371a91edbe2bae4f970a30",
+  "wavCount": 53,
+  "candidateChoices": {
+    "hw.bakery.find-cookie.hint.01": 1,
+    "hw.bakery.find-box.retry.01.n02": 1
+  },
+  "unchangedAudioAndAssetRecords": 51,
+  "changedAssets": [
+    "rosie-f76699389eb71811",
+    "rosie-080c945dfe5bcbef"
+  ],
+  "identitiesAndReferenceHashesMatch": true,
+  "audioDecodeAndDurationsValid": true,
+  "seconds": 128.516625,
+  "audio": [
+    {
+      "assetId": "rosie-da46dd6ee132e560",
+      "duration": 2.696875,
+      "sampleRate": 24000,
+      "peak": 0.999969482421875
+    },
+    {
+      "assetId": "rosie-547a1397de0a669d",
+      "duration": 1.68,
+      "sampleRate": 24000,
+      "peak": 0.8203125
+    },
+    {
+      "assetId": "rosie-dc3fb1fc5cb4053d",
+      "duration": 4.32,
+      "sampleRate": 24000,
+      "peak": 0.54296875
+    },
+    {
+      "assetId": "ghost-fd2d22a445e2be85",
+      "duration": 1.36,
+      "sampleRate": 24000,
+      "peak": 0.43359375
+    },
+    {
+      "assetId": "ghost-8b6294f5fbdef5bb",
+      "duration": 2.0,
+      "sampleRate": 24000,
+      "peak": 0.236328125
+    },
+    {
+      "assetId": "ghost-8657b088714eccac",
+      "duration": 2.4,
+      "sampleRate": 24000,
+      "peak": 0.28515625
+    },
+    {
+      "assetId": "rosie-da1855cb76f36177",
+      "duration": 2.2400416666666665,
+      "sampleRate": 24000,
+      "peak": 0.64453125
+    },
+    {
+      "assetId": "rosie-4966123f76597ad4",
+      "duration": 2.07,
+      "sampleRate": 24000,
+      "peak": 0.999969482421875
+    },
+    {
+      "assetId": "rosie-f76699389eb71811",
+      "duration": 2.48,
+      "sampleRate": 24000,
+      "peak": 0.8359375
+    },
+    {
+      "assetId": "rosie-5ff7d0d11a70ff89",
+      "duration": 2.48,
+      "sampleRate": 24000,
+      "peak": 0.75
+    },
+    {
+      "assetId": "rosie-b38e97e06e644e03",
+      "duration": 4.16,
+      "sampleRate": 24000,
+      "peak": 0.8359375
+    },
+    {
+      "assetId": "ghost-3139328604222bbe",
+      "duration": 1.28,
+      "sampleRate": 24000,
+      "peak": 0.2001953125
+    },
+    {
+      "assetId": "ghost-1679a13a6f35717b",
+      "duration": 1.52,
+      "sampleRate": 24000,
+      "peak": 0.1962890625
+    },
+    {
+      "assetId": "ghost-105d906eb25fa02f",
+      "duration": 1.92,
+      "sampleRate": 24000,
+      "peak": 0.291015625
+    },
+    {
+      "assetId": "ghost-d6fb9567120e9311",
+      "duration": 2.48,
+      "sampleRate": 24000,
+      "peak": 0.26953125
+    },
+    {
+      "assetId": "ghost-30ed5294a90b6e42",
+      "duration": 1.68,
+      "sampleRate": 24000,
+      "peak": 0.38671875
+    },
+    {
+      "assetId": "rosie-811a3e8d079249ce",
+      "duration": 1.44,
+      "sampleRate": 24000,
+      "peak": 0.71875
+    },
+    {
+      "assetId": "rosie-7e1fbcbb2078fb4a",
+      "duration": 1.9200416666666666,
+      "sampleRate": 24000,
+      "peak": 0.84375
+    },
+    {
+      "assetId": "rosie-f59379dd39543ffe",
+      "duration": 3.36,
+      "sampleRate": 24000,
+      "peak": 0.75
+    },
+    {
+      "assetId": "rosie-f37862d1890108ab",
+      "duration": 2.8,
+      "sampleRate": 24000,
+      "peak": 0.82421875
+    },
+    {
+      "assetId": "rosie-1d45a564a4b7d2e3",
+      "duration": 2.8,
+      "sampleRate": 24000,
+      "peak": 0.88671875
+    },
+    {
+      "assetId": "rosie-34663a14b9267233",
+      "duration": 1.52,
+      "sampleRate": 24000,
+      "peak": 0.65625
+    },
+    {
+      "assetId": "rosie-95e9ed4d5538506a",
+      "duration": 1.84,
+      "sampleRate": 24000,
+      "peak": 0.8515625
+    },
+    {
+      "assetId": "rosie-eb1dd31cc6ef4e9b",
+      "duration": 1.9200416666666666,
+      "sampleRate": 24000,
+      "peak": 0.65625
+    },
+    {
+      "assetId": "rosie-706eae3573ce8aa3",
+      "duration": 2.160041666666667,
+      "sampleRate": 24000,
+      "peak": 0.76171875
+    },
+    {
+      "assetId": "rosie-f26977078f9104a4",
+      "duration": 2.32,
+      "sampleRate": 24000,
+      "peak": 0.75390625
+    },
+    {
+      "assetId": "rosie-e309a3aaf9d3616a",
+      "duration": 2.48,
+      "sampleRate": 24000,
+      "peak": 0.671875
+    },
+    {
+      "assetId": "rosie-6910776ddb427f7d",
+      "duration": 2.08,
+      "sampleRate": 24000,
+      "peak": 0.65234375
+    },
+    {
+      "assetId": "ghost-90a7ce698b66131c",
+      "duration": 1.92,
+      "sampleRate": 24000,
+      "peak": 0.26953125
+    },
+    {
+      "assetId": "rosie-c064e8b51b577254",
+      "duration": 4.48,
+      "sampleRate": 24000,
+      "peak": 0.8046875
+    },
+    {
+      "assetId": "rosie-2fff498886bb0a73",
+      "duration": 4.48,
+      "sampleRate": 24000,
+      "peak": 0.80859375
+    },
+    {
+      "assetId": "rosie-79cf9176c317e7af",
+      "duration": 4.56,
+      "sampleRate": 24000,
+      "peak": 0.83984375
+    },
+    {
+      "assetId": "rosie-e6976b8cfdfa3884",
+      "duration": 2.4,
+      "sampleRate": 24000,
+      "peak": 0.5078125
+    },
+    {
+      "assetId": "rosie-31434f5254f66f52",
+      "duration": 2.56,
+      "sampleRate": 24000,
+      "peak": 0.59375
+    },
+    {
+      "assetId": "rosie-298a26a0d3209bb0",
+      "duration": 2.9600416666666667,
+      "sampleRate": 24000,
+      "peak": 0.859375
+    },
+    {
+      "assetId": "rosie-29fd38abb6109ddc",
+      "duration": 2.64,
+      "sampleRate": 24000,
+      "peak": 0.859375
+    },
+    {
+      "assetId": "rosie-080c945dfe5bcbef",
+      "duration": 4.32,
+      "sampleRate": 24000,
+      "peak": 0.57421875
+    },
+    {
+      "assetId": "rosie-6b46c321fa591a5c",
+      "duration": 3.92,
+      "sampleRate": 24000,
+      "peak": 0.55859375
+    },
+    {
+      "assetId": "rosie-346b1dc88a5e75d0",
+      "duration": 4.0,
+      "sampleRate": 24000,
+      "peak": 0.5625
+    },
+    {
+      "assetId": "rosie-030c2cf03cea934a",
+      "duration": 4.0,
+      "sampleRate": 24000,
+      "peak": 0.5546875
+    },
+    {
+      "assetId": "rosie-6b68374e2ab01e54",
+      "duration": 2.309375,
+      "sampleRate": 24000,
+      "peak": 0.999969482421875
+    },
+    {
+      "assetId": "rosie-8c901b0e43b44075",
+      "duration": 1.84,
+      "sampleRate": 24000,
+      "peak": 0.6171875
+    },
+    {
+      "assetId": "rosie-fe3a896f433219d6",
+      "duration": 1.68,
+      "sampleRate": 24000,
+      "peak": 0.66796875
+    },
+    {
+      "assetId": "rosie-ef4862c3bd3e98c1",
+      "duration": 3.36,
+      "sampleRate": 24000,
+      "peak": 0.72265625
+    },
+    {
+      "assetId": "ghost-5ac809ad7a63c4ec",
+      "duration": 1.76,
+      "sampleRate": 24000,
+      "peak": 0.470703125
+    },
+    {
+      "assetId": "rosie-76fc09481787313d",
+      "duration": 1.9200416666666666,
+      "sampleRate": 24000,
+      "peak": 0.400390625
+    },
+    {
+      "assetId": "rosie-61d3d845736c68f9",
+      "duration": 2.9600416666666667,
+      "sampleRate": 24000,
+      "peak": 0.58984375
+    },
+    {
+      "assetId": "rosie-982af9caaf314ff8",
+      "duration": 2.0,
+      "sampleRate": 24000,
+      "peak": 0.8125
+    },
+    {
+      "assetId": "rosie-96139c5c9d4069c8",
+      "duration": 0.9600416666666667,
+      "sampleRate": 24000,
+      "peak": 0.734375
+    },
+    {
+      "assetId": "rosie-11eb102aa3acd786",
+      "duration": 1.12,
+      "sampleRate": 24000,
+      "peak": 0.80859375
+    },
+    {
+      "assetId": "rosie-96f08825b85f1c26",
+      "duration": 1.12,
+      "sampleRate": 24000,
+      "peak": 0.56640625
+    },
+    {
+      "assetId": "rosie-3b21ffd64709780d",
+      "duration": 0.9600416666666667,
+      "sampleRate": 24000,
+      "peak": 0.8515625
+    },
+    {
+      "assetId": "rosie-f111f48212c9124c",
+      "duration": 0.88,
+      "sampleRate": 24000,
+      "peak": 0.8828125
+    }
+  ]
+}
