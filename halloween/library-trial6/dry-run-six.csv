@@ -1,0 +1,7 @@
+﻿lineId,role,voiceId,text,emotionTarget
+hw.library.welcome.lines.01,rosie,qwen_rosie_r2,Welcome to the Halloween Library!,warm
+hw.library.teach-crown.lines.01,rosie,qwen_rosie_r2,A crown. Crown.,warm
+hw.library.find-princess.lines.01,rosie,qwen_rosie_r2,A crown. A pink dress. Who is it?,curious
+hw.library.hello.lines.01,princess,af_bella,"Hello, Stephanie!",warm-friendly
+hw.library.find-book.lines.01,princess,af_bella,Where is my book? My book has a crown.,curious
+hw.library.book-found.lines.02,princess,af_bella,"I found my book! Thank you, Stephanie!",happy
