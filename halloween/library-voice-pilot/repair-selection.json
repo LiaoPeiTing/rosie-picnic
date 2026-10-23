@@ -1,0 +1,20 @@
+{
+  "choices": {
+    "hw.library.teach-crown.lines.01": 1,
+    "hw.library.hello.lines.01": 2,
+    "hw.library.find-book.lines.01": 2,
+    "hw.library.book-found.lines.02": 2
+  },
+  "unchangedAcceptedHashes": {
+    "hw.library.welcome.lines.01": "efd8173f8f95889f014ea06cf37a6b2fc24e4903fe1f4c735060bf1c5f9af7a1",
+    "hw.library.find-princess.lines.01": "e5e5d6da05a9b157243f6ce45843956e6cd26e85b76de4c1e4058ca7512e79a8"
+  },
+  "changedAssets": [
+    "rosie-90eb7bf71f773ef6",
+    "princess-3720e4220c8a5ce4",
+    "princess-e728f8e179e85c02",
+    "princess-571bf50fb946e5c5"
+  ],
+  "originalManifestSha256": "9b6a9d54895c058c5f0f4c477d0be2279f5f279b72a5ef983dde88ee1a9fa8e0",
+  "productionApproved": false
+}

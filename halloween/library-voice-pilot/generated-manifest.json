@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "scope": "library-trial6-review",
+  "source": {
+    "repo": "LiaoPeiTing/rosie-picnic",
+    "path": "halloween/engine.js",
+    "commit": "ba3f490f502223fb8349e861769b87530c846f2d",
+    "sha256": "0d64f5d844b7c1c3f53f463cb90da0af4790eb98ecf4999d717ffe1a1832b0ba"
+  },
+  "models": {
+    "Qwen/Qwen3-TTS-12Hz-1.7B-Base": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0"
+    },
+    "hexgrad/Kokoro-82M": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "license": "apache-2.0"
+    },
+    "Qwen/Qwen3-TTS-Tokenizer-12Hz": {
+      "repo": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+      "revision": "7dd38ad4e9bad454aae9cd937d0cd577604fe229",
+      "license": "apache-2.0"
+    }
+  },
+  "characters": {
+    "rosie": {
+      "id": "rosie",
+      "name": "Rosie",
+      "voiceId": "qwen_rosie_r2",
+      "backend": "qwen-base",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+        "license": "apache-2.0"
+      },
+      "reference": {
+        "file": "rosie-greeting-v1_qwen_rosie_r2.wav",
+        "sha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+        "ref_text": "Welcome to the Halloween Bakery!",
+        "use": "main",
+        "origin": "user-approved original AI synthetic reference"
+      },
+      "consistencyReference": null,
+      "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+    },
+    "princess": {
+      "id": "princess",
+      "name": "Princess",
+      "voiceId": "af_bella",
+      "backend": "kokoro",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+        "license": "apache-2.0"
+      },
+      "reference": null,
+      "consistencyReference": null,
+      "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+    }
+  },
+  "lines": {
+    "hw.library.welcome.lines.01": {
+      "lineId": "hw.library.welcome.lines.01",
+      "assetId": "rosie-511b9ae26efed5a8",
+      "role": "rosie",
+      "text": "Welcome to the Halloween Library!",
+      "scene": "library",
+      "nodeId": "welcome",
+      "channel": "lines",
+      "slot": 1,
+      "stage": 1,
+      "view": "library",
+      "kind": "story",
+      "emotionTarget": "warm",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": null,
+      "effect": null,
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "actionTiming": null
+    },
+    "hw.library.teach-crown.lines.01": {
+      "lineId": "hw.library.teach-crown.lines.01",
+      "assetId": "rosie-90eb7bf71f773ef6",
+      "role": "rosie",
+      "text": "A crown. Crown.",
+      "scene": "library",
+      "nodeId": "teach-crown",
+      "channel": "lines",
+      "slot": 1,
+      "stage": 1,
+      "view": "crown",
+      "kind": "story",
+      "emotionTarget": "warm",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": null,
+      "effect": null,
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "actionTiming": null
+    },
+    "hw.library.find-princess.lines.01": {
+      "lineId": "hw.library.find-princess.lines.01",
+      "assetId": "rosie-87319e5d959e19f2",
+      "role": "rosie",
+      "text": "A crown. A pink dress. Who is it?",
+      "scene": "library",
+      "nodeId": "find-princess",
+      "channel": "lines",
+      "slot": 1,
+      "stage": 1,
+      "view": "guest-choices",
+      "kind": "question",
+      "emotionTarget": "curious",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": null,
+      "effect": null,
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "actionTiming": null
+    },
+    "hw.library.hello.lines.01": {
+      "lineId": "hw.library.hello.lines.01",
+      "assetId": "princess-3720e4220c8a5ce4",
+      "role": "princess",
+      "text": "Hello, Stephanie!",
+      "scene": "library",
+      "nodeId": "hello",
+      "channel": "lines",
+      "slot": 1,
+      "stage": 1,
+      "view": "library",
+      "kind": "natural",
+      "emotionTarget": "warm-friendly",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": null,
+      "effect": null,
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.start",
+          "type": "existing-greeting-gesture",
+          "actor": "princess"
+        }
+      ],
+      "actionTiming": null
+    },
+    "hw.library.find-book.lines.01": {
+      "lineId": "hw.library.find-book.lines.01",
+      "assetId": "princess-e728f8e179e85c02",
+      "role": "princess",
+      "text": "Where is my book? My book has a crown.",
+      "scene": "library",
+      "nodeId": "find-book",
+      "channel": "lines",
+      "slot": 1,
+      "stage": 2,
+      "view": "book-choices",
+      "kind": "question",
+      "emotionTarget": "curious",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": null,
+      "effect": null,
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        }
+      ],
+      "actionTiming": null
+    },
+    "hw.library.book-found.lines.02": {
+      "lineId": "hw.library.book-found.lines.02",
+      "assetId": "princess-571bf50fb946e5c5",
+      "role": "princess",
+      "text": "I found my book! Thank you, Stephanie!",
+      "scene": "library",
+      "nodeId": "book-found",
+      "channel": "lines",
+      "slot": 2,
+      "stage": 2,
+      "view": "library",
+      "kind": "action",
+      "emotionTarget": "happy",
+      "counts": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "origin": "engine.js",
+      "motion": "deliver",
+      "effect": "book",
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        }
+      ],
+      "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+    }
+  },
+  "assets": {
+    "rosie-511b9ae26efed5a8": {
+      "lineId": "hw.library.welcome.lines.01",
+      "assetId": "rosie-511b9ae26efed5a8",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Welcome to the Halloween Library!",
+      "textSha256": "2ce912e572bee29c9d9383673484fe9448ae07001ad073fcb7aaa9384b888226",
+      "filename": "rosie__rosie-511b9ae26efed5a8__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-511b9ae26efed5a8__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-user-listening",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.welcome.lines.01"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "emotionTarget": "warm",
+      "sha256": "efd8173f8f95889f014ea06cf37a6b2fc24e4903fe1f4c735060bf1c5f9af7a1",
+      "sampleRate": 24000,
+      "duration": 2.64,
+      "seed": 490186949,
+      "gain": 1.0,
+      "generation": {
+        "model": {
+          "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+          "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+          "license": "apache-2.0"
+        },
+        "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+        "voiceId": "qwen_rosie_r2"
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T14:44:18.193541+00:00"
+    },
+    "rosie-90eb7bf71f773ef6": {
+      "lineId": "hw.library.teach-crown.lines.01",
+      "assetId": "rosie-90eb7bf71f773ef6",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "A crown. Crown.",
+      "textSha256": "0740ffbd990e66a038130dcdfdfca77ea90f971e57cc887bab8b577f63473ca1",
+      "filename": "rosie__rosie-90eb7bf71f773ef6__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-90eb7bf71f773ef6__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.teach-crown.lines.01"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "emotionTarget": "warm",
+      "sha256": "fa9e972f3a41cd821e9b165c9ac979440031baabca9077de2af9bd0c9879f434",
+      "sampleRate": 24000,
+      "duration": 2.160041666666667,
+      "seed": 2298032557,
+      "gain": 1.0,
+      "generation": {
+        "model": {
+          "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+          "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+          "license": "apache-2.0"
+        },
+        "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+        "voiceId": "qwen_rosie_r2"
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T15:24:15.119773+00:00",
+      "retakeSettings": {
+        "recipe": "same-reference-different-seed",
+        "pitchProcessing": false
+      },
+      "retake": {
+        "candidate": 1,
+        "previousSha256": "75496c4446a3707cb16663b2fef682228c9da51b0efae71ffd1b347f2142cec2",
+        "lineId": "hw.library.teach-crown.lines.01"
+      }
+    },
+    "rosie-87319e5d959e19f2": {
+      "lineId": "hw.library.find-princess.lines.01",
+      "assetId": "rosie-87319e5d959e19f2",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "A crown. A pink dress. Who is it?",
+      "textSha256": "fd332859db24f8b5b6b46c588317b27f8222a4b7a8101c3e3a944320248b293b",
+      "filename": "rosie__rosie-87319e5d959e19f2__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-87319e5d959e19f2__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-user-listening",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.find-princess.lines.01"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "rosie"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "rosie"
+        }
+      ],
+      "emotionTarget": "curious",
+      "sha256": "e5e5d6da05a9b157243f6ce45843956e6cd26e85b76de4c1e4058ca7512e79a8",
+      "sampleRate": 24000,
+      "duration": 3.6,
+      "seed": 1044541207,
+      "gain": 1.0,
+      "generation": {
+        "model": {
+          "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+          "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+          "license": "apache-2.0"
+        },
+        "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+        "voiceId": "qwen_rosie_r2"
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T14:44:36.853003+00:00"
+    },
+    "princess-3720e4220c8a5ce4": {
+      "lineId": "hw.library.hello.lines.01",
+      "assetId": "princess-3720e4220c8a5ce4",
+      "role": "princess",
+      "voiceId": "af_bella",
+      "text": "Hello, Stephanie!",
+      "textSha256": "c22cce4fb6f15aa6a168fd7ef63b238f8df3ff75c9aed016ac474f038492ebe9",
+      "filename": "princess__princess-3720e4220c8a5ce4__af_bella.wav",
+      "src": "audio/princess__princess-3720e4220c8a5ce4__af_bella.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "official Kokoro voice",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.hello.lines.01"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.start",
+          "type": "existing-greeting-gesture",
+          "actor": "princess"
+        }
+      ],
+      "emotionTarget": "warm-friendly",
+      "sha256": "75d0d1c5cde1e30dd8292b459307223c629db288cf1040197266774babc00451",
+      "sampleRate": 24000,
+      "duration": 2.1,
+      "seed": 777134632,
+      "gain": 1.0,
+      "generation": {
+        "voiceId": "af_bella",
+        "voiceTensorSha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
+        "model": {
+          "repo": "hexgrad/Kokoro-82M",
+          "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+          "license": "apache-2.0"
+        },
+        "pitchProcessing": false
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T15:24:15.122299+00:00",
+      "retakeSettings": {
+        "segments": [
+          {
+            "text": "Hello, Stephanie!",
+            "start": 0.0,
+            "end": 2.1
+          }
+        ],
+        "recipe": {
+          "speed": 0.86,
+          "split": "sentence",
+          "sentencePause": 0.28,
+          "commaPause": 0.0
+        }
+      },
+      "retake": {
+        "candidate": 2,
+        "previousSha256": "8e8ead1ccc85acd455b86d2693a6e0819d67ab2e5f13805e9060b5fd6abb712e",
+        "lineId": "hw.library.hello.lines.01"
+      }
+    },
+    "princess-e728f8e179e85c02": {
+      "lineId": "hw.library.find-book.lines.01",
+      "assetId": "princess-e728f8e179e85c02",
+      "role": "princess",
+      "voiceId": "af_bella",
+      "text": "Where is my book? My book has a crown.",
+      "textSha256": "be3a7247f0d346554413504dfa2b81a39b0e51bb84c7a6ad470f251ccd9245fd",
+      "filename": "princess__princess-e728f8e179e85c02__af_bella.wav",
+      "src": "audio/princess__princess-e728f8e179e85c02__af_bella.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "official Kokoro voice",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.find-book.lines.01"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        }
+      ],
+      "emotionTarget": "curious",
+      "sha256": "977bc8e3b6081f9587b24ed26ebdbfa57e27b1f13a58c027e3cd6dd684822461",
+      "sampleRate": 24000,
+      "duration": 4.505,
+      "seed": 698071329,
+      "gain": 1.0,
+      "generation": {
+        "voiceId": "af_bella",
+        "voiceTensorSha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
+        "model": {
+          "repo": "hexgrad/Kokoro-82M",
+          "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+          "license": "apache-2.0"
+        },
+        "pitchProcessing": false
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T15:24:15.123444+00:00",
+      "retakeSettings": {
+        "segments": [
+          {
+            "text": "Where is my book?",
+            "start": 0.0,
+            "end": 1.975
+          },
+          {
+            "text": " My book has a crown.",
+            "start": 2.255,
+            "end": 4.505
+          }
+        ],
+        "recipe": {
+          "speed": 0.86,
+          "split": "sentence",
+          "sentencePause": 0.28,
+          "commaPause": 0.0
+        }
+      },
+      "retake": {
+        "candidate": 2,
+        "previousSha256": "a97b09387792a0a8f310486d8797d1c60cd5c0b14163aacf15f672908475afae",
+        "lineId": "hw.library.find-book.lines.01"
+      }
+    },
+    "princess-571bf50fb946e5c5": {
+      "lineId": "hw.library.book-found.lines.02",
+      "assetId": "princess-571bf50fb946e5c5",
+      "role": "princess",
+      "voiceId": "af_bella",
+      "text": "I found my book! Thank you, Stephanie!",
+      "textSha256": "ebdd04c6eb928b90f69418327a2cd3e92f17c08118cff39b152017304833ac97",
+      "filename": "princess__princess-571bf50fb946e5c5__af_bella.wav",
+      "src": "audio/princess__princess-571bf50fb946e5c5__af_bella.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "official Kokoro voice",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.library.book-found.lines.02"
+      ],
+      "events": [
+        {
+          "trigger": "voice.start",
+          "type": "mouth.start",
+          "actor": "princess"
+        },
+        {
+          "trigger": "voice.end",
+          "type": "mouth.stop",
+          "actor": "princess"
+        }
+      ],
+      "emotionTarget": "happy",
+      "sha256": "baa5c10f30b465afeb9dd63307beb8ce25d59d67e46d994e03e079b10588a4d5",
+      "sampleRate": 24000,
+      "duration": 4.48,
+      "seed": 155231428,
+      "gain": 1.0,
+      "generation": {
+        "voiceId": "af_bella",
+        "voiceTensorSha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
+        "model": {
+          "repo": "hexgrad/Kokoro-82M",
+          "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+          "license": "apache-2.0"
+        },
+        "pitchProcessing": false
+      },
+      "visemes": [],
+      "generatedAt": "2026-10-23T15:24:15.125089+00:00",
+      "retakeSettings": {
+        "segments": [
+          {
+            "text": "I found my book!",
+            "start": 0.0,
+            "end": 1.975
+          },
+          {
+            "text": " Thank you, Stephanie!",
+            "start": 2.255,
+            "end": 4.48
+          }
+        ],
+        "recipe": {
+          "speed": 0.86,
+          "split": "sentence",
+          "sentencePause": 0.28,
+          "commaPause": 0.0
+        }
+      },
+      "retake": {
+        "candidate": 2,
+        "previousSha256": "56a20afa09cfbee78b73104ff15960ecd37f2eb1550414e81f574ed592a8b3ff",
+        "lineId": "hw.library.book-found.lines.02"
+      }
+    }
+  },
+  "productionApproved": false,
+  "qualityReview": "pending-user-listening"
+}
