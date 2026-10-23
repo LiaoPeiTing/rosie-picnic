@@ -1,0 +1,13 @@
+{
+  "choices": {
+    "hw.bakery.find-cookie.hint.01": 1,
+    "hw.bakery.find-box.retry.01.n02": 1
+  },
+  "changedAssetIds": [
+    "rosie-f76699389eb71811",
+    "rosie-080c945dfe5bcbef"
+  ],
+  "unchangedAssets": 51,
+  "originalManifestSha256": "132254f6fad10877c5eead9efc13938714ea2fcc69371a91edbe2bae4f970a30",
+  "productionApproved": false
+}

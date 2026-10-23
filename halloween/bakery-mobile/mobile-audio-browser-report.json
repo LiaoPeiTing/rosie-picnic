@@ -1,0 +1,26 @@
+{
+  "engine": "Google Chrome desktop touch simulation; not physical Android",
+  "failed": {
+    "status": "聲音暫時無法播放，請按「啟用聲音」重試；詳細原因見配音狀態。",
+    "detail": "配音無法播放：hw.bakery.welcome.lines.01（HTTP 503）。請按「重試配音」。不會改用瀏覽器TTS聲線。",
+    "tts": 0,
+    "voice": false
+  },
+  "interrupted": {
+    "state": "suspended",
+    "mouth": false,
+    "status": "請點一下「啟用聲音」，再重試配音。"
+  },
+  "settings": {
+    "master": 0.8,
+    "voice": 0.8,
+    "music": 0.2,
+    "sfx": 0.45
+  },
+  "ranges": 4,
+  "ended": {
+    "voice": false,
+    "tts": 0
+  },
+  "errors": []
+}

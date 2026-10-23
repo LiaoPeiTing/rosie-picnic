@@ -1,0 +1,150 @@
+{
+  "rosie": {
+    "id": "rosie",
+    "name": "Rosie",
+    "voiceId": "qwen_rosie_r2",
+    "backend": "qwen-base",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0"
+    },
+    "reference": {
+      "file": "rosie-greeting-v1_qwen_rosie_r2.wav",
+      "sha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "ref_text": "Welcome to the Halloween Bakery!",
+      "use": "main",
+      "origin": "user-approved original AI synthetic reference"
+    },
+    "consistencyReference": null,
+    "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+  },
+  "ghost": {
+    "id": "ghost",
+    "name": "Ghost",
+    "voiceId": "ghost_qwen_boy_v1",
+    "backend": "qwen-base",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0"
+    },
+    "reference": {
+      "file": "ghost_qwen_boy_v1.wav",
+      "sha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "ref_text": "Hello, Stephanie! I have a surprise for you!",
+      "use": "main",
+      "origin": "user-supplied-and-listening-approved"
+    },
+    "consistencyReference": {
+      "role": "ghost",
+      "use": "consistency-test",
+      "file": "ghost_clone_test.wav",
+      "sha256": "14c4074a58fa06e3648f08702f68ba5ad6aeba32dde86888c5ac4b6cf62dfa0d",
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 2.08,
+      "peak": 0.318359,
+      "rms": 0.041223,
+      "bytes": 99884,
+      "origin": "user-supplied-and-listening-approved",
+      "sourceLicense": "user-provided; upstream generation provenance not independently verified",
+      "publicRedistribution": "not-assumed; reference stays local/Colab upload"
+    },
+    "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+  },
+  "princess": {
+    "id": "princess",
+    "name": "Princess",
+    "voiceId": "af_bella",
+    "backend": "kokoro",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "license": "apache-2.0"
+    },
+    "reference": null,
+    "consistencyReference": null,
+    "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+  },
+  "pirate": {
+    "id": "pirate",
+    "name": "Pirate",
+    "voiceId": "pirate_A_captain",
+    "backend": "qwen-base",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0"
+    },
+    "reference": {
+      "file": "pirate_A_captain.wav",
+      "sha256": "adff9dc480146e0ba93e63123045cae4d18943d9207b626321171b491a4d2c45",
+      "ref_text": "Arrr! You found me! All aboard! Let's go!",
+      "use": "main",
+      "origin": "user-supplied-and-listening-approved"
+    },
+    "consistencyReference": {
+      "role": "pirate",
+      "use": "consistency-test",
+      "file": "pirate_clone_test.wav",
+      "sha256": "e1b32908d34443e20fb89ea90de20af7d4fc6f72b514235b08e7b100f73dcff7",
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.44,
+      "peak": 0.570312,
+      "rms": 0.089519,
+      "bytes": 165164,
+      "origin": "user-supplied-and-listening-approved",
+      "sourceLicense": "user-provided; upstream generation provenance not independently verified",
+      "publicRedistribution": "not-assumed; reference stays local/Colab upload"
+    },
+    "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+  },
+  "mermaid": {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "voiceId": "af_nicole",
+    "backend": "kokoro",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "license": "apache-2.0"
+    },
+    "reference": null,
+    "consistencyReference": null,
+    "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+  },
+  "vampire_ring": {
+    "id": "vampire_ring",
+    "name": "Vampire ring",
+    "voiceId": "am_onyx",
+    "backend": "kokoro",
+    "language": "English",
+    "accentTarget": "en-US",
+    "voiceSelectedByUser": true,
+    "model": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "license": "apache-2.0"
+    },
+    "reference": null,
+    "consistencyReference": null,
+    "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+  }
+}

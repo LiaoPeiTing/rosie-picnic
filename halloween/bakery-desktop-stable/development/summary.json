@@ -1,0 +1,18 @@
+{
+  "engineUniqueAssets": 113,
+  "appCountAssets": 5,
+  "totalUniqueAssets": 118,
+  "lineContexts": 129,
+  "bakeryLineContexts": 59,
+  "bakeryUniqueAssets": 53,
+  "bakeryRoles": {
+    "rosie": 43,
+    "ghost": 10
+  },
+  "source": {
+    "repo": "LiaoPeiTing/rosie-picnic",
+    "path": "halloween/engine.js",
+    "commit": "ba3f490f502223fb8349e861769b87530c846f2d",
+    "sha256": "0d64f5d844b7c1c3f53f463cb90da0af4790eb98ecf4999d717ffe1a1832b0ba"
+  }
+}

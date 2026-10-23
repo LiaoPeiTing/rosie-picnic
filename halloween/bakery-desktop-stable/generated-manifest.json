@@ -1,0 +1,1699 @@
+{
+  "schemaVersion": 2,
+  "scope": "bakery-generated-review",
+  "productionApproved": false,
+  "source": {
+    "repo": "LiaoPeiTing/rosie-picnic",
+    "path": "halloween/engine.js",
+    "commit": "ba3f490f502223fb8349e861769b87530c846f2d",
+    "sha256": "0d64f5d844b7c1c3f53f463cb90da0af4790eb98ecf4999d717ffe1a1832b0ba"
+  },
+  "assets": {
+    "rosie-da46dd6ee132e560": {
+      "assetId": "rosie-da46dd6ee132e560",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Welcome to the Halloween Bakery!",
+      "textSha256": "427a8154c77d384fca1d814c20a00a24d861d4477fa022aa2181b7618f8d092d",
+      "filename": "rosie__rosie-da46dd6ee132e560__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-da46dd6ee132e560__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.welcome.lines.01"
+      ],
+      "sha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "sampleRate": 24000,
+      "duration": 2.696875,
+      "generationBackend": "approved-audition-seed",
+      "seed": 541366187,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T04:44:51.639642+00:00",
+      "visemes": []
+    },
+    "rosie-547a1397de0a669d": {
+      "assetId": "rosie-547a1397de0a669d",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "How many candies?",
+      "textSha256": "730135d4aad7181c37315ed2c2e39c79d1dc1f59951646b91295ceb9a451be93",
+      "filename": "rosie__rosie-547a1397de0a669d__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-547a1397de0a669d__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.lines.02",
+        "hw.bakery.candy-question.hint.02"
+      ],
+      "sha256": "71f5d7bd6ed7381e420b87987962f6fb16998df40d4a71d4ed472266bad10303",
+      "sampleRate": 24000,
+      "duration": 1.68,
+      "generationBackend": "qwen-base",
+      "seed": 2952935949,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T04:45:43.609002+00:00",
+      "visemes": []
+    },
+    "rosie-dc3fb1fc5cb4053d": {
+      "assetId": "rosie-dc3fb1fc5cb4053d",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "One pumpkin cookie and three candies. Which one is correct?",
+      "textSha256": "db6a28231f0574e81113c78f8071ed4fb88860f269f625c5c63f7aacc54a0e49",
+      "filename": "rosie__rosie-dc3fb1fc5cb4053d__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-dc3fb1fc5cb4053d__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.lines.02.n03"
+      ],
+      "sha256": "f2a55af7980cab0b44669928fb051a3e853f6897624702dde76c9f122174ed13",
+      "sampleRate": 24000,
+      "duration": 4.32,
+      "generationBackend": "qwen-base",
+      "seed": 1318957538,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T04:45:55.907894+00:00",
+      "visemes": []
+    },
+    "ghost-fd2d22a445e2be85": {
+      "assetId": "ghost-fd2d22a445e2be85",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Hello, Stephanie!",
+      "textSha256": "c22cce4fb6f15aa6a168fd7ef63b238f8df3ff75c9aed016ac474f038492ebe9",
+      "filename": "ghost__ghost-fd2d22a445e2be85__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-fd2d22a445e2be85__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.hello.lines.01"
+      ],
+      "sha256": "7228facf1024e97cbc8a498c99a8cbc8e06ce0302a29b4eae886a7b624bda61a",
+      "sampleRate": 24000,
+      "duration": 1.36,
+      "generationBackend": "qwen-base",
+      "seed": 514193296,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T04:45:59.791577+00:00",
+      "visemes": []
+    },
+    "ghost-8b6294f5fbdef5bb": {
+      "assetId": "ghost-8b6294f5fbdef5bb",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "A pumpkin cookie, please!",
+      "textSha256": "660ce1ed7538efa748386be9ad39fccc6d047f89cdee4b033792b713d5eccf12",
+      "filename": "ghost__ghost-8b6294f5fbdef5bb__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-8b6294f5fbdef5bb__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.request-cookie.lines.01"
+      ],
+      "sha256": "14170fc8aca990066560dd1010b4e1deb0baa9753a7b35490950f41efe84256a",
+      "sampleRate": 24000,
+      "duration": 2.0,
+      "generationBackend": "qwen-base",
+      "seed": 137444013,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T04:46:05.275139+00:00",
+      "visemes": []
+    },
+    "ghost-8657b088714eccac": {
+      "assetId": "ghost-8657b088714eccac",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Yummy! Thank you!",
+      "textSha256": "81fe02ce42e3f4f8b7f93447b3b69000ae7dddd26d1cb74052f8314a5ff90fe4",
+      "filename": "ghost__ghost-8657b088714eccac__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-8657b088714eccac__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.happy-question.lines.01"
+      ],
+      "sha256": "2a48cdcc85d7a770b8174b3271bb2ca664f4b800f17c212e7612b1dfe5379c7f",
+      "sampleRate": 24000,
+      "duration": 2.4,
+      "generationBackend": "qwen-base",
+      "seed": 804951039,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T04:46:12.522388+00:00",
+      "visemes": []
+    },
+    "rosie-da1855cb76f36177": {
+      "assetId": "rosie-da1855cb76f36177",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look! The ghost has a box.",
+      "textSha256": "b20cb026c7cfecbea1c6fe1708462b4f07c10ab926c11dd1de2dd7b414db683b",
+      "filename": "rosie__rosie-da1855cb76f36177__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-da1855cb76f36177__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.welcome.lines.02"
+      ],
+      "sha256": "fcf3d97c47a5f013a522d26c8f80c8658407d3a6bd130bb4470a84f8b778e722",
+      "sampleRate": 24000,
+      "duration": 2.2400416666666665,
+      "generationBackend": "qwen-base",
+      "seed": 3204057341,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:08:15.584400+00:00",
+      "visemes": []
+    },
+    "rosie-4966123f76597ad4": {
+      "assetId": "rosie-4966123f76597ad4",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Which one is the pumpkin cookie?",
+      "textSha256": "5654ea4c03f5bd25479f01375c14ebd49986db56ebef8c59598d86221fd67939",
+      "filename": "rosie__rosie-4966123f76597ad4__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-4966123f76597ad4__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-cookie.lines.01"
+      ],
+      "sha256": "85efa296e9622a8e75ff771dd87c2755844667a5b8d88a793d16bc797e5ba992",
+      "sampleRate": 24000,
+      "duration": 2.07,
+      "generationBackend": "approved-audition-seed",
+      "seed": 466269951,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:08:15.590113+00:00",
+      "visemes": []
+    },
+    "rosie-f76699389eb71811": {
+      "assetId": "rosie-f76699389eb71811",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin. Find the pumpkin cookie.",
+      "textSha256": "f4e625c90ab8d54378073984967d3c368689a2b7cd876ab628b15b55422bbaf7",
+      "filename": "rosie__rosie-f76699389eb71811__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-f76699389eb71811__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-cookie.hint.01"
+      ],
+      "sha256": "142a99fbecd00e46e2f5d8952deecb0b7c777d8f6bfeb5b79378e0816a76b4e6",
+      "sampleRate": 24000,
+      "duration": 2.48,
+      "generationBackend": "qwen-base",
+      "seed": 2551448466,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T06:54:28.255117+00:00",
+      "visemes": [],
+      "retake": {
+        "lineId": "hw.bakery.find-cookie.hint.01",
+        "candidate": 1,
+        "previousSha256": "d083f96be00f189bb912cd151a66d59e7f7bd1758d7bb6188cebbea6a159bb4c",
+        "sampling": {
+          "do_sample": true,
+          "temperature": 0.9,
+          "top_p": 1.0,
+          "top_k": 50,
+          "subtalker_dosample": true,
+          "subtalker_temperature": 0.9,
+          "max_new_tokens": 2048
+        }
+      }
+    },
+    "rosie-5ff7d0d11a70ff89": {
+      "assetId": "rosie-5ff7d0d11a70ff89",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. Find the pumpkin cookie.",
+      "textSha256": "a2c35946684d39798d477c27dd9f0a090af3ababa0d5b0b55ab1d3a78b6788d3",
+      "filename": "rosie__rosie-5ff7d0d11a70ff89__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-5ff7d0d11a70ff89__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-cookie.retry.01"
+      ],
+      "sha256": "5fa4d9b840d7698dbdfdd4fd2381c32acd69a2135a8a63aff0961aaf9f678bf3",
+      "sampleRate": 24000,
+      "duration": 2.48,
+      "generationBackend": "qwen-base",
+      "seed": 3424302172,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:08:29.733122+00:00",
+      "visemes": []
+    },
+    "rosie-b38e97e06e644e03": {
+      "assetId": "rosie-b38e97e06e644e03",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin! Yes, a pumpkin cookie!",
+      "textSha256": "68c07b8fd986ecbd328e7d32fdc48dce423aacc778e981779e8c4b103a2315a4",
+      "filename": "rosie__rosie-b38e97e06e644e03__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-b38e97e06e644e03__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.cookie-in.lines.01"
+      ],
+      "sha256": "fdaa77d99be91c5675f90f97af5ed427f865583401074060b877c5617342d9fd",
+      "sampleRate": 24000,
+      "duration": 4.16,
+      "generationBackend": "qwen-base",
+      "seed": 2926293539,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:08:41.917167+00:00",
+      "visemes": []
+    },
+    "ghost-3139328604222bbe": {
+      "assetId": "ghost-3139328604222bbe",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Thank you!",
+      "textSha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55",
+      "filename": "ghost__ghost-3139328604222bbe__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-3139328604222bbe__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.cookie-in.lines.02",
+        "hw.bakery.almost-ready.lines.01"
+      ],
+      "sha256": "9ad2018259a30fdeb50be337a74f93788a2382b979072c3a34ceaab6ed6196b0",
+      "sampleRate": 24000,
+      "duration": 1.28,
+      "generationBackend": "qwen-base",
+      "seed": 2575564998,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:08:45.592290+00:00",
+      "visemes": []
+    },
+    "ghost-1679a13a6f35717b": {
+      "assetId": "ghost-1679a13a6f35717b",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Two candies, please!",
+      "textSha256": "604f8f00eda5b371089cd5d56be739aca6279c546ace6006b3e4569284a5885b",
+      "filename": "ghost__ghost-1679a13a6f35717b__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-1679a13a6f35717b__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.lines.01.n02"
+      ],
+      "sha256": "c2a8ffbfeec3fdb69cb513acaa8fefef61b5abd2eec936e8d2c1cc857b7e56df",
+      "sampleRate": 24000,
+      "duration": 1.52,
+      "generationBackend": "qwen-base",
+      "seed": 2161533960,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:08:50.081366+00:00",
+      "visemes": []
+    },
+    "ghost-105d906eb25fa02f": {
+      "assetId": "ghost-105d906eb25fa02f",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Three candies, please!",
+      "textSha256": "703aac8f2e9c0a87e90616ba9cdc9c808c4f0f8fad65900090d03582d6243232",
+      "filename": "ghost__ghost-105d906eb25fa02f__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-105d906eb25fa02f__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.lines.01.n03"
+      ],
+      "sha256": "08923c9c5c44a5e0316b81324344e0522771758c5daf2fcdef0705b21efece49",
+      "sampleRate": 24000,
+      "duration": 1.92,
+      "generationBackend": "qwen-base",
+      "seed": 2798151351,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:08:55.927144+00:00",
+      "visemes": []
+    },
+    "ghost-d6fb9567120e9311": {
+      "assetId": "ghost-d6fb9567120e9311",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Four candies, please!",
+      "textSha256": "bcd8c8afa3b330baaad12f300d9fc890cb9755c0612173d95a09e7b3f28b0207",
+      "filename": "ghost__ghost-d6fb9567120e9311__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-d6fb9567120e9311__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.lines.01.n04"
+      ],
+      "sha256": "0c9ecaca6b6e04a532ef1efb53d1775eeb71176410a47919bff219eb398cab3f",
+      "sampleRate": 24000,
+      "duration": 2.48,
+      "generationBackend": "qwen-base",
+      "seed": 1126414328,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:09:03.508221+00:00",
+      "visemes": []
+    },
+    "ghost-30ed5294a90b6e42": {
+      "assetId": "ghost-30ed5294a90b6e42",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Five candies, please!",
+      "textSha256": "2e8305dec529ce87eeeb8f6d87e16119cda49586bc601ad83e028d7cdbeb1e2c",
+      "filename": "ghost__ghost-30ed5294a90b6e42__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-30ed5294a90b6e42__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.lines.01.n05"
+      ],
+      "sha256": "0e0f571c2be46e8d7c18245de01d678831e3a6dffb0aab39da67600078c19dc4",
+      "sampleRate": 24000,
+      "duration": 1.68,
+      "generationBackend": "qwen-base",
+      "seed": 3266012988,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:09:08.550496+00:00",
+      "visemes": []
+    },
+    "rosie-811a3e8d079249ce": {
+      "assetId": "rosie-811a3e8d079249ce",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "one, two.",
+      "textSha256": "12272c883d835960468609343a285d8664b9ec0aac8dab0fddb689be3a4eb396",
+      "filename": "rosie__rosie-811a3e8d079249ce__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-811a3e8d079249ce__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.hint.01.n02",
+        "hw.bakery.candy-in.lines.02.n02"
+      ],
+      "sha256": "713573c8a67ee3a511e4b1b2d8277026dfad22bc3a6ffc946a0642b6e296f95f",
+      "sampleRate": 24000,
+      "duration": 1.44,
+      "generationBackend": "qwen-base",
+      "seed": 1092487985,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:12.510058+00:00",
+      "visemes": []
+    },
+    "rosie-7e1fbcbb2078fb4a": {
+      "assetId": "rosie-7e1fbcbb2078fb4a",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "one, two, three.",
+      "textSha256": "90fcc68e22ea7f058ed9e60a1f3258b9385fb6fe50093ab3b422ac6d001ac825",
+      "filename": "rosie__rosie-7e1fbcbb2078fb4a__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-7e1fbcbb2078fb4a__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.hint.01.n03",
+        "hw.bakery.candy-in.lines.02.n03"
+      ],
+      "sha256": "42672fffc777fb69fd75273904a0ebe5045ebccfda1d4f7bf6b1c2282ed36d52",
+      "sampleRate": 24000,
+      "duration": 1.9200416666666666,
+      "generationBackend": "qwen-base",
+      "seed": 3360892784,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:18.853311+00:00",
+      "visemes": []
+    },
+    "rosie-f59379dd39543ffe": {
+      "assetId": "rosie-f59379dd39543ffe",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "one, two, three, four.",
+      "textSha256": "235aaa3cf0c406fbb5fe1cc3f9f8c30aa390ded561fd6cf4ed2c0ee2dbbd5d2e",
+      "filename": "rosie__rosie-f59379dd39543ffe__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-f59379dd39543ffe__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.hint.01.n04",
+        "hw.bakery.candy-in.lines.02.n04"
+      ],
+      "sha256": "cf5d70ab91833086e46e4104f0d43be3d0215859096a0dce01ff749e52bfe4be",
+      "sampleRate": 24000,
+      "duration": 3.36,
+      "generationBackend": "qwen-base",
+      "seed": 3953548597,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:28.242520+00:00",
+      "visemes": []
+    },
+    "rosie-f37862d1890108ab": {
+      "assetId": "rosie-f37862d1890108ab",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "one, two, three, four, five.",
+      "textSha256": "c7e1c6a15a51b11e731d291c43e92ff0663eec9aa1f8448cda597b3375c7f6a1",
+      "filename": "rosie__rosie-f37862d1890108ab__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-f37862d1890108ab__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.hint.01.n05",
+        "hw.bakery.candy-in.lines.02.n05"
+      ],
+      "sha256": "bc15f4c0b847a289602876fbab8197f2ddce24e9ec1b32bb15e4b5d774595986",
+      "sampleRate": 24000,
+      "duration": 2.8,
+      "generationBackend": "qwen-base",
+      "seed": 1032826829,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:36.365525+00:00",
+      "visemes": []
+    },
+    "rosie-1d45a564a4b7d2e3": {
+      "assetId": "rosie-1d45a564a4b7d2e3",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. Let’s count again.",
+      "textSha256": "4c39a1474d7e47d430261442c23d63db5efbc090db23302b881673b034acd2af",
+      "filename": "rosie__rosie-1d45a564a4b7d2e3__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-1d45a564a4b7d2e3__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-question.retry.01"
+      ],
+      "sha256": "ff3c3fa262b3eff76340a508e43b2fa9d63480f42debeddf1a2b12dacf7109fa",
+      "sampleRate": 24000,
+      "duration": 2.8,
+      "generationBackend": "qwen-base",
+      "seed": 2989352959,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:44.828237+00:00",
+      "visemes": []
+    },
+    "rosie-34663a14b9267233": {
+      "assetId": "rosie-34663a14b9267233",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Count with me!",
+      "textSha256": "af103b0226c3ce7d97781c59f3b5dcfcfd70ce07b5da39325f7e8213e6c01c6d",
+      "filename": "rosie__rosie-34663a14b9267233__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-34663a14b9267233__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.lines.01"
+      ],
+      "sha256": "fb83c637fad63707d1e82dad06b2ced9889bc96606c78d0d9b519d2c8650fee1",
+      "sampleRate": 24000,
+      "duration": 1.52,
+      "generationBackend": "qwen-base",
+      "seed": 2005937927,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:49.042500+00:00",
+      "visemes": []
+    },
+    "rosie-95e9ed4d5538506a": {
+      "assetId": "rosie-95e9ed4d5538506a",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Yes! Two candies!",
+      "textSha256": "64eddad4bf743b78f769decf0eede313526a7dc86d51009e1d5f336fef4e0007",
+      "filename": "rosie__rosie-95e9ed4d5538506a__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-95e9ed4d5538506a__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.lines.03.n02"
+      ],
+      "sha256": "7f778ebd7e54389c5a8d4947f650e49a8bfefa6fed31c5b2b987a7ac5c7e44e5",
+      "sampleRate": 24000,
+      "duration": 1.84,
+      "generationBackend": "qwen-base",
+      "seed": 3795312843,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:09:54.669138+00:00",
+      "visemes": []
+    },
+    "rosie-eb1dd31cc6ef4e9b": {
+      "assetId": "rosie-eb1dd31cc6ef4e9b",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Yes! Three candies!",
+      "textSha256": "0b37f51b6fd14357cfdf42af24d32931384277d3e418b92dc42c2ddc59b9bc26",
+      "filename": "rosie__rosie-eb1dd31cc6ef4e9b__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-eb1dd31cc6ef4e9b__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.lines.03.n03"
+      ],
+      "sha256": "9d22ae903b29389fdd1bb57a77ab0f16a3a71b8a3f67d35740fd6e4e4bb56466",
+      "sampleRate": 24000,
+      "duration": 1.9200416666666666,
+      "generationBackend": "qwen-base",
+      "seed": 3953491148,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:00.020669+00:00",
+      "visemes": []
+    },
+    "rosie-706eae3573ce8aa3": {
+      "assetId": "rosie-706eae3573ce8aa3",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Yes! Four candies!",
+      "textSha256": "be61e7ad672ea9b365b50994b8e037f8cafc410ab746a08d426e74b4c85405ac",
+      "filename": "rosie__rosie-706eae3573ce8aa3__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-706eae3573ce8aa3__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.lines.03.n04"
+      ],
+      "sha256": "7635c26700ebdd9b2501c345e0f3a0236e91c6642bdf273a6756a2f3e8f9bd23",
+      "sampleRate": 24000,
+      "duration": 2.160041666666667,
+      "generationBackend": "qwen-base",
+      "seed": 3695717211,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:06.244355+00:00",
+      "visemes": []
+    },
+    "rosie-f26977078f9104a4": {
+      "assetId": "rosie-f26977078f9104a4",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Yes! Five candies!",
+      "textSha256": "949c2ae0f06d8db51704551de6789fb4f4028bdded6cf7679c2d75767663dee3",
+      "filename": "rosie__rosie-f26977078f9104a4__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-f26977078f9104a4__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.lines.03.n05"
+      ],
+      "sha256": "4c6cb972cd1e1ab4b31c73a6c1f49550bb656cab9207009c2f872dbf92df9dae",
+      "sampleRate": 24000,
+      "duration": 2.32,
+      "generationBackend": "qwen-base",
+      "seed": 594206830,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:13.307467+00:00",
+      "visemes": []
+    },
+    "rosie-e309a3aaf9d3616a": {
+      "assetId": "rosie-e309a3aaf9d3616a",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "The box is almost ready!",
+      "textSha256": "48e9587a144ad67c93996c32bcbdc1fd505eabbb8c1da9b9f2bc16ae73041020",
+      "filename": "rosie__rosie-e309a3aaf9d3616a__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-e309a3aaf9d3616a__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.almost-ready.lines.02"
+      ],
+      "sha256": "060fad033de79735df22ff72ffc9267a637a38feb23c8685a4ddb1c2fc2d4c3e",
+      "sampleRate": 24000,
+      "duration": 2.48,
+      "generationBackend": "qwen-base",
+      "seed": 898330425,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:20.821825+00:00",
+      "visemes": []
+    },
+    "rosie-6910776ddb427f7d": {
+      "assetId": "rosie-6910776ddb427f7d",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look at the party boxes!",
+      "textSha256": "184518e37ce5eb1dd3715046a5e93e6e6a2c5dfa5172cf66720d8255a5ee0135",
+      "filename": "rosie__rosie-6910776ddb427f7d__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-6910776ddb427f7d__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.boxes-arrive.lines.01"
+      ],
+      "sha256": "951a0a9eafe6827bf0ac18fb583d54b682c16748337aefc2e688d8bbb55ccc4b",
+      "sampleRate": 24000,
+      "duration": 2.08,
+      "generationBackend": "qwen-base",
+      "seed": 3945557651,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:26.520937+00:00",
+      "visemes": []
+    },
+    "ghost-90a7ce698b66131c": {
+      "assetId": "ghost-90a7ce698b66131c",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Where is my party box?",
+      "textSha256": "457be123aeb21f023a957ec286d0c77289629c45d3a83d606d2ea4c07b25652d",
+      "filename": "ghost__ghost-90a7ce698b66131c__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-90a7ce698b66131c__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.lines.01"
+      ],
+      "sha256": "f2fc205b0b529b9ef30eeaa01d2242d1fc62a8c9c24b9abca918dc0e95dc96a5",
+      "sampleRate": 24000,
+      "duration": 1.92,
+      "generationBackend": "qwen-base",
+      "seed": 2065175766,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:10:32.233646+00:00",
+      "visemes": []
+    },
+    "rosie-c064e8b51b577254": {
+      "assetId": "rosie-c064e8b51b577254",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "One pumpkin cookie and two candies. Which one is correct?",
+      "textSha256": "d532743179dd71c3ec13daadb8ff01324468214306ffe299c2627cb6f1c858b9",
+      "filename": "rosie__rosie-c064e8b51b577254__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-c064e8b51b577254__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.lines.02.n02"
+      ],
+      "sha256": "559ad16c42b56402a050038ae3ae007da151add43cf166872bae860649e99a99",
+      "sampleRate": 24000,
+      "duration": 4.48,
+      "generationBackend": "qwen-base",
+      "seed": 1718693302,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:45.378195+00:00",
+      "visemes": []
+    },
+    "rosie-2fff498886bb0a73": {
+      "assetId": "rosie-2fff498886bb0a73",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "One pumpkin cookie and four candies. Which one is correct?",
+      "textSha256": "73ae0fb005ae7253925f917c31c1966b4874a9f9616115938a253a729eedb509",
+      "filename": "rosie__rosie-2fff498886bb0a73__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-2fff498886bb0a73__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.lines.02.n04"
+      ],
+      "sha256": "c052f7e0a253f58c39c9a23a87e95cc6581173ac7a9320bff148150bf63fc1fc",
+      "sampleRate": 24000,
+      "duration": 4.48,
+      "generationBackend": "qwen-base",
+      "seed": 1357749273,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:10:58.351008+00:00",
+      "visemes": []
+    },
+    "rosie-79cf9176c317e7af": {
+      "assetId": "rosie-79cf9176c317e7af",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "One pumpkin cookie and five candies. Which one is correct?",
+      "textSha256": "064a05b255012bb1dfd097ce38d218c2033d2cd126fc31d76f61a3f007fefc64",
+      "filename": "rosie__rosie-79cf9176c317e7af__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-79cf9176c317e7af__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.lines.02.n05"
+      ],
+      "sha256": "e106809af0f55880ec17a1f54800cbadb63a93edfacb326927f7c4f71997ca98",
+      "sampleRate": 24000,
+      "duration": 4.56,
+      "generationBackend": "qwen-base",
+      "seed": 134610667,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:11:11.410400+00:00",
+      "visemes": []
+    },
+    "rosie-e6976b8cfdfa3884": {
+      "assetId": "rosie-e6976b8cfdfa3884",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin cookie. Two candies.",
+      "textSha256": "4cd7f15633422956d0fee020bd26c8b6e540aeeda8e2cee2d2fe27f155336293",
+      "filename": "rosie__rosie-e6976b8cfdfa3884__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-e6976b8cfdfa3884__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.hint.01.n02"
+      ],
+      "sha256": "dfb6ca41aba9c7824dc88e9313ca0779db96b7e75ebe9a46710e3a3d5c69e15b",
+      "sampleRate": 24000,
+      "duration": 2.4,
+      "generationBackend": "qwen-base",
+      "seed": 2277372399,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:11:17.979102+00:00",
+      "visemes": []
+    },
+    "rosie-31434f5254f66f52": {
+      "assetId": "rosie-31434f5254f66f52",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin cookie. Three candies.",
+      "textSha256": "fdf7bbe96b9b4be1614f306c8b2c55db1d78fd9823f61685d7d2eb957024bfc4",
+      "filename": "rosie__rosie-31434f5254f66f52__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-31434f5254f66f52__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.hint.01.n03"
+      ],
+      "sha256": "cd67a98ae8bc7fc9f17f127f5fbdbf98a1f2ae2d7f635ba68a60fa5e11a4ef51",
+      "sampleRate": 24000,
+      "duration": 2.56,
+      "generationBackend": "qwen-base",
+      "seed": 1340875482,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:11:25.794023+00:00",
+      "visemes": []
+    },
+    "rosie-298a26a0d3209bb0": {
+      "assetId": "rosie-298a26a0d3209bb0",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin cookie. Four candies.",
+      "textSha256": "ea10cd28edbd4eba9b18d04290d25cbe3f9e65fd30cce8b35e3d2560aef16742",
+      "filename": "rosie__rosie-298a26a0d3209bb0__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-298a26a0d3209bb0__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.hint.01.n04"
+      ],
+      "sha256": "8dd2d8dd44e9c5b305f17b9c7638c4e70760b559c18f3eb4c55ab98c33d5f1fd",
+      "sampleRate": 24000,
+      "duration": 2.9600416666666667,
+      "generationBackend": "qwen-base",
+      "seed": 3173757933,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:11:34.057228+00:00",
+      "visemes": []
+    },
+    "rosie-29fd38abb6109ddc": {
+      "assetId": "rosie-29fd38abb6109ddc",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Pumpkin cookie. Five candies.",
+      "textSha256": "2aed6c12102f3c1ba2a08a0dfe15aaecdc880ad501f77eb50469a5daa5c42028",
+      "filename": "rosie__rosie-29fd38abb6109ddc__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-29fd38abb6109ddc__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.hint.01.n05"
+      ],
+      "sha256": "b240e5737b0a7e255286a8e2f4323eb54b460f17f9bf3dd59f5fb2c0797bd7c1",
+      "sampleRate": 24000,
+      "duration": 2.64,
+      "generationBackend": "qwen-base",
+      "seed": 669608608,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:11:41.776768+00:00",
+      "visemes": []
+    },
+    "rosie-080c945dfe5bcbef": {
+      "assetId": "rosie-080c945dfe5bcbef",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. One pumpkin cookie and two candies.",
+      "textSha256": "2b9e90e936144c1347e9b1364a3d2bea07156b3d682bd3e5af51dc1a878b3ab3",
+      "filename": "rosie__rosie-080c945dfe5bcbef__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-080c945dfe5bcbef__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "user-selected-retake; in-game-review-pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.retry.01.n02"
+      ],
+      "sha256": "5c43b3971b2368db4b1586039f518da0e8bea480354add819c1dae796d1b44a8",
+      "sampleRate": 24000,
+      "duration": 4.32,
+      "generationBackend": "qwen-base",
+      "seed": 1621803995,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T06:54:28.275557+00:00",
+      "visemes": [],
+      "retake": {
+        "lineId": "hw.bakery.find-box.retry.01.n02",
+        "candidate": 1,
+        "previousSha256": "95d55a1e4323b7670954cff82db2e55a8bfeb0593453df69e3ecbe8e07063e79",
+        "sampling": {
+          "do_sample": true,
+          "temperature": 0.9,
+          "top_p": 1.0,
+          "top_k": 50,
+          "subtalker_dosample": true,
+          "subtalker_temperature": 0.9,
+          "max_new_tokens": 2048
+        }
+      }
+    },
+    "rosie-6b46c321fa591a5c": {
+      "assetId": "rosie-6b46c321fa591a5c",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. One pumpkin cookie and three candies.",
+      "textSha256": "c8a025f3138a57b40b27cb26cf683e99499768ce61e8ea570a0c6f9fc06e7c44",
+      "filename": "rosie__rosie-6b46c321fa591a5c__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-6b46c321fa591a5c__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.retry.01.n03"
+      ],
+      "sha256": "5f3be5ce2a32bf44327198fd2595f868110b311f8b6d86f7c97cd2f4cd4f9054",
+      "sampleRate": 24000,
+      "duration": 3.92,
+      "generationBackend": "qwen-base",
+      "seed": 1554659759,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:04.127949+00:00",
+      "visemes": []
+    },
+    "rosie-346b1dc88a5e75d0": {
+      "assetId": "rosie-346b1dc88a5e75d0",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. One pumpkin cookie and four candies.",
+      "textSha256": "5d02ac6f7761e03c3ec5731f2806d5e95458806af0386af53e29ab3d6e53fa2c",
+      "filename": "rosie__rosie-346b1dc88a5e75d0__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-346b1dc88a5e75d0__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.retry.01.n04"
+      ],
+      "sha256": "e8ae3a0a82cb4fc2758aae20eec09f87ad21378e26a1c81efb4dfe4cd6971793",
+      "sampleRate": 24000,
+      "duration": 4.0,
+      "generationBackend": "qwen-base",
+      "seed": 142652158,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:15.585218+00:00",
+      "visemes": []
+    },
+    "rosie-030c2cf03cea934a": {
+      "assetId": "rosie-030c2cf03cea934a",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Good try. One pumpkin cookie and five candies.",
+      "textSha256": "d019ac18192e12a0b30ccddcea5910521ad03d6f89b1f8c688906a0fb137f52a",
+      "filename": "rosie__rosie-030c2cf03cea934a__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-030c2cf03cea934a__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.find-box.retry.01.n05"
+      ],
+      "sha256": "3ef2381aae531f8c83457d4540ba03a41d4d0fce9118384b5a072a9c4f6a6b51",
+      "sampleRate": 24000,
+      "duration": 4.0,
+      "generationBackend": "qwen-base",
+      "seed": 2729428629,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:27.014036+00:00",
+      "visemes": []
+    },
+    "rosie-6b68374e2ab01e54": {
+      "assetId": "rosie-6b68374e2ab01e54",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Yes! The party box is ready!",
+      "textSha256": "c311d9b6dd154f8b9426c11e1416a7b9cfb978cff5bac5101a229dc27fbf0995",
+      "filename": "rosie__rosie-6b68374e2ab01e54__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-6b68374e2ab01e54__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.box-delivered.lines.01"
+      ],
+      "sha256": "a83df311900e0fdef188d218dcfefdf962b4e7ad5df5314bab037cbcc4b812b5",
+      "sampleRate": 24000,
+      "duration": 2.309375,
+      "generationBackend": "approved-audition-seed",
+      "seed": 3959333139,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:27.019734+00:00",
+      "visemes": []
+    },
+    "rosie-8c901b0e43b44075": {
+      "assetId": "rosie-8c901b0e43b44075",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Is the ghost happy?",
+      "textSha256": "9ec40d2bf55cebfea259bf1613910d59c9d659b6a0b824ae61c248b0940f6e0e",
+      "filename": "rosie__rosie-8c901b0e43b44075__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-8c901b0e43b44075__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.happy-question.lines.02"
+      ],
+      "sha256": "05fc508786f8a846f1bd57ebcaeece7114664b608ad2898bdcb3bd7affa2430f",
+      "sampleRate": 24000,
+      "duration": 1.84,
+      "generationBackend": "qwen-base",
+      "seed": 323474821,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:32.099763+00:00",
+      "visemes": []
+    },
+    "rosie-fe3a896f433219d6": {
+      "assetId": "rosie-fe3a896f433219d6",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "The ghost is happy!",
+      "textSha256": "0bd44398653b12ac850290133bbec0413f0ed2253e94c70f92819d1465fef0f3",
+      "filename": "rosie__rosie-fe3a896f433219d6__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-fe3a896f433219d6__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.happy-description.lines.01"
+      ],
+      "sha256": "8ce0e10ab42c64a915759c25be91763d74e5e5b4ea572de4ab7e36632f0bef07",
+      "sampleRate": 24000,
+      "duration": 1.68,
+      "generationBackend": "qwen-base",
+      "seed": 2195702674,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:37.203206+00:00",
+      "visemes": []
+    },
+    "rosie-ef4862c3bd3e98c1": {
+      "assetId": "rosie-ef4862c3bd3e98c1",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "You did it! You got a Ghost sticker!",
+      "textSha256": "77b834db78f07dbd585632bf2ec6febf8e09a4e485ac4b68fa7627ed885b2379",
+      "filename": "rosie__rosie-ef4862c3bd3e98c1__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-ef4862c3bd3e98c1__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.reward.lines.01"
+      ],
+      "sha256": "6af9d5a70cc657a12db4e1acd6b1014dc6472923cb48e7cf60a7fa3169557f20",
+      "sampleRate": 24000,
+      "duration": 3.36,
+      "generationBackend": "qwen-base",
+      "seed": 4086641674,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:46.776340+00:00",
+      "visemes": []
+    },
+    "ghost-5ac809ad7a63c4ec": {
+      "assetId": "ghost-5ac809ad7a63c4ec",
+      "role": "ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "text": "Bye-bye, Stephanie!",
+      "textSha256": "9c333ffb996c4f988e4bfa3106bdbc197bc31dec52b9f7532cbd4064458dc9d8",
+      "filename": "ghost__ghost-5ac809ad7a63c4ec__ghost_qwen_boy_v1.wav",
+      "src": "audio/ghost__ghost-5ac809ad7a63c4ec__ghost_qwen_boy_v1.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.goodbye.lines.01"
+      ],
+      "sha256": "3d9d3dd7e8612b6a8e4df342f8ab9d6a38ba946bc8b4d90b3670f0cb63ff042e",
+      "sampleRate": 24000,
+      "duration": 1.76,
+      "generationBackend": "qwen-base",
+      "seed": 1456232189,
+      "gain": 1.0,
+      "referenceSha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+      "generatedAt": "2026-10-23T05:12:52.769203+00:00",
+      "visemes": []
+    },
+    "rosie-76fc09481787313d": {
+      "assetId": "rosie-76fc09481787313d",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Is this the pumpkin cookie?",
+      "textSha256": "014d9f4381979a84ae3930af8875e32c1077baf550089e3bc6a492ba5831ae8e",
+      "filename": "rosie__rosie-76fc09481787313d__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-76fc09481787313d__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.correct-rosie.lines.01"
+      ],
+      "sha256": "df0cc4993e2052af2bc5d52771f8ef59a408388cff0d4ddb71d4c8beb3267c5c",
+      "sampleRate": 24000,
+      "duration": 1.9200416666666666,
+      "generationBackend": "qwen-base",
+      "seed": 355642842,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:12:58.136394+00:00",
+      "visemes": []
+    },
+    "rosie-61d3d845736c68f9": {
+      "assetId": "rosie-61d3d845736c68f9",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look at this cookie. Is it a pumpkin cookie?",
+      "textSha256": "6a8fbb01af4262df45a669a299438363972ab47e9459014a0128884b3cff21ff",
+      "filename": "rosie__rosie-61d3d845736c68f9__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-61d3d845736c68f9__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.correct-rosie.hint.01"
+      ],
+      "sha256": "eba7bc6878ff9034747f006cbd752bd4f321ae064a679de976c059f3afa28dfd",
+      "sampleRate": 24000,
+      "duration": 2.9600416666666667,
+      "generationBackend": "qwen-base",
+      "seed": 1435089755,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:06.982524+00:00",
+      "visemes": []
+    },
+    "rosie-982af9caaf314ff8": {
+      "assetId": "rosie-982af9caaf314ff8",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Oops! You’re right!",
+      "textSha256": "1f484d64ec61cafea8ae37478bc32d8e5381a1c51a8580ab06ebdf3a19121379",
+      "filename": "rosie__rosie-982af9caaf314ff8__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-982af9caaf314ff8__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.oops.lines.01"
+      ],
+      "sha256": "1ba403a4ead298439d91a7c6a7e4fdf881d3934c4bdce0970ea3e5071a459c95",
+      "sampleRate": 24000,
+      "duration": 2.0,
+      "generationBackend": "qwen-base",
+      "seed": 541416757,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:12.598749+00:00",
+      "visemes": []
+    },
+    "rosie-96139c5c9d4069c8": {
+      "assetId": "rosie-96139c5c9d4069c8",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "One.",
+      "textSha256": "70277bfc409b502132d7a48b2a3b386294264b31f7bf024a5fb0cafabb8ac122",
+      "filename": "rosie__rosie-96139c5c9d4069c8__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-96139c5c9d4069c8__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.count.01"
+      ],
+      "sha256": "a2d9baaa92a3d12cda9113fddf67b9cdf14e2aac44f401cfbe2860e996c1d7e9",
+      "sampleRate": 24000,
+      "duration": 0.9600416666666667,
+      "generationBackend": "qwen-base",
+      "seed": 2578486034,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:16.333139+00:00",
+      "visemes": []
+    },
+    "rosie-11eb102aa3acd786": {
+      "assetId": "rosie-11eb102aa3acd786",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Two.",
+      "textSha256": "1eb32d1ee4458814f94f8b92d1bd3e06e16dca6fab43d53f700840321f27fdf4",
+      "filename": "rosie__rosie-11eb102aa3acd786__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-11eb102aa3acd786__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.count.02"
+      ],
+      "sha256": "b87e09baf6661abc023d290a1644dfefa68853530147e46ba6e5a00a3b1bef90",
+      "sampleRate": 24000,
+      "duration": 1.12,
+      "generationBackend": "qwen-base",
+      "seed": 1186766310,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:19.754844+00:00",
+      "visemes": []
+    },
+    "rosie-96f08825b85f1c26": {
+      "assetId": "rosie-96f08825b85f1c26",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Three.",
+      "textSha256": "43c4d94ea2cd4fbece4f396e10852401108971f22e2f37707fbbb688ddc7fe3c",
+      "filename": "rosie__rosie-96f08825b85f1c26__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-96f08825b85f1c26__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.count.03"
+      ],
+      "sha256": "71301c40f95ea7175dd46d2cae2cdc53b5ab6ba304d53e1a1d51ab4b79207aca",
+      "sampleRate": 24000,
+      "duration": 1.12,
+      "generationBackend": "qwen-base",
+      "seed": 2519661051,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:23.009527+00:00",
+      "visemes": []
+    },
+    "rosie-3b21ffd64709780d": {
+      "assetId": "rosie-3b21ffd64709780d",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Four.",
+      "textSha256": "2f7820a5325de01510971fb541180d3730df116b28942068bb1e5a7040528833",
+      "filename": "rosie__rosie-3b21ffd64709780d__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-3b21ffd64709780d__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.count.04"
+      ],
+      "sha256": "56d25454fce518959f93bd06b99ae0a26e1c39545d01ad88fa859c35cbe9c915",
+      "sampleRate": 24000,
+      "duration": 0.9600416666666667,
+      "generationBackend": "qwen-base",
+      "seed": 609319004,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:25.816936+00:00",
+      "visemes": []
+    },
+    "rosie-f111f48212c9124c": {
+      "assetId": "rosie-f111f48212c9124c",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Five.",
+      "textSha256": "a62a3699a6ab74ba0e901dc48a1d800e5f60f3fb52da7925f8b9b367cbbaa769",
+      "filename": "rosie__rosie-f111f48212c9124c__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-f111f48212c9124c__qwen_rosie_r2.wav",
+      "status": "generated",
+      "review": "pending-in-game-quality-review",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.bakery.candy-in.count.05"
+      ],
+      "sha256": "61824af255448d35b0dfd8955e44837f9e2e251f6665dc5e48d825de906610f9",
+      "sampleRate": 24000,
+      "duration": 0.88,
+      "generationBackend": "qwen-base",
+      "seed": 165655219,
+      "gain": 1.0,
+      "referenceSha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+      "generatedAt": "2026-10-23T05:13:29.148277+00:00",
+      "visemes": []
+    }
+  },
+  "characters": {
+    "rosie": {
+      "id": "rosie",
+      "name": "Rosie",
+      "voiceId": "qwen_rosie_r2",
+      "backend": "qwen-base",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+        "license": "apache-2.0"
+      },
+      "reference": {
+        "file": "rosie-greeting-v1_qwen_rosie_r2.wav",
+        "sha256": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+        "ref_text": "Welcome to the Halloween Bakery!",
+        "use": "main",
+        "origin": "user-approved original AI synthetic reference"
+      },
+      "consistencyReference": null,
+      "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+    },
+    "ghost": {
+      "id": "ghost",
+      "name": "Ghost",
+      "voiceId": "ghost_qwen_boy_v1",
+      "backend": "qwen-base",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+        "license": "apache-2.0"
+      },
+      "reference": {
+        "file": "ghost_qwen_boy_v1.wav",
+        "sha256": "50c31a44cf531b13308dfe6ee02e6e9c54a970539cf5d634ec6628e008bef5b8",
+        "ref_text": "Hello, Stephanie! I have a surprise for you!",
+        "use": "main",
+        "origin": "user-supplied-and-listening-approved"
+      },
+      "consistencyReference": {
+        "role": "ghost",
+        "use": "consistency-test",
+        "file": "ghost_clone_test.wav",
+        "sha256": "14c4074a58fa06e3648f08702f68ba5ad6aeba32dde86888c5ac4b6cf62dfa0d",
+        "sampleRate": 24000,
+        "channels": 1,
+        "durationSeconds": 2.08,
+        "peak": 0.318359,
+        "rms": 0.041223,
+        "bytes": 99884,
+        "origin": "user-supplied-and-listening-approved",
+        "sourceLicense": "user-provided; upstream generation provenance not independently verified",
+        "publicRedistribution": "not-assumed; reference stays local/Colab upload"
+      },
+      "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+    },
+    "princess": {
+      "id": "princess",
+      "name": "Princess",
+      "voiceId": "af_bella",
+      "backend": "kokoro",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+        "license": "apache-2.0"
+      },
+      "reference": null,
+      "consistencyReference": null,
+      "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+    },
+    "pirate": {
+      "id": "pirate",
+      "name": "Pirate",
+      "voiceId": "pirate_A_captain",
+      "backend": "qwen-base",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+        "license": "apache-2.0"
+      },
+      "reference": {
+        "file": "pirate_A_captain.wav",
+        "sha256": "adff9dc480146e0ba93e63123045cae4d18943d9207b626321171b491a4d2c45",
+        "ref_text": "Arrr! You found me! All aboard! Let's go!",
+        "use": "main",
+        "origin": "user-supplied-and-listening-approved"
+      },
+      "consistencyReference": {
+        "role": "pirate",
+        "use": "consistency-test",
+        "file": "pirate_clone_test.wav",
+        "sha256": "e1b32908d34443e20fb89ea90de20af7d4fc6f72b514235b08e7b100f73dcff7",
+        "sampleRate": 24000,
+        "channels": 1,
+        "durationSeconds": 3.44,
+        "peak": 0.570312,
+        "rms": 0.089519,
+        "bytes": 165164,
+        "origin": "user-supplied-and-listening-approved",
+        "sourceLicense": "user-provided; upstream generation provenance not independently verified",
+        "publicRedistribution": "not-assumed; reference stays local/Colab upload"
+      },
+      "instructionSupport": "Identity via frozen reference; Base has no emotion instruct parameter. Emotion labels are review targets."
+    },
+    "mermaid": {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "voiceId": "af_nicole",
+      "backend": "kokoro",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+        "license": "apache-2.0"
+      },
+      "reference": null,
+      "consistencyReference": null,
+      "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+    },
+    "vampire_ring": {
+      "id": "vampire_ring",
+      "name": "Vampire ring",
+      "voiceId": "am_onyx",
+      "backend": "kokoro",
+      "language": "English",
+      "accentTarget": "en-US",
+      "voiceSelectedByUser": true,
+      "model": {
+        "repo": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+        "license": "apache-2.0"
+      },
+      "reference": null,
+      "consistencyReference": null,
+      "instructionSupport": "Fixed native voice; no explicit emotion instruction; no pitch shift."
+    }
+  },
+  "models": {
+    "Qwen/Qwen3-TTS-12Hz-1.7B-Base": {
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0"
+    },
+    "hexgrad/Kokoro-82M": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "license": "apache-2.0"
+    },
+    "Qwen/Qwen3-TTS-Tokenizer-12Hz": {
+      "repo": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+      "revision": "7dd38ad4e9bad454aae9cd937d0cd577604fe229",
+      "license": "apache-2.0"
+    }
+  },
+  "alignmentStatus": "not-aligned; RMS mouth is not phoneme alignment"
+}

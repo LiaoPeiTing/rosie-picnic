@@ -1,0 +1,659 @@
+{
+  "engine": "Chromium/Edge touch simulation, not physical Android",
+  "unlock": {
+    "context": "running",
+    "gesture": [
+      {
+        "type": "resume",
+        "active": true
+      },
+      {
+        "type": "start",
+        "active": true
+      },
+      {
+        "type": "start",
+        "active": true
+      },
+      {
+        "type": "start",
+        "active": true
+      },
+      {
+        "type": "start",
+        "active": true
+      }
+    ],
+    "status": "聲音已啟動"
+  },
+  "paused": {
+    "state": "suspended",
+    "mouth": false,
+    "time": 0.5306666666666666
+  },
+  "layout": [
+    {
+      "node": "correct-rosie",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 172,
+          "right": 512.140625,
+          "bottom": 394.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 402.296875,
+          "right": 512.140625,
+          "bottom": 495.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 172,
+          "right": 834,
+          "bottom": 360
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-cookie",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-cookie",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-cookie",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-cookie",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "candy-question",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 408.296875
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "candy-question",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 408.296875
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-box",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "node": "find-box",
+      "overflow": false,
+      "boxes": {
+        ".world": {
+          "x": 10,
+          "y": 94,
+          "right": 512.140625,
+          "bottom": 316.296875
+        },
+        ".mobile-choices": {
+          "x": 10,
+          "y": 324.296875,
+          "right": 512.140625,
+          "bottom": 417.890625
+        },
+        ".play-dock": {
+          "x": 520.140625,
+          "y": 94,
+          "right": 834,
+          "bottom": 282
+        }
+      },
+      "buttons": [
+        {
+          "text": "Replay",
+          "width": 60.734375,
+          "height": 44
+        },
+        {
+          "text": "Pause",
+          "width": 55.65625,
+          "height": 44
+        },
+        {
+          "text": "End",
+          "width": 43.234375,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "result": {
+    "screen": "complete",
+    "starts": [
+      {
+        "id": "hw.bakery.welcome.lines.01",
+        "text": "Welcome to the Halloween Bakery!",
+        "subtitle": "Welcome to the Halloween Bakery!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.welcome.lines.02",
+        "text": "Look! The ghost has a box.",
+        "subtitle": "Look! The ghost has a box.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.hello.lines.01",
+        "text": "Hello, Stephanie!",
+        "subtitle": "Hello, Stephanie!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.request-cookie.lines.01",
+        "text": "A pumpkin cookie, please!",
+        "subtitle": "A pumpkin cookie, please!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.correct-rosie.lines.01",
+        "text": "Is this the pumpkin cookie?",
+        "subtitle": "Is this the pumpkin cookie?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.oops.lines.01",
+        "text": "Oops! You’re right!",
+        "subtitle": "Oops! You’re right!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-cookie.lines.01",
+        "text": "Which one is the pumpkin cookie?",
+        "subtitle": "Which one is the pumpkin cookie?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-cookie.hint.01",
+        "text": "Pumpkin. Find the pumpkin cookie.",
+        "subtitle": "Pumpkin. Find the pumpkin cookie.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-cookie.retry.01",
+        "text": "Good try. Find the pumpkin cookie.",
+        "subtitle": "Good try. Find the pumpkin cookie.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-cookie.lines.01",
+        "text": "Which one is the pumpkin cookie?",
+        "subtitle": "Which one is the pumpkin cookie?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.cookie-in.lines.01",
+        "text": "Pumpkin! Yes, a pumpkin cookie!",
+        "subtitle": "Pumpkin! Yes, a pumpkin cookie!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.cookie-in.lines.02",
+        "text": "Thank you!",
+        "subtitle": "Thank you!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-question.lines.01.n03",
+        "text": "Three candies, please!",
+        "subtitle": "Three candies, please!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-question.lines.02",
+        "text": "How many candies?",
+        "subtitle": "How many candies?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-question.retry.01",
+        "text": "Good try. Let’s count again.",
+        "subtitle": "Good try. Let’s count again.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-in.lines.01",
+        "text": "Count with me!",
+        "subtitle": "Count with me!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-in.count.01",
+        "text": "One.",
+        "subtitle": "One.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-in.count.02",
+        "text": "Two.",
+        "subtitle": "Two.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-in.count.03",
+        "text": "Three.",
+        "subtitle": "Three.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.candy-in.lines.03.n03",
+        "text": "Yes! Three candies!",
+        "subtitle": "Yes! Three candies!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.almost-ready.lines.01",
+        "text": "Thank you!",
+        "subtitle": "Thank you!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.almost-ready.lines.02",
+        "text": "The box is almost ready!",
+        "subtitle": "The box is almost ready!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.boxes-arrive.lines.01",
+        "text": "Look at the party boxes!",
+        "subtitle": "Look at the party boxes!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-box.lines.01",
+        "text": "Where is my party box?",
+        "subtitle": "Where is my party box?",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-box.lines.02.n03",
+        "text": "One pumpkin cookie and three candies. Which one is correct?",
+        "subtitle": "One pumpkin cookie and three candies. Which one is correct?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.find-box.retry.01.n03",
+        "text": "Good try. One pumpkin cookie and three candies.",
+        "subtitle": "Good try. One pumpkin cookie and three candies.",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.box-delivered.lines.01",
+        "text": "Yes! The party box is ready!",
+        "subtitle": "Yes! The party box is ready!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.happy-question.lines.01",
+        "text": "Yummy! Thank you!",
+        "subtitle": "Yummy! Thank you!",
+        "who": "Ghost",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.happy-question.lines.02",
+        "text": "Is the ghost happy?",
+        "subtitle": "Is the ghost happy?",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.happy-description.lines.01",
+        "text": "The ghost is happy!",
+        "subtitle": "The ghost is happy!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.reward.lines.01",
+        "text": "You did it! You got a Ghost sticker!",
+        "subtitle": "You did it! You got a Ghost sticker!",
+        "who": "Rosie",
+        "mode": "recorded"
+      },
+      {
+        "id": "hw.bakery.goodbye.lines.01",
+        "text": "Bye-bye, Stephanie!",
+        "subtitle": "Bye-bye, Stephanie!",
+        "who": "Ghost",
+        "mode": "recorded"
+      }
+    ],
+    "sfx": [
+      "ui.chapter.select",
+      "game.answer.correct",
+      "game.answer.wrong",
+      "game.answer.correct",
+      "bakery.cookie.deliver",
+      "ui.chapter.select",
+      "game.answer.wrong",
+      "game.answer.correct",
+      "bakery.candy.count",
+      "bakery.candy.count",
+      "bakery.candy.count",
+      "ui.chapter.select",
+      "bakery.cookie.select",
+      "game.answer.wrong",
+      "game.answer.correct",
+      "bakery.box.complete",
+      "ui.chapter.select",
+      "game.reward.show",
+      "game.goodbye"
+    ],
+    "tts": 0,
+    "overflow": false,
+    "assets": 53
+  },
+  "errors": []
+}

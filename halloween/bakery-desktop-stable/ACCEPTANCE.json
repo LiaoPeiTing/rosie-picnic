@@ -1,0 +1,9 @@
+{
+  "status": "桌面版初步驗收通過",
+  "approvedBy": "家長本次親自試玩確認",
+  "date": "2026-10-23",
+  "htmlSha256": "33b13106c0104bd59f44e442912fa23c731e42656774b06cf7dd0bdfc7a1f89c",
+  "wavCount": 53,
+  "mobileStatus": "另行修復，不納入本桌面驗收",
+  "formalGameChanged": false
+}
