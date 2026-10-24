@@ -1,0 +1,1 @@
+只替換及執行目前Colab第5區塊。保留現有OUTPUT；不執行第1～4區塊、不重新上傳音檔、不呼叫模型。review_existing30.py可完整貼入；亦可使用回覆提供的固定版本下載執行碼。24句每次選擇/備註自動寫入OUTPUT/voice-review.json；重跑第5區塊自動還原。六句鎖定接受。下載完整ZIP含30 WAV、原generated-manifest、voice-review、retake-request及靜態review.html。Colab執行階段清除會遺失暫存檔，離開前下載。重新載入只需要驗收JSON，不需要WAV。
