@@ -1,0 +1,13 @@
+{
+  "status": "30段人工試聽已接受，待遊戲內驗收",
+  "wavCount": 30,
+  "unchangedWavCount": 28,
+  "selectedCandidates": {
+    "hw.library.crown-on.lines.01": 2,
+    "hw.library.command-1.hint.01": 2
+  },
+  "manifestSha256": "78efc488135196f83cd9504be360c4de6779aeccd04dd4283702e70a21cb98da",
+  "decodedAll": true,
+  "productionApproved": false,
+  "selectionEvidence": "uploaded repair-selection + retake provenance; standalone candidate files not supplied"
+}
