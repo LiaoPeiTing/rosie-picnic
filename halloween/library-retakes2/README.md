@@ -1,0 +1,1 @@
+Library兩句指定重錄：上傳私人library-retakes2-inputs.zip，T4免費GPU。依序安裝、上傳、dry-run，核對僅兩Rosie句後開啟第4格確認碼。第5格原音及3候選逐句比較，兩句皆選才匯出完整30句；28原音hash不變，核准6包括其中。參考qwen_rosie_r2不變，不做pitch。不觸碰正式遊戲/Bakery/Park。候選與選擇可先備份下載。
