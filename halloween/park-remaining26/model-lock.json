@@ -1,0 +1,17 @@
+{
+  "Qwen/Qwen3-TTS-12Hz-1.7B-Base": {
+    "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+    "license": "apache-2.0"
+  },
+  "hexgrad/Kokoro-82M": {
+    "repo": "hexgrad/Kokoro-82M",
+    "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+    "license": "apache-2.0"
+  },
+  "Qwen/Qwen3-TTS-Tokenizer-12Hz": {
+    "repo": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+    "revision": "7dd38ad4e9bad454aae9cd937d0cd577604fe229",
+    "license": "apache-2.0"
+  }
+}
