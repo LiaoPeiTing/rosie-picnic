@@ -1,0 +1,1588 @@
+{
+  "scope": "park26-waiting-free-gpu",
+  "date": "2026-10-25",
+  "status": "待生成：免費Colab GPU額度限制",
+  "newGenerated": 0,
+  "approvedUniqueAssets": 92,
+  "pendingCount": 26,
+  "inputZip": "park-remaining26-inputs.zip",
+  "inputZipSha256": "950e04a6031f84716b9f3bc721bc60096fe32d4653c70d3a419c2676d56db067",
+  "approvedAssets": {
+    "rosie-da46dd6ee132e560": "f26a8e4ca3d1226a250e2507027f326f65060bd5cdf4d846e69c32913b051e4f",
+    "rosie-547a1397de0a669d": "71f5d7bd6ed7381e420b87987962f6fb16998df40d4a71d4ed472266bad10303",
+    "rosie-dc3fb1fc5cb4053d": "f2a55af7980cab0b44669928fb051a3e853f6897624702dde76c9f122174ed13",
+    "ghost-fd2d22a445e2be85": "7228facf1024e97cbc8a498c99a8cbc8e06ce0302a29b4eae886a7b624bda61a",
+    "ghost-8b6294f5fbdef5bb": "14170fc8aca990066560dd1010b4e1deb0baa9753a7b35490950f41efe84256a",
+    "ghost-8657b088714eccac": "2a48cdcc85d7a770b8174b3271bb2ca664f4b800f17c212e7612b1dfe5379c7f",
+    "rosie-da1855cb76f36177": "fcf3d97c47a5f013a522d26c8f80c8658407d3a6bd130bb4470a84f8b778e722",
+    "rosie-4966123f76597ad4": "85efa296e9622a8e75ff771dd87c2755844667a5b8d88a793d16bc797e5ba992",
+    "rosie-f76699389eb71811": "142a99fbecd00e46e2f5d8952deecb0b7c777d8f6bfeb5b79378e0816a76b4e6",
+    "rosie-5ff7d0d11a70ff89": "5fa4d9b840d7698dbdfdd4fd2381c32acd69a2135a8a63aff0961aaf9f678bf3",
+    "rosie-b38e97e06e644e03": "fdaa77d99be91c5675f90f97af5ed427f865583401074060b877c5617342d9fd",
+    "ghost-3139328604222bbe": "9ad2018259a30fdeb50be337a74f93788a2382b979072c3a34ceaab6ed6196b0",
+    "ghost-1679a13a6f35717b": "c2a8ffbfeec3fdb69cb513acaa8fefef61b5abd2eec936e8d2c1cc857b7e56df",
+    "ghost-105d906eb25fa02f": "08923c9c5c44a5e0316b81324344e0522771758c5daf2fcdef0705b21efece49",
+    "ghost-d6fb9567120e9311": "0c9ecaca6b6e04a532ef1efb53d1775eeb71176410a47919bff219eb398cab3f",
+    "ghost-30ed5294a90b6e42": "0e0f571c2be46e8d7c18245de01d678831e3a6dffb0aab39da67600078c19dc4",
+    "rosie-811a3e8d079249ce": "713573c8a67ee3a511e4b1b2d8277026dfad22bc3a6ffc946a0642b6e296f95f",
+    "rosie-7e1fbcbb2078fb4a": "42672fffc777fb69fd75273904a0ebe5045ebccfda1d4f7bf6b1c2282ed36d52",
+    "rosie-f59379dd39543ffe": "cf5d70ab91833086e46e4104f0d43be3d0215859096a0dce01ff749e52bfe4be",
+    "rosie-f37862d1890108ab": "bc15f4c0b847a289602876fbab8197f2ddce24e9ec1b32bb15e4b5d774595986",
+    "rosie-1d45a564a4b7d2e3": "ff3c3fa262b3eff76340a508e43b2fa9d63480f42debeddf1a2b12dacf7109fa",
+    "rosie-34663a14b9267233": "fb83c637fad63707d1e82dad06b2ced9889bc96606c78d0d9b519d2c8650fee1",
+    "rosie-95e9ed4d5538506a": "7f778ebd7e54389c5a8d4947f650e49a8bfefa6fed31c5b2b987a7ac5c7e44e5",
+    "rosie-eb1dd31cc6ef4e9b": "9d22ae903b29389fdd1bb57a77ab0f16a3a71b8a3f67d35740fd6e4e4bb56466",
+    "rosie-706eae3573ce8aa3": "7635c26700ebdd9b2501c345e0f3a0236e91c6642bdf273a6756a2f3e8f9bd23",
+    "rosie-f26977078f9104a4": "4c6cb972cd1e1ab4b31c73a6c1f49550bb656cab9207009c2f872dbf92df9dae",
+    "rosie-e309a3aaf9d3616a": "060fad033de79735df22ff72ffc9267a637a38feb23c8685a4ddb1c2fc2d4c3e",
+    "rosie-6910776ddb427f7d": "951a0a9eafe6827bf0ac18fb583d54b682c16748337aefc2e688d8bbb55ccc4b",
+    "ghost-90a7ce698b66131c": "f2fc205b0b529b9ef30eeaa01d2242d1fc62a8c9c24b9abca918dc0e95dc96a5",
+    "rosie-c064e8b51b577254": "559ad16c42b56402a050038ae3ae007da151add43cf166872bae860649e99a99",
+    "rosie-2fff498886bb0a73": "c052f7e0a253f58c39c9a23a87e95cc6581173ac7a9320bff148150bf63fc1fc",
+    "rosie-79cf9176c317e7af": "e106809af0f55880ec17a1f54800cbadb63a93edfacb326927f7c4f71997ca98",
+    "rosie-e6976b8cfdfa3884": "dfb6ca41aba9c7824dc88e9313ca0779db96b7e75ebe9a46710e3a3d5c69e15b",
+    "rosie-31434f5254f66f52": "cd67a98ae8bc7fc9f17f127f5fbdbf98a1f2ae2d7f635ba68a60fa5e11a4ef51",
+    "rosie-298a26a0d3209bb0": "8dd2d8dd44e9c5b305f17b9c7638c4e70760b559c18f3eb4c55ab98c33d5f1fd",
+    "rosie-29fd38abb6109ddc": "b240e5737b0a7e255286a8e2f4323eb54b460f17f9bf3dd59f5fb2c0797bd7c1",
+    "rosie-080c945dfe5bcbef": "5c43b3971b2368db4b1586039f518da0e8bea480354add819c1dae796d1b44a8",
+    "rosie-6b46c321fa591a5c": "5f3be5ce2a32bf44327198fd2595f868110b311f8b6d86f7c97cd2f4cd4f9054",
+    "rosie-346b1dc88a5e75d0": "e8ae3a0a82cb4fc2758aae20eec09f87ad21378e26a1c81efb4dfe4cd6971793",
+    "rosie-030c2cf03cea934a": "3ef2381aae531f8c83457d4540ba03a41d4d0fce9118384b5a072a9c4f6a6b51",
+    "rosie-6b68374e2ab01e54": "a83df311900e0fdef188d218dcfefdf962b4e7ad5df5314bab037cbcc4b812b5",
+    "rosie-8c901b0e43b44075": "05fc508786f8a846f1bd57ebcaeece7114664b608ad2898bdcb3bd7affa2430f",
+    "rosie-fe3a896f433219d6": "8ce0e10ab42c64a915759c25be91763d74e5e5b4ea572de4ab7e36632f0bef07",
+    "rosie-ef4862c3bd3e98c1": "6af9d5a70cc657a12db4e1acd6b1014dc6472923cb48e7cf60a7fa3169557f20",
+    "ghost-5ac809ad7a63c4ec": "3d9d3dd7e8612b6a8e4df342f8ab9d6a38ba946bc8b4d90b3670f0cb63ff042e",
+    "rosie-76fc09481787313d": "df0cc4993e2052af2bc5d52771f8ef59a408388cff0d4ddb71d4c8beb3267c5c",
+    "rosie-61d3d845736c68f9": "eba7bc6878ff9034747f006cbd752bd4f321ae064a679de976c059f3afa28dfd",
+    "rosie-982af9caaf314ff8": "1ba403a4ead298439d91a7c6a7e4fdf881d3934c4bdce0970ea3e5071a459c95",
+    "rosie-96139c5c9d4069c8": "a2d9baaa92a3d12cda9113fddf67b9cdf14e2aac44f401cfbe2860e996c1d7e9",
+    "rosie-11eb102aa3acd786": "b87e09baf6661abc023d290a1644dfefa68853530147e46ba6e5a00a3b1bef90",
+    "rosie-96f08825b85f1c26": "71301c40f95ea7175dd46d2cae2cdc53b5ab6ba304d53e1a1d51ab4b79207aca",
+    "rosie-3b21ffd64709780d": "56d25454fce518959f93bd06b99ae0a26e1c39545d01ad88fa859c35cbe9c915",
+    "rosie-f111f48212c9124c": "61824af255448d35b0dfd8955e44837f9e2e251f6665dc5e48d825de906610f9",
+    "rosie-511b9ae26efed5a8": "efd8173f8f95889f014ea06cf37a6b2fc24e4903fe1f4c735060bf1c5f9af7a1",
+    "rosie-90eb7bf71f773ef6": "fa9e972f3a41cd821e9b165c9ac979440031baabca9077de2af9bd0c9879f434",
+    "rosie-87319e5d959e19f2": "e5e5d6da05a9b157243f6ce45843956e6cd26e85b76de4c1e4058ca7512e79a8",
+    "princess-3720e4220c8a5ce4": "75d0d1c5cde1e30dd8292b459307223c629db288cf1040197266774babc00451",
+    "princess-e728f8e179e85c02": "977bc8e3b6081f9587b24ed26ebdbfa57e27b1f13a58c027e3cd6dd684822461",
+    "princess-571bf50fb946e5c5": "baa5c10f30b465afeb9dd63307beb8ce25d59d67e46d994e03e079b10588a4d5",
+    "rosie-c190ddf93ee3874a": "0708e10eb6d9325bb8040050205dad18b5cfa5d5243ca6d4a5afebf48116a434",
+    "rosie-7affab230c87e815": "967e3e420ac30d3b2700137958e48ce195a4facf2c66bfffd4d7c58e8c4f1533",
+    "rosie-ec2ecfd3d2ddfdeb": "1fb3cb47c438c0d66f66ff36a3a3689663bfca7eb750dd2b824cd9bbfeb23159",
+    "rosie-68054a70c21c65b6": "2237017cfaa0ee1903c68e2156a7cdb20c931ffd71488b9978c50484d36a51ee",
+    "rosie-d1b47e593b3a21df": "aa9a1ad25f26b2763a7e2b96df417f8e5b943ddc2f9440763e5be3b0c45c1f0f",
+    "rosie-b533d7376f1b7f96": "ac10badfa9da36798bf8fb574008386178aaed41b5bd42024dd48737a57e3896",
+    "rosie-6bfa133bd1d20605": "fbb8194d41c135844cecc9ed2d3b1fad62c54c265eb539b6895bf9782027a7df",
+    "rosie-9c39282e9c49070c": "f3ff5a1e11386a02aa9dd2e3cdde164c65b89d85be33477894a7a826debec117",
+    "rosie-2518646d9595742a": "8a2e72c73eaad7bd6aae867a6174ce8d8ea4f248d2064f063407ce15ee570e3d",
+    "rosie-4682559e0c393296": "38950e9748a9e4d061079c979bc89952e444d8d646e6a0c5f0e10eab7816750a",
+    "rosie-f4f915314162a16c": "360114175c9d845ff8b52747660d07df92c9065659ca516aebf440fe4a37d4d6",
+    "rosie-440a07b589744f63": "1fe4bbc5be1e78fc0547e4dfc3c4af24d80d5b14a543765b7ff008f1fef43215",
+    "rosie-027bafea5b4e76a7": "4c371c1014b3e8a3416b3d19bf803e4e2519a7d33fbee85f5bb5ba9f60539c1b",
+    "princess-666130f81a2643cb": "0fb71b8221a672b7cc54d77bb6428771520c8fee5953cf258d7f3aec7231f862",
+    "princess-00ce7ab0e0fa0e49": "ba7a3db9a5913c309ff47e2e917963bc056a9b8aa7a28ccaf0f4d460e30819bf",
+    "princess-81eaaa24e2930533": "5358776cdd712e4903247939f33ff2a5f4f0d67ad2077a49b15766ca0910a3b1",
+    "princess-f62fe81d9ea55595": "b673404ed8bff7a64903f542928395b6effef15170811f3e1d3a99218bb8ee2f",
+    "princess-f4203d98fce906d9": "ed2dcb440ea4a1e151bde23afb576066624fb0ea634b5a4cb4f02e4b6293742e",
+    "princess-02986f8d4e57964b": "5d1c3e82702f53477f86ef884f270b53863eaf6bf3cd583822940a47a0314441",
+    "princess-f49de3f6f81d17d7": "f95edcaca7aba665dfadc4b2840d0abd97d075c581cf122a4cfc3b0b83a49c5a",
+    "princess-9df3ec60229e839e": "3765760cd668703ecfdcb5e326116058465d284dc4be34dfc2d5536dbfc18f16",
+    "princess-439256ed3b9e572a": "d6962dc282771ba070e5632041949c55c7bdd2b32501f1b32e198ea50e93ec37",
+    "princess-cde0b237677f051f": "bb4a5968bc6d3efdc65f0882f17db488d5fc6727490584ffbf57e7335f9921d7",
+    "princess-2d6b59558a18e5e2": "0606a577f3766284be461d510a351a187433be96add72bb621e03688c6073b87",
+    "rosie-e0fc10d4cdd10b68": "03fbd33d07efd694d0fded023d57797f4f4b33f3ae5c36ee4233833ff7a16665",
+    "rosie-b951fc6fcbbb6f6c": "165b005833542835c63eaae31183d3cc1b71350b49313e49366c421867b47f9a",
+    "rosie-2b075b1122a28fae": "821233b12e830e88a0dc69955e61ecb4b9dcba487f22477286421bc17d1b6893",
+    "pirate-a4b74cf0d756cdef": "f004d35d32d2cf66fe295721883246a611f9868f3f40cfd165d360b018adff8b",
+    "pirate-75f54f5194c0636b": "b385d67abbb0dc6ce627d48cf7deffd72a3bd5adbaa1211a2198a3c431a2dab6",
+    "pirate-f341d5d30cb50482": "97852c941f969716585835f66a301964620ba60baf8c4c59594d18e12e2b969b",
+    "mermaid-c3c2db5d4572c299": "7051249b7e951dca96c8b9e1947be646fe88cf0073972b49e99b45339d507245",
+    "vampire_ring-fe90b2524e5c007f": "c33dff2500910b6bee9433f035820200777e4e2019b96a4da561da020a4dc41e",
+    "vampire_ring-e90eb8e3cebb22a7": "6f68fe89e1ecd8421a81c22a4010a2963fdb76707772077b9752452e1f2462e7"
+  },
+  "pending": [
+    {
+      "assetId": "rosie-2dfa15fd1128f5b0",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look around the park. Can you see him?",
+      "textSha256": "088123e1cf34f733c6e6cd39f46300adb2892753cb302e5656c45331c7a60a05",
+      "filename": "rosie__rosie-2dfa15fd1128f5b0__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-2dfa15fd1128f5b0__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-pirate.hint.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-pirate.hint.01",
+          "assetId": "rosie-2dfa15fd1128f5b0",
+          "role": "rosie",
+          "text": "Look around the park. Can you see him?",
+          "scene": "park",
+          "nodeId": "find-pirate",
+          "channel": "hint",
+          "slot": 1,
+          "stage": 1,
+          "view": "park-hide",
+          "kind": "question",
+          "emotionTarget": "clear-encouraging",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-2d2302f48607b1f1",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Take another look. Where is the pirate?",
+      "textSha256": "d55fb26a38803182d3ddbafc3f472cd83abf44db6f96441812da94fd821b1158",
+      "filename": "rosie__rosie-2d2302f48607b1f1__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-2d2302f48607b1f1__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-pirate.retry.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-pirate.retry.01",
+          "assetId": "rosie-2d2302f48607b1f1",
+          "role": "rosie",
+          "text": "Take another look. Where is the pirate?",
+          "scene": "park",
+          "nodeId": "find-pirate",
+          "channel": "retry",
+          "slot": 1,
+          "stage": 1,
+          "view": "park-hide",
+          "kind": "question",
+          "emotionTarget": "gentle-reassuring",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-84b77ffba4471005",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Where is the mermaid?",
+      "textSha256": "b9220f967251ab450da81f70862f71ef0f3f22f3303f5badaea3811a1e8a51e5",
+      "filename": "pirate__pirate-84b77ffba4471005__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-84b77ffba4471005__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-mermaid.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-mermaid.lines.01",
+          "assetId": "pirate-84b77ffba4471005",
+          "role": "pirate",
+          "text": "Where is the mermaid?",
+          "scene": "park",
+          "nodeId": "find-mermaid",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-mermaid",
+          "kind": "question",
+          "emotionTarget": "curious",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-0cd6e914f80cf997",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look around. Can you see her tail?",
+      "textSha256": "a1e52aee496f844f12f62091746c42e99fb94719121027938326195c9ebd03d6",
+      "filename": "rosie__rosie-0cd6e914f80cf997__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-0cd6e914f80cf997__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-mermaid.hint.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-mermaid.hint.01",
+          "assetId": "rosie-0cd6e914f80cf997",
+          "role": "rosie",
+          "text": "Look around. Can you see her tail?",
+          "scene": "park",
+          "nodeId": "find-mermaid",
+          "channel": "hint",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-mermaid",
+          "kind": "question",
+          "emotionTarget": "clear-encouraging",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-7d7c4559289f41fa",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Take another look. Where is the mermaid?",
+      "textSha256": "b12f17f32956e4e92a227170c1dba356da2fc71cb93cd11fae1b04e0337f199d",
+      "filename": "pirate__pirate-7d7c4559289f41fa__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-7d7c4559289f41fa__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-mermaid.retry.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-mermaid.retry.01",
+          "assetId": "pirate-7d7c4559289f41fa",
+          "role": "pirate",
+          "text": "Take another look. Where is the mermaid?",
+          "scene": "park",
+          "nodeId": "find-mermaid",
+          "channel": "retry",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-mermaid",
+          "kind": "question",
+          "emotionTarget": "gentle-reassuring",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-630cfc2523c82614",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Yes! The mermaid is in the sea!",
+      "textSha256": "c5bfa52b96da35f2e08d7b49e9b2f7dc339dda7d84935c581a973b8b57c7fd9b",
+      "filename": "pirate__pirate-630cfc2523c82614__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-630cfc2523c82614__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.mermaid-found.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.mermaid-found.lines.01",
+          "assetId": "pirate-630cfc2523c82614",
+          "role": "pirate",
+          "text": "Yes! The mermaid is in the sea!",
+          "scene": "park",
+          "nodeId": "mermaid-found",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-mermaid",
+          "kind": "action",
+          "emotionTarget": "happy",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "happy",
+          "effect": "mermaid",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-115d0883295ef057",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Can you help me find my vampire ring?",
+      "textSha256": "1e360e09aa4dc39c4d6d1fc47123a57486760c6a030bcc23c6aca5a3ea9573e8",
+      "filename": "pirate__pirate-115d0883295ef057__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-115d0883295ef057__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.gold-request.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.gold-request.lines.01",
+          "assetId": "pirate-115d0883295ef057",
+          "role": "pirate",
+          "text": "Can you help me find my vampire ring?",
+          "scene": "park",
+          "nodeId": "gold-request",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "story",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-34057870dfe27d9f",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "It has red eyes and bat wings!",
+      "textSha256": "ae60e66b85fe829cfaaa8512110727f03566d1ee1a5490e91e7c3e5fbf8f5290",
+      "filename": "pirate__pirate-34057870dfe27d9f__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-34057870dfe27d9f__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.gold-request.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.gold-request.lines.02",
+          "assetId": "pirate-34057870dfe27d9f",
+          "role": "pirate",
+          "text": "It has red eyes and bat wings!",
+          "scene": "park",
+          "nodeId": "gold-request",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "story",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-f706168e78f68bb4",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Where is my vampire ring?",
+      "textSha256": "0a3c75102de75a72a03df7144ddf678be599009592b6b5b9522c550ada9719db",
+      "filename": "pirate__pirate-f706168e78f68bb4__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-f706168e78f68bb4__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-gold.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-gold.lines.01",
+          "assetId": "pirate-f706168e78f68bb4",
+          "role": "pirate",
+          "text": "Where is my vampire ring?",
+          "scene": "park",
+          "nodeId": "find-gold",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "question",
+          "emotionTarget": "curious",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-c01493d700e7c8c4",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Can you find it, Stephanie?",
+      "textSha256": "db66120b7e2d06ae39266de88097602528b7fd6337e874eba59be073f04d9233",
+      "filename": "pirate__pirate-c01493d700e7c8c4__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-c01493d700e7c8c4__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-gold.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-gold.lines.02",
+          "assetId": "pirate-c01493d700e7c8c4",
+          "role": "pirate",
+          "text": "Can you find it, Stephanie?",
+          "scene": "park",
+          "nodeId": "find-gold",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "question",
+          "emotionTarget": "curious",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-4263e5f766864250",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look around the park. Can you see the red eyes?",
+      "textSha256": "10ea9d3a3dbf4df0ae05fea06035488761573a599276c4ea4b475093f53bc747",
+      "filename": "rosie__rosie-4263e5f766864250__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-4263e5f766864250__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-gold.hint.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-gold.hint.01",
+          "assetId": "rosie-4263e5f766864250",
+          "role": "rosie",
+          "text": "Look around the park. Can you see the red eyes?",
+          "scene": "park",
+          "nodeId": "find-gold",
+          "channel": "hint",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "question",
+          "emotionTarget": "clear-encouraging",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-1398cbc9f6abb7f1",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Look carefully. Where is my vampire ring?",
+      "textSha256": "c3879a113f63cd22301dd8576a015b1b03a06bba32e0654bfadb3a9c5325d990",
+      "filename": "pirate__pirate-1398cbc9f6abb7f1__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-1398cbc9f6abb7f1__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-gold.retry.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-gold.retry.01",
+          "assetId": "pirate-1398cbc9f6abb7f1",
+          "role": "pirate",
+          "text": "Look carefully. Where is my vampire ring?",
+          "scene": "park",
+          "nodeId": "find-gold",
+          "channel": "retry",
+          "slot": 1,
+          "stage": 2,
+          "view": "park-gold",
+          "kind": "question",
+          "emotionTarget": "gentle-reassuring",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-7eb1911e496d9231",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Now let’s find my ship!",
+      "textSha256": "9db799efa99919056cd10318b621f837ee52997b019aaff7534da1fd8bcd11fd",
+      "filename": "pirate__pirate-7eb1911e496d9231__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-7eb1911e496d9231__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.ship-request.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.ship-request.lines.01",
+          "assetId": "pirate-7eb1911e496d9231",
+          "role": "pirate",
+          "text": "Now let’s find my ship!",
+          "scene": "park",
+          "nodeId": "ship-request",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 3,
+          "view": "park-ship",
+          "kind": "story",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-80f70ba65518dd5b",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Let’s look around!",
+      "textSha256": "6c93feba894684c9b9a3a01ed2c8498a93f3343246fbae490f541d6d93b50883",
+      "filename": "rosie__rosie-80f70ba65518dd5b__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-80f70ba65518dd5b__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.ship-request.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.ship-request.lines.02",
+          "assetId": "rosie-80f70ba65518dd5b",
+          "role": "rosie",
+          "text": "Let’s look around!",
+          "scene": "park",
+          "nodeId": "ship-request",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 3,
+          "view": "park-ship",
+          "kind": "story",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-7d03c768cd4a98c1",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Where is my ship?",
+      "textSha256": "66cca309adc2de708d26df4d511a13616b7f7aa8add64130792aebbbf487052d",
+      "filename": "pirate__pirate-7d03c768cd4a98c1__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-7d03c768cd4a98c1__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-ship.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-ship.lines.01",
+          "assetId": "pirate-7d03c768cd4a98c1",
+          "role": "pirate",
+          "text": "Where is my ship?",
+          "scene": "park",
+          "nodeId": "find-ship",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 3,
+          "view": "park-ship",
+          "kind": "question",
+          "emotionTarget": "curious",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-a426924884c65fb2",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Look at the blue water. On the sea!",
+      "textSha256": "b1ffcf3e95237f66bb91ef44f0b4f8d9b2a0d39931362d92534cc99f2c2d68c7",
+      "filename": "rosie__rosie-a426924884c65fb2__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-a426924884c65fb2__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-ship.hint.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-ship.hint.01",
+          "assetId": "rosie-a426924884c65fb2",
+          "role": "rosie",
+          "text": "Look at the blue water. On the sea!",
+          "scene": "park",
+          "nodeId": "find-ship",
+          "channel": "hint",
+          "slot": 1,
+          "stage": 3,
+          "view": "park-ship",
+          "kind": "question",
+          "emotionTarget": "clear-encouraging",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-0e694df64664b111",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Let’s look on the sea!",
+      "textSha256": "56eb823dc20d7c8e1797dc0dd2ed3c3ab90b2a9b86db87e5c3133599fa452534",
+      "filename": "rosie__rosie-0e694df64664b111__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-0e694df64664b111__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.find-ship.retry.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.find-ship.retry.01",
+          "assetId": "rosie-0e694df64664b111",
+          "role": "rosie",
+          "text": "Let’s look on the sea!",
+          "scene": "park",
+          "nodeId": "find-ship",
+          "channel": "retry",
+          "slot": 1,
+          "stage": 3,
+          "view": "park-ship",
+          "kind": "question",
+          "emotionTarget": "gentle-reassuring",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-145df43fc97da2c5",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "There’s my ship!",
+      "textSha256": "007aed37c88fb7772057e2f2c7dbad175f42634b5fd68bed776b09cfff350426",
+      "filename": "pirate__pirate-145df43fc97da2c5__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-145df43fc97da2c5__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.ship-found.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.ship-found.lines.01",
+          "assetId": "pirate-145df43fc97da2c5",
+          "role": "pirate",
+          "text": "There’s my ship!",
+          "scene": "park",
+          "nodeId": "ship-found",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 3,
+          "view": "park-sail",
+          "kind": "action",
+          "emotionTarget": "happy",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "deliver",
+          "effect": "ship",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-0d60964f3d1004bd",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Let’s take my vampire ring to the ship!",
+      "textSha256": "bf4d6c5b06e3075b57d87b8f73c5ad1d59d3c64f911c810ab6fbf18f43a92fdd",
+      "filename": "pirate__pirate-0d60964f3d1004bd__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-0d60964f3d1004bd__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.ship-found.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.ship-found.lines.02",
+          "assetId": "pirate-0d60964f3d1004bd",
+          "role": "pirate",
+          "text": "Let’s take my vampire ring to the ship!",
+          "scene": "park",
+          "nodeId": "ship-found",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 3,
+          "view": "park-sail",
+          "kind": "action",
+          "emotionTarget": "happy",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "deliver",
+          "effect": "ship",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-e193ea0f793cea8e",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "All aboard! Let’s go!",
+      "textSha256": "f1133e9776b685a8f644626c214f0d80e624fc3a5f901139d8bb9ae3c792dcc4",
+      "filename": "pirate__pirate-e193ea0f793cea8e__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-e193ea0f793cea8e__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.sail-away.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.sail-away.lines.01",
+          "assetId": "pirate-e193ea0f793cea8e",
+          "role": "pirate",
+          "text": "All aboard! Let’s go!",
+          "scene": "park",
+          "nodeId": "sail-away",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 4,
+          "view": "park-sail",
+          "kind": "action",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "sail",
+          "effect": "sail",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-cb5e35d6ec2d5c7b",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "You found the pirate, the mermaid, the vampire ring, and the ship!",
+      "textSha256": "5674a667d1da6ce12be551e8f1eb234d77c7a940c40152498a50365bd4f8aebe",
+      "filename": "rosie__rosie-cb5e35d6ec2d5c7b__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-cb5e35d6ec2d5c7b__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.sail-away.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.sail-away.lines.02",
+          "assetId": "rosie-cb5e35d6ec2d5c7b",
+          "role": "rosie",
+          "text": "You found the pirate, the mermaid, the vampire ring, and the ship!",
+          "scene": "park",
+          "nodeId": "sail-away",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 4,
+          "view": "park-sail",
+          "kind": "action",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "sail",
+          "effect": "sail",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-5a309e25289f68a2",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Thank you, Stephanie! I’m happy!",
+      "textSha256": "b599f0163fd416220aba6a7ddda8fcdd6d8039860f1eb4619b6dedf875d891a3",
+      "filename": "pirate__pirate-5a309e25289f68a2__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-5a309e25289f68a2__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.happy-question.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.happy-question.lines.01",
+          "assetId": "pirate-5a309e25289f68a2",
+          "role": "pirate",
+          "text": "Thank you, Stephanie! I’m happy!",
+          "scene": "park",
+          "nodeId": "happy-question",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 4,
+          "view": "park-sail",
+          "kind": "natural",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-933d7d35ed19acd7",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Hooray! You’re a great treasure finder!",
+      "textSha256": "9e67023bfc71eac7374ca3672be091cbb918a88a38ab409df324b617e79e12d1",
+      "filename": "pirate__pirate-933d7d35ed19acd7__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-933d7d35ed19acd7__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.celebrate.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.celebrate.lines.01",
+          "assetId": "pirate-933d7d35ed19acd7",
+          "role": "pirate",
+          "text": "Hooray! You’re a great treasure finder!",
+          "scene": "park",
+          "nodeId": "celebrate",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 4,
+          "view": "park-sail",
+          "kind": "action",
+          "emotionTarget": "warm",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "celebrate",
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-ad915c0d16528bf7",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "You did it! You got a Pirate sticker!",
+      "textSha256": "751721e9e8c5aaa0f6b7001ca7ad787e8fe1f2fcfe7644e0eb8ebfe9d2305fcb",
+      "filename": "rosie__rosie-ad915c0d16528bf7__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-ad915c0d16528bf7__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.reward.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.reward.lines.01",
+          "assetId": "rosie-ad915c0d16528bf7",
+          "role": "rosie",
+          "text": "You did it! You got a Pirate sticker!",
+          "scene": "park",
+          "nodeId": "reward",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 4,
+          "view": "reward",
+          "kind": "action",
+          "emotionTarget": "happy",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": "reward",
+          "effect": "reward",
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": "Preserve existing action phase after dialogue; use playback clock, never infer action timing from RMS."
+        }
+      ]
+    },
+    {
+      "assetId": "pirate-3c368de74f53b624",
+      "role": "pirate",
+      "voiceId": "pirate_A_captain",
+      "text": "Bye-bye, Stephanie!",
+      "textSha256": "9c333ffb996c4f988e4bfa3106bdbc197bc31dec52b9f7532cbd4064458dc9d8",
+      "filename": "pirate__pirate-3c368de74f53b624__pirate_A_captain.wav",
+      "src": "audio/pirate__pirate-3c368de74f53b624__pirate_A_captain.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.goodbye.lines.01"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.goodbye.lines.01",
+          "assetId": "pirate-3c368de74f53b624",
+          "role": "pirate",
+          "text": "Bye-bye, Stephanie!",
+          "scene": "park",
+          "nodeId": "goodbye",
+          "channel": "lines",
+          "slot": 1,
+          "stage": 4,
+          "view": "reward",
+          "kind": "natural",
+          "emotionTarget": "warm-friendly",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "pirate"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "pirate"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    },
+    {
+      "assetId": "rosie-5f809dee0856acc0",
+      "role": "rosie",
+      "voiceId": "qwen_rosie_r2",
+      "text": "Bye-bye! See you soon!",
+      "textSha256": "dcb079f3e074cae0df031c7ae4863c97f0f0d32925198436af0b965db37f93ba",
+      "filename": "rosie__rosie-5f809dee0856acc0__qwen_rosie_r2.wav",
+      "src": "audio/rosie__rosie-5f809dee0856acc0__qwen_rosie_r2.wav",
+      "status": "missing",
+      "review": "pending",
+      "license": {
+        "modelVerified": true,
+        "referenceSource": "user-approved reference; upstream provenance not independently audited",
+        "productionReleaseApproved": false
+      },
+      "lineIds": [
+        "hw.park.goodbye.lines.02"
+      ],
+      "lines": [
+        {
+          "lineId": "hw.park.goodbye.lines.02",
+          "assetId": "rosie-5f809dee0856acc0",
+          "role": "rosie",
+          "text": "Bye-bye! See you soon!",
+          "scene": "park",
+          "nodeId": "goodbye",
+          "channel": "lines",
+          "slot": 2,
+          "stage": 4,
+          "view": "reward",
+          "kind": "natural",
+          "emotionTarget": "warm-friendly",
+          "counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "origin": "engine.js",
+          "motion": null,
+          "effect": null,
+          "events": [
+            {
+              "trigger": "voice.start",
+              "type": "mouth.start",
+              "actor": "rosie"
+            },
+            {
+              "trigger": "voice.end",
+              "type": "mouth.stop",
+              "actor": "rosie"
+            }
+          ],
+          "actionTiming": null
+        }
+      ]
+    }
+  ]
+}
