@@ -17,3 +17,10 @@
 
 ## 驗收範圍
 僅新增獨立windows-complete頁與新儲存namespace，不改正式/halloween/、原Bakery/Library穩定頁、昨天的waiting26頁或回復tag。不做手機裝飾動畫。本次是自動化瀏覽器功能測試，最後的家庭遊玩體驗仍待家長驗收。
+
+## 2026-10-26 家長回饋修正
+- 其他檢查家長已表示接受。本輪只改獨立Windows頁：Park ship-found/sail-away說完直接前進，順帶略過兩段中間的checkpoint-3確認停留；Replay亦連續，無改台詞/音檔/固定ID。
+- Chrome原速四句實際播放：ship-found→sail-away→happy-question，無acting/checkpoint等待，量測換幕間隔358.5ms（原有自然換句間隔），非8秒動畫空等。
+- Edge狀態測試一般/Replay皆連續；find-ship問答仍waiting，gold-found/Library move/Bakery candy-in仍保留原互動/動作流程。
+- Bakery僅box-choices畫面移除中央scene-prop.party-box；保留Picture A/B/C三個選答卡。Chrome原速題目/錯答重試皆無大箱子，三卡均存在且可點，正答正確前進至box-delivered。其他裝糖果/送盒畫面不更動。
+- 118WAV SHA再次核對不變；原穩定tag/備份/正式入口未改。
