@@ -134,7 +134,7 @@
   },
   "fileHashes": {
     "audio-manifest.json": "fdbb6151dc7347320e9bc8d50cd0d6e628df56db12a3ac9c41e53af8a0729188",
-    "index.html": "e664f15b69f1b317f97cf5bbbaf7b3e1ffc39131e0e2d1578b6f229589260edf",
+    "index.html": "8cf8b202b5ed291b07dbedc9ec84e9171aecdad1a80f150ada118daeb760cce4",
     "assets/blink.png": "8e60f4d60556b697d17d99ca3791edfae6c208c394f4afbbdefd3102fba3017e",
     "assets/blink.webp": "3814b1618b56fdf470a55a9447b4915aafcbc003a853482ae504a798d3161201",
     "assets/cat-blink.png": "997b8b19f001039b04d23292ecbc9c10ba185f6a8f733a53b88694ed84028f36",
@@ -333,5 +333,8 @@
     "assets/audio/voice/vampire_ring/README.md": "2fe922ba04c471f14522d45b6ea2c624501aa256443b7b37eeba374a5593c44a"
   },
   "prePublishValidation": "passed",
-  "postDeploymentReport": "../release-verification/windows-v1.0.0-20261026.json"
+  "postDeploymentReport": "../release-verification/windows-v1.0.0-20261026.json",
+  "fileHashBasis": "Published Git blobs (text normalized to LF); approved WAV bytes unchanged",
+  "postDeployVerification": "passed",
+  "gameCodeCommit": "ede0d436963ce32c04e5ec270239bf472c8197c0"
 }

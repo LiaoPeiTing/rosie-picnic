@@ -12,5 +12,7 @@
     "park": 36
   },
   "uniqueWavCount": 118,
-  "postDeployVerification": "pending"
+  "postDeployVerification": "passed",
+  "gameCodeCommit": "ede0d436963ce32c04e5ec270239bf472c8197c0",
+  "verificationReport": "release-verification/windows-v1.0.0-20261026.json"
 }

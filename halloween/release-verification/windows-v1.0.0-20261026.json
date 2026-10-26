@@ -1,0 +1,2815 @@
+{
+  "status": "passed",
+  "date": "2026-10-26",
+  "gameCodeCommit": "ede0d436963ce32c04e5ec270239bf472c8197c0",
+  "releaseTag": "halloween-windows-v1.0.0-20261026",
+  "rollbackTag": "halloween-before-windows-release-20261026",
+  "referenceCounts": {
+    "bakery": 53,
+    "library": 30,
+    "park": 36
+  },
+  "uniqueWavCount": 118,
+  "method": "Windows installed Chrome and Edge, production URL, original speed, DOM interactions, no game HTML or timers modified",
+  "browsers": [
+    {
+      "channel": "chrome",
+      "official": "https://liaopeiting.github.io/rosie-picnic/halloween/?v=windows-v1.0.0-20261026",
+      "actualUrl": "https://liaopeiting.github.io/rosie-picnic/halloween/windows-release-20261026-v1/?v=1.0.0",
+      "originalSpeed": true,
+      "htmlModified": false,
+      "results": [
+        {
+          "theme": "bakery",
+          "completed": true,
+          "wall": "1 / 3",
+          "answers": 4,
+          "hints": 4
+        },
+        {
+          "theme": "library",
+          "completed": true,
+          "wall": "2 / 3",
+          "answers": 4,
+          "hints": 3
+        },
+        {
+          "theme": "park",
+          "completed": true,
+          "wall": "3 / 3",
+          "answers": 4,
+          "hints": 4
+        }
+      ],
+      "controls": [
+        {
+          "theme": "bakery",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        },
+        {
+          "theme": "library",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        },
+        {
+          "theme": "park",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        }
+      ],
+      "all118HashDecode": true,
+      "wall": "3 / 3",
+      "tts": 0,
+      "events": [
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 1810.1000000238419
+        },
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 2266.600000023842
+        },
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 2520.600000023842
+        },
+        {
+          "type": "end",
+          "id": "rosie-da46dd6ee132e560",
+          "t": 5212.199999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-da1855cb76f36177",
+          "text": "Look! The ghost has a box.",
+          "t": 5573.399999976158
+        },
+        {
+          "type": "end",
+          "id": "rosie-da1855cb76f36177",
+          "t": 7822.5
+        },
+        {
+          "type": "start",
+          "id": "ghost-fd2d22a445e2be85",
+          "text": "Hello, Stephanie!",
+          "t": 8193
+        },
+        {
+          "type": "end",
+          "id": "ghost-fd2d22a445e2be85",
+          "t": 9555.100000023842
+        },
+        {
+          "type": "start",
+          "id": "ghost-8b6294f5fbdef5bb",
+          "text": "A pumpkin cookie, please!",
+          "t": 12923.799999952316
+        },
+        {
+          "type": "end",
+          "id": "ghost-8b6294f5fbdef5bb",
+          "t": 14921.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-76fc09481787313d",
+          "text": "Is this the pumpkin cookie?",
+          "t": 15275.600000023842
+        },
+        {
+          "type": "end",
+          "id": "rosie-76fc09481787313d",
+          "t": 17203.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-61d3d845736c68f9",
+          "text": "Look at this cookie. Is it a pumpkin cookie?",
+          "t": 17711.699999928474
+        },
+        {
+          "type": "end",
+          "id": "rosie-61d3d845736c68f9",
+          "t": 20671.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-982af9caaf314ff8",
+          "text": "Oops! You’re right!",
+          "t": 21194.399999976158
+        },
+        {
+          "type": "end",
+          "id": "rosie-982af9caaf314ff8",
+          "t": 23191.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-4966123f76597ad4",
+          "text": "Which one is the pumpkin cookie?",
+          "t": 23554.199999928474
+        },
+        {
+          "type": "end",
+          "id": "rosie-4966123f76597ad4",
+          "t": 25635.199999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-f76699389eb71811",
+          "text": "Pumpkin. Find the pumpkin cookie.",
+          "t": 26108.299999952316
+        },
+        {
+          "type": "end",
+          "id": "rosie-f76699389eb71811",
+          "t": 28583.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-5ff7d0d11a70ff89",
+          "text": "Good try. Find the pumpkin cookie.",
+          "t": 29101.899999976158
+        },
+        {
+          "type": "end",
+          "id": "rosie-5ff7d0d11a70ff89",
+          "t": 31583.899999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-b38e97e06e644e03",
+          "text": "Pumpkin! Yes, a pumpkin cookie!",
+          "t": 32092.299999952316
+        },
+        {
+          "type": "end",
+          "id": "rosie-b38e97e06e644e03",
+          "t": 36252.199999928474
+        },
+        {
+          "type": "start",
+          "id": "ghost-3139328604222bbe",
+          "text": "Thank you!",
+          "t": 36618.799999952316
+        },
+        {
+          "type": "end",
+          "id": "ghost-3139328604222bbe",
+          "t": 37892.10000002384
+        },
+        {
+          "type": "start",
+          "id": "ghost-105d906eb25fa02f",
+          "text": "Three candies, please!",
+          "t": 39540
+        },
+        {
+          "type": "end",
+          "id": "ghost-105d906eb25fa02f",
+          "t": 41452
+        },
+        {
+          "type": "start",
+          "id": "rosie-547a1397de0a669d",
+          "text": "How many candies?",
+          "t": 41814.299999952316
+        },
+        {
+          "type": "end",
+          "id": "rosie-547a1397de0a669d",
+          "t": 43492.199999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-7e1fbcbb2078fb4a",
+          "text": "one, two, three.",
+          "t": 44086.799999952316
+        },
+        {
+          "type": "end",
+          "id": "rosie-7e1fbcbb2078fb4a",
+          "t": 46013.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-547a1397de0a669d",
+          "text": "How many candies?",
+          "t": 46364
+        },
+        {
+          "type": "end",
+          "id": "rosie-547a1397de0a669d",
+          "t": 48045.699999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-1d45a564a4b7d2e3",
+          "text": "Good try. Let’s count again.",
+          "t": 48586.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-1d45a564a4b7d2e3",
+          "t": 51382.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-34663a14b9267233",
+          "text": "Count with me!",
+          "t": 51902.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-34663a14b9267233",
+          "t": 53422.199999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-96139c5c9d4069c8",
+          "text": "One.",
+          "t": 55792.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-96139c5c9d4069c8",
+          "t": 56762.199999928474
+        },
+        {
+          "type": "start",
+          "id": "rosie-11eb102aa3acd786",
+          "text": "Two.",
+          "t": 58792.199999928474
+        },
+        {
+          "type": "end",
+          "id": "rosie-11eb102aa3acd786",
+          "t": 59914.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-96f08825b85f1c26",
+          "text": "Three.",
+          "t": 61790.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-96f08825b85f1c26",
+          "t": 62902.299999952316
+        },
+        {
+          "type": "start",
+          "id": "rosie-eb1dd31cc6ef4e9b",
+          "text": "Yes! Three candies!",
+          "t": 63257
+        },
+        {
+          "type": "end",
+          "id": "rosie-eb1dd31cc6ef4e9b",
+          "t": 65182.299999952316
+        },
+        {
+          "type": "start",
+          "id": "ghost-3139328604222bbe",
+          "text": "Thank you!",
+          "t": 65558.10000002384
+        },
+        {
+          "type": "end",
+          "id": "ghost-3139328604222bbe",
+          "t": 66832.19999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-e309a3aaf9d3616a",
+          "text": "The box is almost ready!",
+          "t": 67191.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-e309a3aaf9d3616a",
+          "t": 69662.19999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-6910776ddb427f7d",
+          "text": "Look at the party boxes!",
+          "t": 70194.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-6910776ddb427f7d",
+          "t": 72273.29999995232
+        },
+        {
+          "type": "start",
+          "id": "ghost-90a7ce698b66131c",
+          "text": "Where is my party box?",
+          "t": 73840.39999997616
+        },
+        {
+          "type": "end",
+          "id": "ghost-90a7ce698b66131c",
+          "t": 75754.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-dc3fb1fc5cb4053d",
+          "text": "One pumpkin cookie and three candies. Which one is correct?",
+          "t": 76105.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-dc3fb1fc5cb4053d",
+          "t": 80421.79999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-31434f5254f66f52",
+          "text": "Pumpkin cookie. Three candies.",
+          "t": 80927.19999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-31434f5254f66f52",
+          "t": 83481.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-6b46c321fa591a5c",
+          "text": "Good try. One pumpkin cookie and three candies.",
+          "t": 83927.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-6b46c321fa591a5c",
+          "t": 87842.29999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-6b68374e2ab01e54",
+          "text": "Yes! The party box is ready!",
+          "t": 88345.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-6b68374e2ab01e54",
+          "t": 90662.29999995232
+        },
+        {
+          "type": "start",
+          "id": "ghost-8657b088714eccac",
+          "text": "Yummy! Thank you!",
+          "t": 92340.89999997616
+        },
+        {
+          "type": "end",
+          "id": "ghost-8657b088714eccac",
+          "t": 94734.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-8c901b0e43b44075",
+          "text": "Is the ghost happy?",
+          "t": 95094.69999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-8c901b0e43b44075",
+          "t": 96934.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-fe3a896f433219d6",
+          "text": "The ghost is happy!",
+          "t": 100301.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-fe3a896f433219d6",
+          "t": 101972.19999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-ef4862c3bd3e98c1",
+          "text": "You did it! You got a Ghost sticker!",
+          "t": 102336.19999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-ef4862c3bd3e98c1",
+          "t": 105692.19999992847
+        },
+        {
+          "type": "start",
+          "id": "ghost-5ac809ad7a63c4ec",
+          "text": "Bye-bye, Stephanie!",
+          "t": 110854.69999992847
+        },
+        {
+          "type": "end",
+          "id": "ghost-5ac809ad7a63c4ec",
+          "t": 112612.69999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 119491.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 119916.29999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 120119
+        },
+        {
+          "type": "end",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "t": 122752.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-90eb7bf71f773ef6",
+          "line": "hw.library.teach-crown.lines.01",
+          "text": "A crown. Crown.",
+          "t": 123108.19999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-90eb7bf71f773ef6",
+          "line": "hw.library.teach-crown.lines.01",
+          "t": 125274.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-87319e5d959e19f2",
+          "line": "hw.library.find-princess.lines.01",
+          "text": "A crown. A pink dress. Who is it?",
+          "t": 125627.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-87319e5d959e19f2",
+          "line": "hw.library.find-princess.lines.01",
+          "t": 129224.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-c190ddf93ee3874a",
+          "line": "hw.library.find-princess.hint.01",
+          "text": "Crown. Pink dress.",
+          "t": 129780.19999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-c190ddf93ee3874a",
+          "line": "hw.library.find-princess.hint.01",
+          "t": 131373.79999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-7affab230c87e815",
+          "line": "hw.library.find-princess.retry.01",
+          "text": "Good try. Look for the pink dress.",
+          "t": 131898.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-7affab230c87e815",
+          "line": "hw.library.find-princess.retry.01",
+          "t": 134612.19999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-ec2ecfd3d2ddfdeb",
+          "line": "hw.library.crown-on.lines.01",
+          "text": "Yes! She is the princess! The princess has a crown!",
+          "t": 135031.79999995232
+        },
+        {
+          "type": "end",
+          "id": "rosie-ec2ecfd3d2ddfdeb",
+          "line": "hw.library.crown-on.lines.01",
+          "t": 139512
+        },
+        {
+          "type": "start",
+          "id": "princess-3720e4220c8a5ce4",
+          "line": "hw.library.hello.lines.01",
+          "text": "Hello, Stephanie!",
+          "t": 141073.69999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-3720e4220c8a5ce4",
+          "line": "hw.library.hello.lines.01",
+          "t": 143182.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-e728f8e179e85c02",
+          "line": "hw.library.find-book.lines.01",
+          "text": "Where is my book? My book has a crown.",
+          "t": 146626.10000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-e728f8e179e85c02",
+          "line": "hw.library.find-book.lines.01",
+          "t": 151139.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-68054a70c21c65b6",
+          "line": "hw.library.find-book.lines.02",
+          "text": "Find the crown book. Which one?",
+          "t": 151504.69999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-68054a70c21c65b6",
+          "line": "hw.library.find-book.lines.02",
+          "t": 153821.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-d1b47e593b3a21df",
+          "line": "hw.library.find-book.hint.01",
+          "text": "Crown. Find the crown book.",
+          "t": 154308
+        },
+        {
+          "type": "end",
+          "id": "rosie-d1b47e593b3a21df",
+          "line": "hw.library.find-book.hint.01",
+          "t": 157101.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-b533d7376f1b7f96",
+          "line": "hw.library.find-book.retry.01",
+          "text": "Good try. Look for the crown.",
+          "t": 157608.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-b533d7376f1b7f96",
+          "line": "hw.library.find-book.retry.01",
+          "t": 159921.79999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-6bfa133bd1d20605",
+          "line": "hw.library.book-found.lines.01",
+          "text": "Yes! The crown book!",
+          "t": 160407.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-6bfa133bd1d20605",
+          "line": "hw.library.book-found.lines.01",
+          "t": 162482.5
+        },
+        {
+          "type": "start",
+          "id": "princess-571bf50fb946e5c5",
+          "line": "hw.library.book-found.lines.02",
+          "text": "I found my book! Thank you, Stephanie!",
+          "t": 162833.5
+        },
+        {
+          "type": "end",
+          "id": "princess-571bf50fb946e5c5",
+          "line": "hw.library.book-found.lines.02",
+          "t": 167312.69999992847
+        },
+        {
+          "type": "start",
+          "id": "princess-666130f81a2643cb",
+          "line": "hw.library.open-book.lines.01",
+          "text": "Let’s open the book!",
+          "t": 169004.19999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-666130f81a2643cb",
+          "line": "hw.library.open-book.lines.01",
+          "t": 171064.39999997616
+        },
+        {
+          "type": "start",
+          "id": "princess-00ce7ab0e0fa0e49",
+          "line": "hw.library.stephanie-says.lines.01",
+          "text": "This is a magic book! Let’s play Stephanie Says!",
+          "t": 172623.10000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-00ce7ab0e0fa0e49",
+          "line": "hw.library.stephanie-says.lines.01",
+          "t": 177682.19999992847
+        },
+        {
+          "type": "start",
+          "id": "princess-81eaaa24e2930533",
+          "line": "hw.library.stephanie-says.lines.02",
+          "text": "You’re the teacher, Stephanie. I’ll follow you!",
+          "t": 178036.19999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-81eaaa24e2930533",
+          "line": "hw.library.stephanie-says.lines.02",
+          "t": 182694.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-f62fe81d9ea55595",
+          "line": "hw.library.command-1.lines.01",
+          "text": "I’m ready, Teacher Stephanie!",
+          "t": 183055.19999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-f62fe81d9ea55595",
+          "line": "hw.library.command-1.lines.01",
+          "t": 185952.29999995232
+        },
+        {
+          "type": "start",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "text": "Turn around, wave your hands, climb, or rollerblade?",
+          "t": 186310.10000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "t": 190902.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "text": "Choose one. Tell me: “Stephanie says…”",
+          "t": 191253.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "t": 195252.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-2518646d9595742a",
+          "line": "hw.library.command-1.hint.01",
+          "text": "Say: “Stephanie says, wave your hands!”",
+          "t": 195831.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-2518646d9595742a",
+          "line": "hw.library.command-1.hint.01",
+          "t": 199023.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "text": "Stephanie says… I’ll do it!",
+          "t": 199497.5
+        },
+        {
+          "type": "end",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "t": 202122.60000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-f49de3f6f81d17d7",
+          "line": "hw.library.command-2.lines.01",
+          "text": "Your turn again, Stephanie! What should I do?",
+          "t": 210492.5
+        },
+        {
+          "type": "end",
+          "id": "princess-f49de3f6f81d17d7",
+          "line": "hw.library.command-2.lines.01",
+          "t": 215353.5
+        },
+        {
+          "type": "start",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "text": "Turn around, wave your hands, climb, or rollerblade?",
+          "t": 215706.29999995232
+        },
+        {
+          "type": "end",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "t": 220302.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "text": "Choose one. Tell me: “Stephanie says…”",
+          "t": 220659.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "t": 224652.19999992847
+        },
+        {
+          "type": "start",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "text": "Stephanie says… I’ll do it!",
+          "t": 225143.60000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "t": 227772.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-4682559e0c393296",
+          "line": "hw.library.pages.lines.01",
+          "text": "You’re a great teacher, Stephanie!",
+          "t": 236150
+        },
+        {
+          "type": "end",
+          "id": "rosie-4682559e0c393296",
+          "line": "hw.library.pages.lines.01",
+          "t": 238391.79999995232
+        },
+        {
+          "type": "start",
+          "id": "princess-9df3ec60229e839e",
+          "line": "hw.library.pages.lines.02",
+          "text": "I loved playing Stephanie Says with you!",
+          "t": 238746.60000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-9df3ec60229e839e",
+          "line": "hw.library.pages.lines.02",
+          "t": 242022.19999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-f4f915314162a16c",
+          "line": "hw.library.close-book.lines.01",
+          "text": "Great job, Stephanie!",
+          "t": 242561.79999995232
+        },
+        {
+          "type": "end",
+          "id": "rosie-f4f915314162a16c",
+          "line": "hw.library.close-book.lines.01",
+          "t": 244494.19999992847
+        },
+        {
+          "type": "start",
+          "id": "princess-439256ed3b9e572a",
+          "line": "hw.library.happy-question.lines.01",
+          "text": "I’m happy!",
+          "t": 246050.19999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-439256ed3b9e572a",
+          "line": "hw.library.happy-question.lines.01",
+          "t": 247921.69999992847
+        },
+        {
+          "type": "start",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "text": "Are you happy?",
+          "t": 248277.69999992847
+        },
+        {
+          "type": "end",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "t": 249311.79999995232
+        },
+        {
+          "type": "start",
+          "id": "princess-cde0b237677f051f",
+          "line": "hw.library.celebrate.lines.01",
+          "text": "Let’s dance!",
+          "t": 252694.69999992847
+        },
+        {
+          "type": "end",
+          "id": "princess-cde0b237677f051f",
+          "line": "hw.library.celebrate.lines.01",
+          "t": 254576.29999995232
+        },
+        {
+          "type": "start",
+          "id": "rosie-027bafea5b4e76a7",
+          "line": "hw.library.reward.lines.01",
+          "text": "You did it! You got a Princess sticker!",
+          "t": 264943.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-027bafea5b4e76a7",
+          "line": "hw.library.reward.lines.01",
+          "t": 268705.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-2d6b59558a18e5e2",
+          "line": "hw.library.goodbye.lines.01",
+          "text": "Bye-bye, Stephanie!",
+          "t": 273860.7999999523
+        },
+        {
+          "type": "end",
+          "id": "princess-2d6b59558a18e5e2",
+          "line": "hw.library.goodbye.lines.01",
+          "t": 276132.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 282773.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 283157.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 283395.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "t": 287237.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-b951fc6fcbbb6f6c",
+          "line": "hw.park.welcome.lines.02",
+          "text": "The pirate is hiding. Let’s find him!",
+          "t": 287605.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-b951fc6fcbbb6f6c",
+          "line": "hw.park.welcome.lines.02",
+          "t": 290882.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-2b075b1122a28fae",
+          "line": "hw.park.find-pirate.lines.01",
+          "text": "Where is the pirate?",
+          "t": 291236.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-2b075b1122a28fae",
+          "line": "hw.park.find-pirate.lines.01",
+          "t": 292912.2999999523
+        },
+        {
+          "type": "start",
+          "id": "rosie-2dfa15fd1128f5b0",
+          "line": "hw.park.find-pirate.hint.01",
+          "text": "Look around the park. Can you see him?",
+          "t": 293474.1999999285
+        },
+        {
+          "type": "end",
+          "id": "rosie-2dfa15fd1128f5b0",
+          "line": "hw.park.find-pirate.hint.01",
+          "t": 296272.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-2d2302f48607b1f1",
+          "line": "hw.park.find-pirate.retry.01",
+          "text": "Take another look. Where is the pirate?",
+          "t": 296789.7999999523
+        },
+        {
+          "type": "end",
+          "id": "rosie-2d2302f48607b1f1",
+          "line": "hw.park.find-pirate.retry.01",
+          "t": 299981.89999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-a4b74cf0d756cdef",
+          "line": "hw.park.pirate-found.lines.01",
+          "text": "You found me! I’m under the swing!",
+          "t": 300455.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-a4b74cf0d756cdef",
+          "line": "hw.park.pirate-found.lines.01",
+          "t": 303972
+        },
+        {
+          "type": "start",
+          "id": "pirate-75f54f5194c0636b",
+          "line": "hw.park.pirate-found.lines.02",
+          "text": "Hello, Stephanie!",
+          "t": 304331
+        },
+        {
+          "type": "end",
+          "id": "pirate-75f54f5194c0636b",
+          "line": "hw.park.pirate-found.lines.02",
+          "t": 305922.5
+        },
+        {
+          "type": "start",
+          "id": "pirate-f341d5d30cb50482",
+          "line": "hw.park.mermaid-request.lines.01",
+          "text": "Stephanie, can you help me find the mermaid?",
+          "t": 312345.1999999285
+        },
+        {
+          "type": "end",
+          "id": "pirate-f341d5d30cb50482",
+          "line": "hw.park.mermaid-request.lines.01",
+          "t": 315461.89999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-84b77ffba4471005",
+          "line": "hw.park.find-mermaid.lines.01",
+          "text": "Where is the mermaid?",
+          "t": 315829.89999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-84b77ffba4471005",
+          "line": "hw.park.find-mermaid.lines.01",
+          "t": 318302.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-0cd6e914f80cf997",
+          "line": "hw.park.find-mermaid.hint.01",
+          "text": "Look around. Can you see her tail?",
+          "t": 318782.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-0cd6e914f80cf997",
+          "line": "hw.park.find-mermaid.hint.01",
+          "t": 321751.89999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-7d7c4559289f41fa",
+          "line": "hw.park.find-mermaid.retry.01",
+          "text": "Take another look. Where is the mermaid?",
+          "t": 322235.10000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-7d7c4559289f41fa",
+          "line": "hw.park.find-mermaid.retry.01",
+          "t": 325111.89999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-630cfc2523c82614",
+          "line": "hw.park.mermaid-found.lines.01",
+          "text": "Yes! The mermaid is in the sea!",
+          "t": 325549.5
+        },
+        {
+          "type": "end",
+          "id": "pirate-630cfc2523c82614",
+          "line": "hw.park.mermaid-found.lines.01",
+          "t": 329142
+        },
+        {
+          "type": "start",
+          "id": "mermaid-c3c2db5d4572c299",
+          "line": "hw.park.mermaid-found.lines.02",
+          "text": "Hi, Stephanie!",
+          "t": 329496.5
+        },
+        {
+          "type": "end",
+          "id": "mermaid-c3c2db5d4572c299",
+          "line": "hw.park.mermaid-found.lines.02",
+          "t": 331452.60000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-115d0883295ef057",
+          "line": "hw.park.gold-request.lines.01",
+          "text": "Can you help me find my vampire ring?",
+          "t": 337815
+        },
+        {
+          "type": "end",
+          "id": "pirate-115d0883295ef057",
+          "line": "hw.park.gold-request.lines.01",
+          "t": 340532.1999999285
+        },
+        {
+          "type": "start",
+          "id": "pirate-34057870dfe27d9f",
+          "line": "hw.park.gold-request.lines.02",
+          "text": "It has red eyes and bat wings!",
+          "t": 340886.6999999285
+        },
+        {
+          "type": "end",
+          "id": "pirate-34057870dfe27d9f",
+          "line": "hw.park.gold-request.lines.02",
+          "t": 343601.89999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-f706168e78f68bb4",
+          "line": "hw.park.find-gold.lines.01",
+          "text": "Where is my vampire ring?",
+          "t": 343958.89999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-f706168e78f68bb4",
+          "line": "hw.park.find-gold.lines.01",
+          "t": 346353.10000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-c01493d700e7c8c4",
+          "line": "hw.park.find-gold.lines.02",
+          "text": "Can you find it, Stephanie?",
+          "t": 346715
+        },
+        {
+          "type": "end",
+          "id": "pirate-c01493d700e7c8c4",
+          "line": "hw.park.find-gold.lines.02",
+          "t": 348473.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-4263e5f766864250",
+          "line": "hw.park.find-gold.hint.01",
+          "text": "Look around the park. Can you see the red eyes?",
+          "t": 349035.2999999523
+        },
+        {
+          "type": "end",
+          "id": "rosie-4263e5f766864250",
+          "line": "hw.park.find-gold.hint.01",
+          "t": 352871.7999999523
+        },
+        {
+          "type": "start",
+          "id": "pirate-1398cbc9f6abb7f1",
+          "line": "hw.park.find-gold.retry.01",
+          "text": "Look carefully. Where is my vampire ring?",
+          "t": 353395.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-1398cbc9f6abb7f1",
+          "line": "hw.park.find-gold.retry.01",
+          "t": 357872
+        },
+        {
+          "type": "start",
+          "id": "vampire_ring-fe90b2524e5c007f",
+          "line": "hw.park.gold-found.lines.01",
+          "text": "You found me! Thank you, Stephanie!",
+          "t": 358325.1999999285
+        },
+        {
+          "type": "end",
+          "id": "vampire_ring-fe90b2524e5c007f",
+          "line": "hw.park.gold-found.lines.01",
+          "t": 361051.89999997616
+        },
+        {
+          "type": "start",
+          "id": "vampire_ring-e90eb8e3cebb22a7",
+          "line": "hw.park.gold-found.lines.02",
+          "text": "I was on the bench!",
+          "t": 361402.89999997616
+        },
+        {
+          "type": "end",
+          "id": "vampire_ring-e90eb8e3cebb22a7",
+          "line": "hw.park.gold-found.lines.02",
+          "t": 363082.7999999523
+        },
+        {
+          "type": "start",
+          "id": "pirate-7eb1911e496d9231",
+          "line": "hw.park.ship-request.lines.01",
+          "text": "Now let’s find my ship!",
+          "t": 370135.60000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-7eb1911e496d9231",
+          "line": "hw.park.ship-request.lines.01",
+          "t": 372132
+        },
+        {
+          "type": "start",
+          "id": "rosie-80f70ba65518dd5b",
+          "line": "hw.park.ship-request.lines.02",
+          "text": "Let’s look around!",
+          "t": 372497.6999999285
+        },
+        {
+          "type": "end",
+          "id": "rosie-80f70ba65518dd5b",
+          "line": "hw.park.ship-request.lines.02",
+          "t": 373931.6999999285
+        },
+        {
+          "type": "start",
+          "id": "pirate-7d03c768cd4a98c1",
+          "line": "hw.park.find-ship.lines.01",
+          "text": "Where is my ship?",
+          "t": 374288.5
+        },
+        {
+          "type": "end",
+          "id": "pirate-7d03c768cd4a98c1",
+          "line": "hw.park.find-ship.lines.01",
+          "t": 375645.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-a426924884c65fb2",
+          "line": "hw.park.find-ship.hint.01",
+          "text": "Look at the blue water. On the sea!",
+          "t": 376085.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-a426924884c65fb2",
+          "line": "hw.park.find-ship.hint.01",
+          "t": 378644.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-0e694df64664b111",
+          "line": "hw.park.find-ship.retry.01",
+          "text": "Let’s look on the sea!",
+          "t": 379068.6999999285
+        },
+        {
+          "type": "end",
+          "id": "rosie-0e694df64664b111",
+          "line": "hw.park.find-ship.retry.01",
+          "t": 381062
+        },
+        {
+          "type": "start",
+          "id": "pirate-145df43fc97da2c5",
+          "line": "hw.park.ship-found.lines.01",
+          "text": "There’s my ship!",
+          "t": 381502.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-145df43fc97da2c5",
+          "line": "hw.park.ship-found.lines.01",
+          "t": 382782.10000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-0d60964f3d1004bd",
+          "line": "hw.park.ship-found.lines.02",
+          "text": "Let’s take my vampire ring to the ship!",
+          "t": 383140.89999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-0d60964f3d1004bd",
+          "line": "hw.park.ship-found.lines.02",
+          "t": 385851.7999999523
+        },
+        {
+          "type": "start",
+          "id": "pirate-e193ea0f793cea8e",
+          "line": "hw.park.sail-away.lines.01",
+          "text": "All aboard! Let’s go!",
+          "t": 386208.1999999285
+        },
+        {
+          "type": "end",
+          "id": "pirate-e193ea0f793cea8e",
+          "line": "hw.park.sail-away.lines.01",
+          "t": 388841.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-cb5e35d6ec2d5c7b",
+          "line": "hw.park.sail-away.lines.02",
+          "text": "You found the pirate, the mermaid, the vampire ring, and the ship!",
+          "t": 389194
+        },
+        {
+          "type": "end",
+          "id": "rosie-cb5e35d6ec2d5c7b",
+          "line": "hw.park.sail-away.lines.02",
+          "t": 394072.39999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-5a309e25289f68a2",
+          "line": "hw.park.happy-question.lines.01",
+          "text": "Thank you, Stephanie! I’m happy!",
+          "t": 394427.1999999285
+        },
+        {
+          "type": "end",
+          "id": "pirate-5a309e25289f68a2",
+          "line": "hw.park.happy-question.lines.01",
+          "t": 397382
+        },
+        {
+          "type": "start",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "text": "Are you happy?",
+          "t": 397737.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "t": 398772.1999999285
+        },
+        {
+          "type": "start",
+          "id": "pirate-933d7d35ed19acd7",
+          "line": "hw.park.celebrate.lines.01",
+          "text": "Hooray! You’re a great treasure finder!",
+          "t": 402128
+        },
+        {
+          "type": "end",
+          "id": "pirate-933d7d35ed19acd7",
+          "line": "hw.park.celebrate.lines.01",
+          "t": 405482.1999999285
+        },
+        {
+          "type": "start",
+          "id": "rosie-ad915c0d16528bf7",
+          "line": "hw.park.reward.lines.01",
+          "text": "You did it! You got a Pirate sticker!",
+          "t": 412839.7999999523
+        },
+        {
+          "type": "end",
+          "id": "rosie-ad915c0d16528bf7",
+          "line": "hw.park.reward.lines.01",
+          "t": 416111.6999999285
+        },
+        {
+          "type": "start",
+          "id": "pirate-3c368de74f53b624",
+          "line": "hw.park.goodbye.lines.01",
+          "text": "Bye-bye, Stephanie!",
+          "t": 421271.10000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-3c368de74f53b624",
+          "line": "hw.park.goodbye.lines.01",
+          "t": 423182
+        },
+        {
+          "type": "start",
+          "id": "rosie-5f809dee0856acc0",
+          "line": "hw.park.goodbye.lines.02",
+          "text": "Bye-bye! See you soon!",
+          "t": 423542.7999999523
+        },
+        {
+          "type": "end",
+          "id": "rosie-5f809dee0856acc0",
+          "line": "hw.park.goodbye.lines.02",
+          "t": 425942
+        }
+      ],
+      "settings": {
+        "master": 0.8,
+        "voice": 1,
+        "music": 0.3,
+        "sfx": 0.45
+      },
+      "duck": false,
+      "voice": false,
+      "scroll": 1440,
+      "width": 1440,
+      "errors": [],
+      "httpErrors": [],
+      "failed": [],
+      "elapsedSeconds": 433.616
+    },
+    {
+      "channel": "msedge",
+      "official": "https://liaopeiting.github.io/rosie-picnic/halloween/?v=windows-v1.0.0-20261026",
+      "actualUrl": "https://liaopeiting.github.io/rosie-picnic/halloween/windows-release-20261026-v1/?v=1.0.0",
+      "originalSpeed": true,
+      "htmlModified": false,
+      "results": [
+        {
+          "theme": "bakery",
+          "completed": true,
+          "wall": "1 / 3",
+          "answers": 4,
+          "hints": 4
+        },
+        {
+          "theme": "library",
+          "completed": true,
+          "wall": "2 / 3",
+          "answers": 4,
+          "hints": 3
+        },
+        {
+          "theme": "park",
+          "completed": true,
+          "wall": "3 / 3",
+          "answers": 4,
+          "hints": 4
+        }
+      ],
+      "controls": [
+        {
+          "theme": "bakery",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        },
+        {
+          "theme": "library",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        },
+        {
+          "theme": "park",
+          "pause": {
+            "context": "suspended",
+            "mouth": 0
+          },
+          "endCleared": true
+        }
+      ],
+      "all118HashDecode": true,
+      "wall": "3 / 3",
+      "tts": 0,
+      "events": [
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 1800.3000000715256
+        },
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 2234.3000000715256
+        },
+        {
+          "type": "start",
+          "id": "rosie-da46dd6ee132e560",
+          "text": "Welcome to the Halloween Bakery!",
+          "t": 2541
+        },
+        {
+          "type": "end",
+          "id": "rosie-da46dd6ee132e560",
+          "t": 5235.100000023842
+        },
+        {
+          "type": "start",
+          "id": "rosie-da1855cb76f36177",
+          "text": "Look! The ghost has a box.",
+          "t": 5593.300000071526
+        },
+        {
+          "type": "end",
+          "id": "rosie-da1855cb76f36177",
+          "t": 7835.200000047684
+        },
+        {
+          "type": "start",
+          "id": "ghost-fd2d22a445e2be85",
+          "text": "Hello, Stephanie!",
+          "t": 8194.5
+        },
+        {
+          "type": "end",
+          "id": "ghost-fd2d22a445e2be85",
+          "t": 9545.100000023842
+        },
+        {
+          "type": "start",
+          "id": "ghost-8b6294f5fbdef5bb",
+          "text": "A pumpkin cookie, please!",
+          "t": 12909.800000071526
+        },
+        {
+          "type": "end",
+          "id": "ghost-8b6294f5fbdef5bb",
+          "t": 14906.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-76fc09481787313d",
+          "text": "Is this the pumpkin cookie?",
+          "t": 15272.899999976158
+        },
+        {
+          "type": "end",
+          "id": "rosie-76fc09481787313d",
+          "t": 17195.399999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-61d3d845736c68f9",
+          "text": "Look at this cookie. Is it a pumpkin cookie?",
+          "t": 17713.200000047684
+        },
+        {
+          "type": "end",
+          "id": "rosie-61d3d845736c68f9",
+          "t": 20675.100000023842
+        },
+        {
+          "type": "start",
+          "id": "rosie-982af9caaf314ff8",
+          "text": "Oops! You’re right!",
+          "t": 21198
+        },
+        {
+          "type": "end",
+          "id": "rosie-982af9caaf314ff8",
+          "t": 23195.100000023842
+        },
+        {
+          "type": "start",
+          "id": "rosie-4966123f76597ad4",
+          "text": "Which one is the pumpkin cookie?",
+          "t": 23556.399999976158
+        },
+        {
+          "type": "end",
+          "id": "rosie-4966123f76597ad4",
+          "t": 25637.800000071526
+        },
+        {
+          "type": "start",
+          "id": "rosie-f76699389eb71811",
+          "text": "Pumpkin. Find the pumpkin cookie.",
+          "t": 26111.700000047684
+        },
+        {
+          "type": "end",
+          "id": "rosie-f76699389eb71811",
+          "t": 28586.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-5ff7d0d11a70ff89",
+          "text": "Good try. Find the pumpkin cookie.",
+          "t": 29097
+        },
+        {
+          "type": "end",
+          "id": "rosie-5ff7d0d11a70ff89",
+          "t": 31575.399999976158
+        },
+        {
+          "type": "start",
+          "id": "rosie-b38e97e06e644e03",
+          "text": "Pumpkin! Yes, a pumpkin cookie!",
+          "t": 32095.600000023842
+        },
+        {
+          "type": "end",
+          "id": "rosie-b38e97e06e644e03",
+          "t": 36255.39999997616
+        },
+        {
+          "type": "start",
+          "id": "ghost-3139328604222bbe",
+          "text": "Thank you!",
+          "t": 36622
+        },
+        {
+          "type": "end",
+          "id": "ghost-3139328604222bbe",
+          "t": 37895.300000071526
+        },
+        {
+          "type": "start",
+          "id": "ghost-105d906eb25fa02f",
+          "text": "Three candies, please!",
+          "t": 39541.5
+        },
+        {
+          "type": "end",
+          "id": "ghost-105d906eb25fa02f",
+          "t": 41455.200000047684
+        },
+        {
+          "type": "start",
+          "id": "rosie-547a1397de0a669d",
+          "text": "How many candies?",
+          "t": 41816.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-547a1397de0a669d",
+          "t": 43496.800000071526
+        },
+        {
+          "type": "start",
+          "id": "rosie-7e1fbcbb2078fb4a",
+          "text": "one, two, three.",
+          "t": 44089.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-7e1fbcbb2078fb4a",
+          "t": 46016.700000047684
+        },
+        {
+          "type": "start",
+          "id": "rosie-547a1397de0a669d",
+          "text": "How many candies?",
+          "t": 46367.800000071526
+        },
+        {
+          "type": "end",
+          "id": "rosie-547a1397de0a669d",
+          "t": 48048.800000071526
+        },
+        {
+          "type": "start",
+          "id": "rosie-1d45a564a4b7d2e3",
+          "text": "Good try. Let’s count again.",
+          "t": 48589
+        },
+        {
+          "type": "end",
+          "id": "rosie-1d45a564a4b7d2e3",
+          "t": 51385.300000071526
+        },
+        {
+          "type": "start",
+          "id": "rosie-34663a14b9267233",
+          "text": "Count with me!",
+          "t": 51905.700000047684
+        },
+        {
+          "type": "end",
+          "id": "rosie-34663a14b9267233",
+          "t": 53425.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-96139c5c9d4069c8",
+          "text": "One.",
+          "t": 55795.800000071526
+        },
+        {
+          "type": "end",
+          "id": "rosie-96139c5c9d4069c8",
+          "t": 56765.300000071526
+        },
+        {
+          "type": "start",
+          "id": "rosie-11eb102aa3acd786",
+          "text": "Two.",
+          "t": 58796.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-11eb102aa3acd786",
+          "t": 59915
+        },
+        {
+          "type": "start",
+          "id": "rosie-96f08825b85f1c26",
+          "text": "Three.",
+          "t": 61794.200000047684
+        },
+        {
+          "type": "end",
+          "id": "rosie-96f08825b85f1c26",
+          "t": 62905.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-eb1dd31cc6ef4e9b",
+          "text": "Yes! Three candies!",
+          "t": 63259.700000047684
+        },
+        {
+          "type": "end",
+          "id": "rosie-eb1dd31cc6ef4e9b",
+          "t": 65185.60000002384
+        },
+        {
+          "type": "start",
+          "id": "ghost-3139328604222bbe",
+          "text": "Thank you!",
+          "t": 65561.80000007153
+        },
+        {
+          "type": "end",
+          "id": "ghost-3139328604222bbe",
+          "t": 66835.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-e309a3aaf9d3616a",
+          "text": "The box is almost ready!",
+          "t": 67193.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-e309a3aaf9d3616a",
+          "t": 69665.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-6910776ddb427f7d",
+          "text": "Look at the party boxes!",
+          "t": 70196.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-6910776ddb427f7d",
+          "t": 72276.10000002384
+        },
+        {
+          "type": "start",
+          "id": "ghost-90a7ce698b66131c",
+          "text": "Where is my party box?",
+          "t": 73843.5
+        },
+        {
+          "type": "end",
+          "id": "ghost-90a7ce698b66131c",
+          "t": 75759.20000004768
+        },
+        {
+          "type": "start",
+          "id": "rosie-dc3fb1fc5cb4053d",
+          "text": "One pumpkin cookie and three candies. Which one is correct?",
+          "t": 76116.80000007153
+        },
+        {
+          "type": "end",
+          "id": "rosie-dc3fb1fc5cb4053d",
+          "t": 80435
+        },
+        {
+          "type": "start",
+          "id": "rosie-31434f5254f66f52",
+          "text": "Pumpkin cookie. Three candies.",
+          "t": 80930.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-31434f5254f66f52",
+          "t": 83485.20000004768
+        },
+        {
+          "type": "start",
+          "id": "rosie-6b46c321fa591a5c",
+          "text": "Good try. One pumpkin cookie and three candies.",
+          "t": 83931.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-6b46c321fa591a5c",
+          "t": 87845.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-6b68374e2ab01e54",
+          "text": "Yes! The party box is ready!",
+          "t": 88348.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-6b68374e2ab01e54",
+          "t": 90655.10000002384
+        },
+        {
+          "type": "start",
+          "id": "ghost-8657b088714eccac",
+          "text": "Yummy! Thank you!",
+          "t": 92344.30000007153
+        },
+        {
+          "type": "end",
+          "id": "ghost-8657b088714eccac",
+          "t": 94736.80000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-8c901b0e43b44075",
+          "text": "Is the ghost happy?",
+          "t": 95098.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-8c901b0e43b44075",
+          "t": 96938.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-fe3a896f433219d6",
+          "text": "The ghost is happy!",
+          "t": 100303.70000004768
+        },
+        {
+          "type": "end",
+          "id": "rosie-fe3a896f433219d6",
+          "t": 101975.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-ef4862c3bd3e98c1",
+          "text": "You did it! You got a Ghost sticker!",
+          "t": 102338.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-ef4862c3bd3e98c1",
+          "t": 105695.5
+        },
+        {
+          "type": "start",
+          "id": "ghost-5ac809ad7a63c4ec",
+          "text": "Bye-bye, Stephanie!",
+          "t": 110875.89999997616
+        },
+        {
+          "type": "end",
+          "id": "ghost-5ac809ad7a63c4ec",
+          "t": 112635.20000004768
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 119523.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 119925.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "text": "Welcome to the Halloween Library!",
+          "t": 120152.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-511b9ae26efed5a8",
+          "line": "hw.library.welcome.lines.01",
+          "t": 122785.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-90eb7bf71f773ef6",
+          "line": "hw.library.teach-crown.lines.01",
+          "text": "A crown. Crown.",
+          "t": 123139.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-90eb7bf71f773ef6",
+          "line": "hw.library.teach-crown.lines.01",
+          "t": 125305.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-87319e5d959e19f2",
+          "line": "hw.library.find-princess.lines.01",
+          "text": "A crown. A pink dress. Who is it?",
+          "t": 125663.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-87319e5d959e19f2",
+          "line": "hw.library.find-princess.lines.01",
+          "t": 129255.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-c190ddf93ee3874a",
+          "line": "hw.library.find-princess.hint.01",
+          "text": "Crown. Pink dress.",
+          "t": 129782.30000007153
+        },
+        {
+          "type": "end",
+          "id": "rosie-c190ddf93ee3874a",
+          "line": "hw.library.find-princess.hint.01",
+          "t": 131376
+        },
+        {
+          "type": "start",
+          "id": "rosie-7affab230c87e815",
+          "line": "hw.library.find-princess.retry.01",
+          "text": "Good try. Look for the pink dress.",
+          "t": 131883.20000004768
+        },
+        {
+          "type": "end",
+          "id": "rosie-7affab230c87e815",
+          "line": "hw.library.find-princess.retry.01",
+          "t": 134595.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-ec2ecfd3d2ddfdeb",
+          "line": "hw.library.crown-on.lines.01",
+          "text": "Yes! She is the princess! The princess has a crown!",
+          "t": 135034.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-ec2ecfd3d2ddfdeb",
+          "line": "hw.library.crown-on.lines.01",
+          "t": 139506.5
+        },
+        {
+          "type": "start",
+          "id": "princess-3720e4220c8a5ce4",
+          "line": "hw.library.hello.lines.01",
+          "text": "Hello, Stephanie!",
+          "t": 141076.5
+        },
+        {
+          "type": "end",
+          "id": "princess-3720e4220c8a5ce4",
+          "line": "hw.library.hello.lines.01",
+          "t": 143185.39999997616
+        },
+        {
+          "type": "start",
+          "id": "princess-e728f8e179e85c02",
+          "line": "hw.library.find-book.lines.01",
+          "text": "Where is my book? My book has a crown.",
+          "t": 146628.89999997616
+        },
+        {
+          "type": "end",
+          "id": "princess-e728f8e179e85c02",
+          "line": "hw.library.find-book.lines.01",
+          "t": 151141.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-68054a70c21c65b6",
+          "line": "hw.library.find-book.lines.02",
+          "text": "Find the crown book. Which one?",
+          "t": 151506.70000004768
+        },
+        {
+          "type": "end",
+          "id": "rosie-68054a70c21c65b6",
+          "line": "hw.library.find-book.lines.02",
+          "t": 153825.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-d1b47e593b3a21df",
+          "line": "hw.library.find-book.hint.01",
+          "text": "Crown. Find the crown book.",
+          "t": 154311.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-d1b47e593b3a21df",
+          "line": "hw.library.find-book.hint.01",
+          "t": 157105
+        },
+        {
+          "type": "start",
+          "id": "rosie-b533d7376f1b7f96",
+          "line": "hw.library.find-book.retry.01",
+          "text": "Good try. Look for the crown.",
+          "t": 157611.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-b533d7376f1b7f96",
+          "line": "hw.library.find-book.retry.01",
+          "t": 159925
+        },
+        {
+          "type": "start",
+          "id": "rosie-6bfa133bd1d20605",
+          "line": "hw.library.book-found.lines.01",
+          "text": "Yes! The crown book!",
+          "t": 160412.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-6bfa133bd1d20605",
+          "line": "hw.library.book-found.lines.01",
+          "t": 162486.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-571bf50fb946e5c5",
+          "line": "hw.library.book-found.lines.02",
+          "text": "I found my book! Thank you, Stephanie!",
+          "t": 162852.20000004768
+        },
+        {
+          "type": "end",
+          "id": "princess-571bf50fb946e5c5",
+          "line": "hw.library.book-found.lines.02",
+          "t": 167325.60000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-666130f81a2643cb",
+          "line": "hw.library.open-book.lines.01",
+          "text": "Let’s open the book!",
+          "t": 169007.5
+        },
+        {
+          "type": "end",
+          "id": "princess-666130f81a2643cb",
+          "line": "hw.library.open-book.lines.01",
+          "t": 171055.30000007153
+        },
+        {
+          "type": "start",
+          "id": "princess-00ce7ab0e0fa0e49",
+          "line": "hw.library.stephanie-says.lines.01",
+          "text": "This is a magic book! Let’s play Stephanie Says!",
+          "t": 172626.10000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-00ce7ab0e0fa0e49",
+          "line": "hw.library.stephanie-says.lines.01",
+          "t": 177685.5
+        },
+        {
+          "type": "start",
+          "id": "princess-81eaaa24e2930533",
+          "line": "hw.library.stephanie-says.lines.02",
+          "text": "You’re the teacher, Stephanie. I’ll follow you!",
+          "t": 178039.30000007153
+        },
+        {
+          "type": "end",
+          "id": "princess-81eaaa24e2930533",
+          "line": "hw.library.stephanie-says.lines.02",
+          "t": 182696.60000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-f62fe81d9ea55595",
+          "line": "hw.library.command-1.lines.01",
+          "text": "I’m ready, Teacher Stephanie!",
+          "t": 183049
+        },
+        {
+          "type": "end",
+          "id": "princess-f62fe81d9ea55595",
+          "line": "hw.library.command-1.lines.01",
+          "t": 185947.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "text": "Turn around, wave your hands, climb, or rollerblade?",
+          "t": 186312.60000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "t": 190905.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "text": "Choose one. Tell me: “Stephanie says…”",
+          "t": 191256.70000004768
+        },
+        {
+          "type": "end",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "t": 195255.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-2518646d9595742a",
+          "line": "hw.library.command-1.hint.01",
+          "text": "Say: “Stephanie says, wave your hands!”",
+          "t": 195834.80000007153
+        },
+        {
+          "type": "end",
+          "id": "rosie-2518646d9595742a",
+          "line": "hw.library.command-1.hint.01",
+          "t": 199026.70000004768
+        },
+        {
+          "type": "start",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "text": "Stephanie says… I’ll do it!",
+          "t": 199501.39999997616
+        },
+        {
+          "type": "end",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "t": 202126.10000002384
+        },
+        {
+          "type": "start",
+          "id": "princess-f49de3f6f81d17d7",
+          "line": "hw.library.command-2.lines.01",
+          "text": "Your turn again, Stephanie! What should I do?",
+          "t": 210495.5
+        },
+        {
+          "type": "end",
+          "id": "princess-f49de3f6f81d17d7",
+          "line": "hw.library.command-2.lines.01",
+          "t": 215355.39999997616
+        },
+        {
+          "type": "start",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "text": "Turn around, wave your hands, climb, or rollerblade?",
+          "t": 215709.20000004768
+        },
+        {
+          "type": "end",
+          "id": "princess-f4203d98fce906d9",
+          "line": "hw.library.command-1.lines.02",
+          "t": 220305.70000004768
+        },
+        {
+          "type": "start",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "text": "Choose one. Tell me: “Stephanie says…”",
+          "t": 220662.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-9c39282e9c49070c",
+          "line": "hw.library.command-1.lines.03",
+          "t": 224655.20000004768
+        },
+        {
+          "type": "start",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "text": "Stephanie says… I’ll do it!",
+          "t": 225150
+        },
+        {
+          "type": "end",
+          "id": "princess-02986f8d4e57964b",
+          "line": "hw.library.move-1.lines.01",
+          "t": 227775.30000007153
+        },
+        {
+          "type": "start",
+          "id": "rosie-4682559e0c393296",
+          "line": "hw.library.pages.lines.01",
+          "text": "You’re a great teacher, Stephanie!",
+          "t": 236151.20000004768
+        },
+        {
+          "type": "end",
+          "id": "rosie-4682559e0c393296",
+          "line": "hw.library.pages.lines.01",
+          "t": 238395.30000007153
+        },
+        {
+          "type": "start",
+          "id": "princess-9df3ec60229e839e",
+          "line": "hw.library.pages.lines.02",
+          "text": "I loved playing Stephanie Says with you!",
+          "t": 238750.10000002384
+        },
+        {
+          "type": "end",
+          "id": "princess-9df3ec60229e839e",
+          "line": "hw.library.pages.lines.02",
+          "t": 242025.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-f4f915314162a16c",
+          "line": "hw.library.close-book.lines.01",
+          "text": "Great job, Stephanie!",
+          "t": 242571.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-f4f915314162a16c",
+          "line": "hw.library.close-book.lines.01",
+          "t": 244499
+        },
+        {
+          "type": "start",
+          "id": "princess-439256ed3b9e572a",
+          "line": "hw.library.happy-question.lines.01",
+          "text": "I’m happy!",
+          "t": 246065.30000007153
+        },
+        {
+          "type": "end",
+          "id": "princess-439256ed3b9e572a",
+          "line": "hw.library.happy-question.lines.01",
+          "t": 247947.10000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "text": "Are you happy?",
+          "t": 248298
+        },
+        {
+          "type": "end",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "t": 249335
+        },
+        {
+          "type": "start",
+          "id": "princess-cde0b237677f051f",
+          "line": "hw.library.celebrate.lines.01",
+          "text": "Let’s dance!",
+          "t": 252699.30000007153
+        },
+        {
+          "type": "end",
+          "id": "princess-cde0b237677f051f",
+          "line": "hw.library.celebrate.lines.01",
+          "t": 254579.70000004768
+        },
+        {
+          "type": "start",
+          "id": "rosie-027bafea5b4e76a7",
+          "line": "hw.library.reward.lines.01",
+          "text": "You did it! You got a Princess sticker!",
+          "t": 264946.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-027bafea5b4e76a7",
+          "line": "hw.library.reward.lines.01",
+          "t": 268708
+        },
+        {
+          "type": "start",
+          "id": "princess-2d6b59558a18e5e2",
+          "line": "hw.library.goodbye.lines.01",
+          "text": "Bye-bye, Stephanie!",
+          "t": 273863.8000000715
+        },
+        {
+          "type": "end",
+          "id": "princess-2d6b59558a18e5e2",
+          "line": "hw.library.goodbye.lines.01",
+          "t": 276135.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 282808.2000000477
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 283204.8000000715
+        },
+        {
+          "type": "start",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "text": "Welcome to Halloween Park! Let’s play hide-and-seek!",
+          "t": 283446.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-e0fc10d4cdd10b68",
+          "line": "hw.park.welcome.lines.01",
+          "t": 287286.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-b951fc6fcbbb6f6c",
+          "line": "hw.park.welcome.lines.02",
+          "text": "The pirate is hiding. Let’s find him!",
+          "t": 287640.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-b951fc6fcbbb6f6c",
+          "line": "hw.park.welcome.lines.02",
+          "t": 290915.3000000715
+        },
+        {
+          "type": "start",
+          "id": "rosie-2b075b1122a28fae",
+          "line": "hw.park.find-pirate.lines.01",
+          "text": "Where is the pirate?",
+          "t": 291270.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-2b075b1122a28fae",
+          "line": "hw.park.find-pirate.lines.01",
+          "t": 292945.7000000477
+        },
+        {
+          "type": "start",
+          "id": "rosie-2dfa15fd1128f5b0",
+          "line": "hw.park.find-pirate.hint.01",
+          "text": "Look around the park. Can you see him?",
+          "t": 293477.3000000715
+        },
+        {
+          "type": "end",
+          "id": "rosie-2dfa15fd1128f5b0",
+          "line": "hw.park.find-pirate.hint.01",
+          "t": 296275.39999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-2d2302f48607b1f1",
+          "line": "hw.park.find-pirate.retry.01",
+          "text": "Take another look. Where is the pirate?",
+          "t": 296793.2000000477
+        },
+        {
+          "type": "end",
+          "id": "rosie-2d2302f48607b1f1",
+          "line": "hw.park.find-pirate.retry.01",
+          "t": 299985.10000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-a4b74cf0d756cdef",
+          "line": "hw.park.pirate-found.lines.01",
+          "text": "You found me! I’m under the swing!",
+          "t": 300458.3000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-a4b74cf0d756cdef",
+          "line": "hw.park.pirate-found.lines.01",
+          "t": 303975.2000000477
+        },
+        {
+          "type": "start",
+          "id": "pirate-75f54f5194c0636b",
+          "line": "hw.park.pirate-found.lines.02",
+          "text": "Hello, Stephanie!",
+          "t": 304333.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-75f54f5194c0636b",
+          "line": "hw.park.pirate-found.lines.02",
+          "t": 305925.60000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-f341d5d30cb50482",
+          "line": "hw.park.mermaid-request.lines.01",
+          "text": "Stephanie, can you help me find the mermaid?",
+          "t": 312361.60000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-f341d5d30cb50482",
+          "line": "hw.park.mermaid-request.lines.01",
+          "t": 315475.39999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-84b77ffba4471005",
+          "line": "hw.park.find-mermaid.lines.01",
+          "text": "Where is the mermaid?",
+          "t": 315832.3000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-84b77ffba4471005",
+          "line": "hw.park.find-mermaid.lines.01",
+          "t": 318305.60000002384
+        },
+        {
+          "type": "start",
+          "id": "rosie-0cd6e914f80cf997",
+          "line": "hw.park.find-mermaid.hint.01",
+          "text": "Look around. Can you see her tail?",
+          "t": 318785.8000000715
+        },
+        {
+          "type": "end",
+          "id": "rosie-0cd6e914f80cf997",
+          "line": "hw.park.find-mermaid.hint.01",
+          "t": 321755.39999997616
+        },
+        {
+          "type": "start",
+          "id": "pirate-7d7c4559289f41fa",
+          "line": "hw.park.find-mermaid.retry.01",
+          "text": "Take another look. Where is the mermaid?",
+          "t": 322236.8000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-7d7c4559289f41fa",
+          "line": "hw.park.find-mermaid.retry.01",
+          "t": 325115.2000000477
+        },
+        {
+          "type": "start",
+          "id": "pirate-630cfc2523c82614",
+          "line": "hw.park.mermaid-found.lines.01",
+          "text": "Yes! The mermaid is in the sea!",
+          "t": 325561.7000000477
+        },
+        {
+          "type": "end",
+          "id": "pirate-630cfc2523c82614",
+          "line": "hw.park.mermaid-found.lines.01",
+          "t": 329156
+        },
+        {
+          "type": "start",
+          "id": "mermaid-c3c2db5d4572c299",
+          "line": "hw.park.mermaid-found.lines.02",
+          "text": "Hi, Stephanie!",
+          "t": 329515.3000000715
+        },
+        {
+          "type": "end",
+          "id": "mermaid-c3c2db5d4572c299",
+          "line": "hw.park.mermaid-found.lines.02",
+          "t": 331465.3000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-115d0883295ef057",
+          "line": "hw.park.gold-request.lines.01",
+          "text": "Can you help me find my vampire ring?",
+          "t": 337832.10000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-115d0883295ef057",
+          "line": "hw.park.gold-request.lines.01",
+          "t": 340545.3000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-34057870dfe27d9f",
+          "line": "hw.park.gold-request.lines.02",
+          "text": "It has red eyes and bat wings!",
+          "t": 340896.89999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-34057870dfe27d9f",
+          "line": "hw.park.gold-request.lines.02",
+          "t": 343615.3000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-f706168e78f68bb4",
+          "line": "hw.park.find-gold.lines.01",
+          "text": "Where is my vampire ring?",
+          "t": 343972.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-f706168e78f68bb4",
+          "line": "hw.park.find-gold.lines.01",
+          "t": 346365.2000000477
+        },
+        {
+          "type": "start",
+          "id": "pirate-c01493d700e7c8c4",
+          "line": "hw.park.find-gold.lines.02",
+          "text": "Can you find it, Stephanie?",
+          "t": 346718.10000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-c01493d700e7c8c4",
+          "line": "hw.park.find-gold.lines.02",
+          "t": 348475.5
+        },
+        {
+          "type": "start",
+          "id": "rosie-4263e5f766864250",
+          "line": "hw.park.find-gold.hint.01",
+          "text": "Look around the park. Can you see the red eyes?",
+          "t": 349036.60000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-4263e5f766864250",
+          "line": "hw.park.find-gold.hint.01",
+          "t": 352875
+        },
+        {
+          "type": "start",
+          "id": "pirate-1398cbc9f6abb7f1",
+          "line": "hw.park.find-gold.retry.01",
+          "text": "Look carefully. Where is my vampire ring?",
+          "t": 353398.60000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-1398cbc9f6abb7f1",
+          "line": "hw.park.find-gold.retry.01",
+          "t": 357875.3000000715
+        },
+        {
+          "type": "start",
+          "id": "vampire_ring-fe90b2524e5c007f",
+          "line": "hw.park.gold-found.lines.01",
+          "text": "You found me! Thank you, Stephanie!",
+          "t": 358327.8000000715
+        },
+        {
+          "type": "end",
+          "id": "vampire_ring-fe90b2524e5c007f",
+          "line": "hw.park.gold-found.lines.01",
+          "t": 361055.2000000477
+        },
+        {
+          "type": "start",
+          "id": "vampire_ring-e90eb8e3cebb22a7",
+          "line": "hw.park.gold-found.lines.02",
+          "text": "I was on the bench!",
+          "t": 361407.10000002384
+        },
+        {
+          "type": "end",
+          "id": "vampire_ring-e90eb8e3cebb22a7",
+          "line": "hw.park.gold-found.lines.02",
+          "t": 363086
+        },
+        {
+          "type": "start",
+          "id": "pirate-7eb1911e496d9231",
+          "line": "hw.park.ship-request.lines.01",
+          "text": "Now let’s find my ship!",
+          "t": 370139.8000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-7eb1911e496d9231",
+          "line": "hw.park.ship-request.lines.01",
+          "t": 372135.3000000715
+        },
+        {
+          "type": "start",
+          "id": "rosie-80f70ba65518dd5b",
+          "line": "hw.park.ship-request.lines.02",
+          "text": "Let’s look around!",
+          "t": 372500.39999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-80f70ba65518dd5b",
+          "line": "hw.park.ship-request.lines.02",
+          "t": 373935.3000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-7d03c768cd4a98c1",
+          "line": "hw.park.find-ship.lines.01",
+          "text": "Where is my ship?",
+          "t": 374289.8000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-7d03c768cd4a98c1",
+          "line": "hw.park.find-ship.lines.01",
+          "t": 375649.2000000477
+        },
+        {
+          "type": "start",
+          "id": "rosie-a426924884c65fb2",
+          "line": "hw.park.find-ship.hint.01",
+          "text": "Look at the blue water. On the sea!",
+          "t": 376087.5
+        },
+        {
+          "type": "end",
+          "id": "rosie-a426924884c65fb2",
+          "line": "hw.park.find-ship.hint.01",
+          "t": 378648
+        },
+        {
+          "type": "start",
+          "id": "rosie-0e694df64664b111",
+          "line": "hw.park.find-ship.retry.01",
+          "text": "Let’s look on the sea!",
+          "t": 379055.2000000477
+        },
+        {
+          "type": "end",
+          "id": "rosie-0e694df64664b111",
+          "line": "hw.park.find-ship.retry.01",
+          "t": 381055
+        },
+        {
+          "type": "start",
+          "id": "pirate-145df43fc97da2c5",
+          "line": "hw.park.ship-found.lines.01",
+          "text": "There’s my ship!",
+          "t": 381505.5
+        },
+        {
+          "type": "end",
+          "id": "pirate-145df43fc97da2c5",
+          "line": "hw.park.ship-found.lines.01",
+          "t": 382785.2000000477
+        },
+        {
+          "type": "start",
+          "id": "pirate-0d60964f3d1004bd",
+          "line": "hw.park.ship-found.lines.02",
+          "text": "Let’s take my vampire ring to the ship!",
+          "t": 383144.2000000477
+        },
+        {
+          "type": "end",
+          "id": "pirate-0d60964f3d1004bd",
+          "line": "hw.park.ship-found.lines.02",
+          "t": 385855
+        },
+        {
+          "type": "start",
+          "id": "pirate-e193ea0f793cea8e",
+          "line": "hw.park.sail-away.lines.01",
+          "text": "All aboard! Let’s go!",
+          "t": 386211.39999997616
+        },
+        {
+          "type": "end",
+          "id": "pirate-e193ea0f793cea8e",
+          "line": "hw.park.sail-away.lines.01",
+          "t": 388845
+        },
+        {
+          "type": "start",
+          "id": "rosie-cb5e35d6ec2d5c7b",
+          "line": "hw.park.sail-away.lines.02",
+          "text": "You found the pirate, the mermaid, the vampire ring, and the ship!",
+          "t": 389197.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-cb5e35d6ec2d5c7b",
+          "line": "hw.park.sail-away.lines.02",
+          "t": 394075.10000002384
+        },
+        {
+          "type": "start",
+          "id": "pirate-5a309e25289f68a2",
+          "line": "hw.park.happy-question.lines.01",
+          "text": "Thank you, Stephanie! I’m happy!",
+          "t": 394430.10000002384
+        },
+        {
+          "type": "end",
+          "id": "pirate-5a309e25289f68a2",
+          "line": "hw.park.happy-question.lines.01",
+          "t": 397385.2000000477
+        },
+        {
+          "type": "start",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "text": "Are you happy?",
+          "t": 397740.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-440a07b589744f63",
+          "line": "hw.library.happy-question.lines.02",
+          "t": 398775.3000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-933d7d35ed19acd7",
+          "line": "hw.park.celebrate.lines.01",
+          "text": "Hooray! You’re a great treasure finder!",
+          "t": 402135.8000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-933d7d35ed19acd7",
+          "line": "hw.park.celebrate.lines.01",
+          "t": 405495.3000000715
+        },
+        {
+          "type": "start",
+          "id": "rosie-ad915c0d16528bf7",
+          "line": "hw.park.reward.lines.01",
+          "text": "You did it! You got a Pirate sticker!",
+          "t": 412859.10000002384
+        },
+        {
+          "type": "end",
+          "id": "rosie-ad915c0d16528bf7",
+          "line": "hw.park.reward.lines.01",
+          "t": 416135.8000000715
+        },
+        {
+          "type": "start",
+          "id": "pirate-3c368de74f53b624",
+          "line": "hw.park.goodbye.lines.01",
+          "text": "Bye-bye, Stephanie!",
+          "t": 421303.8000000715
+        },
+        {
+          "type": "end",
+          "id": "pirate-3c368de74f53b624",
+          "line": "hw.park.goodbye.lines.01",
+          "t": 423215.89999997616
+        },
+        {
+          "type": "start",
+          "id": "rosie-5f809dee0856acc0",
+          "line": "hw.park.goodbye.lines.02",
+          "text": "Bye-bye! See you soon!",
+          "t": 423568.89999997616
+        },
+        {
+          "type": "end",
+          "id": "rosie-5f809dee0856acc0",
+          "line": "hw.park.goodbye.lines.02",
+          "t": 425965.2000000477
+        }
+      ],
+      "settings": {
+        "master": 0.8,
+        "voice": 1,
+        "music": 0.3,
+        "sfx": 0.45
+      },
+      "duck": false,
+      "voice": false,
+      "scroll": 1440,
+      "width": 1440,
+      "errors": [],
+      "httpErrors": [],
+      "failed": [],
+      "elapsedSeconds": 433.677
+    }
+  ],
+  "preservedFixes": [
+    "Park ship-found/sail-away automatic transition",
+    "Bakery central box hidden in choice scene; all three answer cards retained"
+  ],
+  "limits": "Desktop release; mobile decorative animations deferred. Mouth animation is audio activity based, not phoneme alignment."
+}
