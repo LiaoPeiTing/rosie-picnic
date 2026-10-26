@@ -1,6 +1,6 @@
 # 版本與回復
 本頁為獨立/halloween/windows-complete/，正式入口未替換。
-新完整配音檢查點tag：windows-full-audio-checkpoint-20261026（配音已接受，整款待家長驗收）。
+新完整配音檢查點tag：windows-full-audio-checkpoint-20261026-v2（配音已接受，整款待家長驗收）。
 先前待26音檢查點：windows-integration-pending26-20261025。
 原Bakery/Library穩定檢查點：pre-park-desktop-checkpoint-20261024。
 本機完整程式/118核准WAV/美術/原驗收紀錄備份：halloween-voice-production/windows-full-audio-checkpoint-20261026.zip，內含SHA256SUMS.json。

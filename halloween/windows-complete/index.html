@@ -1376,7 +1376,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const input=document.querySelector('#pilot-files'),folder=document.querySelector('#pilot-folder');
  const importFiles=async e=>{try{const audio=window.PilotAudioInstance;await audio.unlock();await audio.install(e.target.files);}catch(error){status(error.message);}};
  input.addEventListener('change',importFiles);folder.addEventListener('change',importFiles);
- status('三關整合測試版：92段核准音就緒，Park26段待GPU生成。正式遊戲未修改。');
+ status('三關完整配音測試版：118段核准音就緒，待家長整款驗收。正式遊戲未修改。');
 });
 })();
 
