@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "releaseTag": "halloween-windows-v1.0.0-20261026",
+  "date": "2026-10-26",
+  "approvedCandidateCommit": "b5f175db5c5411ff93e0b6f540b1a9e8ef12056f",
+  "rollbackTag": "halloween-before-windows-release-20261026",
+  "approvedByUser": true,
+  "productionPath": "windows-release-20261026-v1/",
+  "referenceCounts": {
+    "bakery": 53,
+    "library": 30,
+    "park": 36
+  },
+  "uniqueWavCount": 118,
+  "postDeployVerification": "pending"
+}
